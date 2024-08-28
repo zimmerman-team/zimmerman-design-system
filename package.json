@@ -32,6 +32,9 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_9acad79f015c66e"
   },
+  "resolutions": {
+    "strip-ansi": "6.0.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
