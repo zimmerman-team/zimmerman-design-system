@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
+import { fn, userEvent, within, expect } from "@storybook/test";
 import Button from "./button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -31,25 +31,13 @@ export const Filled: Story = {
     radius: "rounded",
     backgroundColor: "#000",
     color: "white",
+    onClick: fn(),
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const user = userEvent.setup();
+    expect(canvas.getByRole("button")).toBeInTheDocument();
+    // await user.click(canvas.getByRole("button"));
+    // expect(meta.args.onClick).toHaveBeenCalled();
   },
 };
-
-// export const Secondary: Story = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
-
-// export const Large: Story = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// };
-
-// export const Small: Story = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// };

@@ -3,7 +3,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 
-interface ButtonProps {
+type ButtonProps = {
   filled: boolean;
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
@@ -15,7 +15,7 @@ interface ButtonProps {
   };
   color?: string;
   radius: "rounded" | "sharp" | "circle";
-}
+};
 
 export default function Button(props: ButtonProps) {
   const { filled, backgroundColor, size, label, onClick, icon, color, radius } =
@@ -46,6 +46,7 @@ export default function Button(props: ButtonProps) {
           color: ${color};
         }
       `}
+      onClick={onClick}
     >
       {icon && icon.component} {label}
     </button>
