@@ -25,6 +25,16 @@ export default function Button(props: ButtonProps) {
     sharp: "5px",
     circle: "50%",
   };
+  const buttonWidth = {
+    small: "100px",
+    medium: "200px",
+    large: "300px",
+  };
+  const buttonHeight = {
+    small: "30px",
+    medium: "40px",
+    large: "50px",
+  };
   return (
     <button
       css={css`
@@ -40,8 +50,10 @@ export default function Button(props: ButtonProps) {
         justify-content: center;
         flex-direction: ${icon?.position === "left" ? "row" : "row-reverse"};
         cursor: pointer;
-        color: ${color};
+        color: ${filled ? color : backgroundColor};
         gap: 5px;
+        width: ${buttonWidth[size!]};
+        height: ${buttonHeight[size!]};
         &:hover {
           color: ${color};
         }
