@@ -22,7 +22,7 @@ export const Filled: Story = {
   args: {
     filled: true,
     label: "Button",
-    radius: "rounded",
+    radius: "circle",
     backgroundColor: "#000",
     color: "white",
     onClick: fn(),
