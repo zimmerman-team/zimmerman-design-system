@@ -3,7 +3,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 
-interface ButtonProps {
+type ButtonProps = {
   filled: boolean;
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
@@ -15,7 +15,7 @@ interface ButtonProps {
   };
   color?: string;
   radius: "rounded" | "sharp" | "circle";
-}
+};
 
 export default function Button(props: ButtonProps) {
   const { filled, backgroundColor, size, label, onClick, icon, color, radius } =
@@ -24,6 +24,16 @@ export default function Button(props: ButtonProps) {
     rounded: "30px",
     sharp: "5px",
     circle: "50%",
+  };
+  const buttonWidth = {
+    small: "100px",
+    medium: "200px",
+    large: "300px",
+  };
+  const buttonHeight = {
+    small: "30px",
+    medium: "40px",
+    large: "50px",
   };
   return (
     <button
@@ -40,12 +50,15 @@ export default function Button(props: ButtonProps) {
         justify-content: center;
         flex-direction: ${icon?.position === "left" ? "row" : "row-reverse"};
         cursor: pointer;
-        color: ${color};
+        color: ${filled ? color : backgroundColor};
         gap: 5px;
+        width: ${buttonWidth[size!]};
+        height: ${buttonHeight[size!]};
         &:hover {
           color: ${color};
         }
       `}
+      onClick={onClick}
     >
       {icon && icon.component} {label}
     </button>
