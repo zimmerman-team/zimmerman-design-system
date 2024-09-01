@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 dist
+zimmerman-DS.d.ts
+zimmerman-DS.js
+zimmerman-DS.js.map
 .env
 /.pnp
 .pnp.js
