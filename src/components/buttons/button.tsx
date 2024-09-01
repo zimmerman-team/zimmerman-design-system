@@ -17,7 +17,7 @@ type ButtonProps = {
   radius: "rounded" | "sharp" | "circle";
 };
 
-export default function MyButton(props: ButtonProps) {
+export default function MyButton(props: Readonly<ButtonProps>) {
   const { filled, backgroundColor, size, label, onClick, icon, color, radius } =
     props;
   const radiusSize = {
