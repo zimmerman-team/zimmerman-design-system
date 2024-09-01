@@ -5,7 +5,9 @@ Zimmerman Design System is a design system library that provides reusable UI com
 ## Table of Contents
 
 1. [Installation](#installation)
-2. [Peer Depenedencies](#peer Dependencies)
+2. [Peer Depenedencies](#peer-dependencies)
+3. [usage](#usage)
+4. [storybook](#storybook)
 
 ## Installation
 
@@ -43,7 +45,7 @@ function App() {
 
 Make sure to wrap your application with any necessary providers that the design system requires.
 
-## Stroybook
+## Storybook
 
 You can view all components in the design system and their props on Storybook:
 
