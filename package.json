@@ -1,6 +1,6 @@
 {
   "name": "zimmerman-design-system",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "scripts": {
     "_make-bundle": "rollup --config",
@@ -92,7 +92,7 @@
     "react-dom": "^18.3.1"
   },
   "description": "A design system library that contains components shared across projects in the Zimmerman organisation",
-  "main": "dist/index.js",
+  "main": "dist/zimmerman-DS.js",
   "types": "dist/types/zimmerman-DS.d.ts",
   "repository": "https://github.com/zimmerman-team/zimmerman-design-system.git",
   "author": "okorie2 <ellahokorie@gmail.com>",
