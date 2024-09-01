@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Zimmerman Design System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Zimmerman Design System is a design system library that provides reusable UI components and styles shared across projects in the Zimmerman organization.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Installation](#installation)
+2. [Peer Depenedencies](#peer-dependencies)
+3. [usage](#usage)
+4. [storybook](#storybook)
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To install the Zimmerman Design System, run the following command:
+`yarn add zimmerman-design-system`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Peer dependencies
 
-### `yarn test`
+Ensure you have the following peer dependencies installed in your project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```json
+{
+  "@emotion/react": "^11.13.3",
+  "@emotion/styled": "^11.13.0",
+  "@mui/material": "^5.16.7",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1"
+}
+```
 
-### `yarn build`
+You can install all peer dependencies with:
+`npm install @emotion/react@^11.13.3 @emotion/styled@^11.13.0 @mui/material@^5.16.7 react@^18.3.1 react-dom@^18.3.1`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To use the components from the Zimmerman Design System in your project, first import the components you need:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```jsx
+import { Button } from "zimmerman-design-system";
 
-### `yarn eject`
+function App() {
+  return <Button variant="primary">Click Me!</Button>;
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Make sure to wrap your application with any necessary providers that the design system requires.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Storybook
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can view all components in the design system and their props on Storybook:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[View Storybook](https://66cd1b47dde91377fdb2a1d8-ngwbgzilhz.chromatic.com/?path=/docs/example-button--docs)
