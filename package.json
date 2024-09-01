@@ -1,6 +1,6 @@
 {
   "name": "zimmerman-design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "_make-bundle": "rollup --config",
@@ -43,6 +43,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@chromatic-com/storybook": "^1.7.0",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.7",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -58,19 +61,6 @@
     "@storybook/react-webpack5": "^8.2.9",
     "@storybook/test": "^8.2.9",
     "@storybook/test-runner": "^0.19.1",
-    "auto": "^11.2.0",
-    "chromatic": "^11.7.1",
-    "eslint-plugin-storybook": "^0.8.0",
-    "npm-run-all": "^4.1.5",
-    "prop-types": "^15.8.1",
-    "rollup": "^4.21.1",
-    "rollup-plugin-dts": "^6.1.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "storybook": "^8.2.9",
-    "webpack": "^5.94.0",
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/material": "^5.16.7",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -78,13 +68,22 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "auto": "^11.2.0",
+    "chromatic": "^11.7.1",
+    "eslint-plugin-storybook": "^0.8.0",
+    "npm-run-all": "^4.1.5",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "rollup": "^4.21.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook": "^8.2.9",
     "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "webpack": "^5.94.0"
   },
-
   "peerDependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -92,10 +91,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-
-  "description": "A design system library that contains components share across projects in the Zimmerman organisation",
+  "description": "A design system library that contains components shared across projects in the Zimmerman organisation",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/zimmerman-DS.d.ts",
   "repository": "https://github.com/zimmerman-team/zimmerman-design-system.git",
   "author": "okorie2 <ellahokorie@gmail.com>",
   "license": "MIT"

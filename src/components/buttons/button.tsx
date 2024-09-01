@@ -54,6 +54,7 @@ export default function MyButton(props: ButtonProps) {
         gap: 5px;
         width: ${buttonWidth[size!]};
         height: ${buttonHeight[size!]};
+        white-space: nowrap;
         &:hover {
           color: ${color};
         }
