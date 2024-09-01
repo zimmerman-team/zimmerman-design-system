@@ -93,9 +93,9 @@
     "react-dom": "^18.3.1"
   },
 
-  "description": "A design system library that contains components share across projects in the Zimmerman organisation",
+  "description": "A design system library that contains components shared across projects in the Zimmerman organisation",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/zimmerman-DS.d.ts",
   "repository": "https://github.com/zimmerman-team/zimmerman-design-system.git",
   "author": "okorie2 <ellahokorie@gmail.com>",
   "license": "MIT"

@@ -8,7 +8,7 @@ const config = [
   {
     input: 'src/index.ts',
     output: {
-      file: 'zimmerman-DS.js',
+      file: 'dist/zimmerman-DS.js',
       format: 'esm',
       sourcemap: true,
     },
@@ -17,7 +17,7 @@ const config = [
   }, {
     input: 'dist/types/index.d.ts',
     output: {
-      file: 'zimmerman-DS.d.ts',
+      file: 'dist/types/zimmerman-DS.d.ts',
       format: 'es'
     },
     plugins: [dts() ]
