@@ -39,7 +39,16 @@ To use the components from the Zimmerman Design System in your project, first im
 import { Button } from "zimmerman-design-system";
 
 function App() {
-  return <Button variant="primary">Click Me!</Button>;
+  return (
+    <Button
+      filled
+      label="my button"
+      radius="rounded"
+      backgroundColor="pink"
+      color="black"
+      size="small"
+    />
+  );
 }
 ```
 
