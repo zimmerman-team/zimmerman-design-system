@@ -21,6 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const Filled: Story = {
   args: {
     filled: true,
+    padding: "0px",
     label: "Button",
     radius: "circle",
     backgroundColor: "#000",
