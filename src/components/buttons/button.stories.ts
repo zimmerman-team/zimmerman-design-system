@@ -11,8 +11,15 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {
     backgroundColor: { control: "color" },
+    radius: {
+      control: { type: "select" },
+      options: ["rounded", "sharp", "circle"],
+    },
+    size: {
+      control: { type: "radio" },
+      options: ["small", "medium", "large"],
+    },
   },
-  args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
 export default meta;
