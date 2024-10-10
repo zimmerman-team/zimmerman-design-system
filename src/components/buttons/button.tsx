@@ -1,88 +1,139 @@
 /** @jsxImportSource @emotion/react */
 
-import React from "react";
+import React, { ElementType } from "react";
+import { SxProps, Theme } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-
+import { Link } from "react-router-dom";
+/**
+ * Button component props
+ */
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   gap?: string;
-  label: string;
-  color?: string;
-  filled: boolean;
-  padding?: string;
-  fontSize?: string;
-  fontFamily?: string;
-  backgroundColor?: string;
-  size?: "small" | "medium" | "large";
-  radius: "rounded" | "sharp" | "circle";
-  textTransform?: "uppercase" | "lowercase" | "capitalize";
+  label?: string;
+  component?:ElementType;
+  expandable?: boolean;
+  link?: string;
+  display?: string;
+  borderRadius?: string;
+  textTransform?: string;
+  opacity?: string;
+  visibility?: string;
+  ariaLabel?: string;
+  alignItems?: string;
+  variant?: "contained" | "outlined" | "text";
+  background?: string; 
   icon?: {
     component: React.ReactNode;
     position: "left" | "right";
   };
+  color?: string;
+  padding?: string;
+  width?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  lineHeight?: string;
+  to?: string;
+  border?: string;
+  height?: string;
+  justifyContent?: string;
+  right?: string;
+  zIndex?: string;
+  position?: string;
+  transition?: string;
+  textAlign?: string ;
+  css?: {
+    "&:hover"?: {
+      backgroundColor?: string;
+      color?: string;
+      cursor?: string;
+      fontWeight?: string;
+      background?: string;
+    };
+  };
+  borderColor?: string;
 }
 
+/**
+ * Button component props
+ */
 export default function MyButton(props: Readonly<ButtonProps>) {
   const {
     gap,
-    size,
+    display,
     icon,
     label,
     color,
-    filled,
-    radius,
+    component,
     padding,
     onClick,
     fontSize,
-    fontFamily,
+    width,
+    height,
+    variant,
+    background,
+    to,
+    right,
+    zIndex,
+    alignItems,
+    lineHeight,
+    border,
+    borderRadius,
     textTransform,
-    backgroundColor,
-    ...otherProps // HTML5 button attributes
+    justifyContent,
+    position,
+    opacity,
+    visibility,
+    fontWeight,
+    css,
+    borderColor,
+    textAlign,
+    ...otherProps
   } = props;
 
-  const radiusSize = {
-    rounded: "30px",
-    sharp: "5px",
-    circle: "50%",
-  };
-  const buttonWidth = {
-    small: "100px",
-    medium: "200px",
-    large: "300px",
-  };
-  const buttonHeight = {
-    small: "30px",
-    medium: "40px",
-    large: "50px",
-  };
-
+  /**MUI Button component with its respective components */
   return (
     <Button
       {...otherProps}
       onClick={onClick}
-      startIcon={icon && icon.position === "left" ? icon.component : undefined}
-      endIcon={icon && icon.position === "right" ? icon.component : undefined}
+      variant="contained"
+      aria-label={props.ariaLabel}
+      startIcon={icon?.position === "left" ? icon.component : undefined}
+      endIcon={icon?.position === "right" ? icon.component : undefined}
+      component={to ? Link : 'button'}
+      css={css}
+      to={to}
       sx={{
-        display: "flex",
-        outline: "none",
-        gap: gap ?? "5px",
-        whiteSpace: "nowrap",
+        gap: gap ?? "0px",
         alignItems: "center",
-        justifyContent: "center",
-        width: buttonWidth[size!],
-        height: buttonHeight[size!],
+        display: display ?? "flex",
+        width: width,
+        lineHeight: lineHeight,
         fontSize: fontSize ?? "14px",
         padding: padding ?? "7px 24px",
-        borderRadius: radiusSize[radius],
-        color: filled ? color : backgroundColor,
-        textTransform: textTransform ?? "lowercase",
-        fontFamily: fontFamily ?? '"Inter", sans-serif',
-        backgroundColor: filled ? backgroundColor : "transparent",
-        border: !filled ? `1px solid ${backgroundColor}` : "none",
-        flexDirection: icon?.position === "left" ? "row" : "row-reverse",
-        ":hover": {
-          cursor: "pointer",
+        fontWeight: "700",
+        borderRadius:borderRadius ?? "5px",
+        alignContent: alignItems,
+        textTransform: textTransform ?? "none",
+        justifyContent:justifyContent,
+        color:color,
+        right: right,
+        zIndex: zIndex,
+        position: position,
+        transition: "all 0.3s ease",
+        opacity: opacity,
+        visibility: visibility,
+        background: background,
+        border: border,
+        textAlign: textAlign,
+        height:height,
+       "&:hover": css?.["&:hover"],
+       "> .MuiButton-icon": {
+          margin: 0,
         },
-      }}
+        cursor: "pointer",
+        expandable: props.expandable, 
+        borderColor: borderColor,
+      } as SxProps<Theme>}
     >
       {label}
     </Button>
