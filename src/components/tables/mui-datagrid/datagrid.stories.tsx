@@ -1,0 +1,208 @@
+import type { Meta, StoryObj } from "@storybook/react";
+import React from "react";
+import myDataGrid from "./datagrid";
+import { GridToolbarContainer, GridToolbarQuickFilter } from "@mui/x-data-grid";
+import {columns,rows} from "./data"
+
+
+const CustomToolbar = () => (
+  <GridToolbarContainer>
+    <GridToolbarQuickFilter />
+    <button>Custom Filter</button>
+    <button>Custom Add File</button>
+    <button>Custom Columns</button>
+    <button>Custom Sort</button>
+  </GridToolbarContainer>
+);
+
+const meta: Meta<typeof myDataGrid> = {
+  title: "Example/Table/DataGrid Tables",
+  component: myDataGrid,
+  parameters: {
+    layout: "centered",
+  },
+  tags: ["autodocs"],
+  argTypes: {
+    arialabel: { control: "text" },
+    arialabelledby: { control: "text" },
+    hideFooter: { control: "boolean" },
+    autoHeight: { control: "boolean" },
+    autoPageSize: { control: "boolean" },
+    autosizeOnMount: { control: "boolean" },
+    checkboxSelection: { control: "boolean" },
+    columnHeaderHeight: { control: { type: "number" } },
+    rowHeight: { control: { type: "number" } },
+    rowSelection: { control: "boolean" },
+    headerFontSize: { control: "text" },
+    customStyles: { control: "object" },
+    slots: { control: "object" },
+    slotProps: { control: "object" },
+    sx: { control: "object" },
+  },
+};
+
+export default meta;
+type Story = StoryObj<typeof myDataGrid>;
+
+export const DefaultDataGrid: Story = {
+  args: {
+    rows,
+    columns,
+    hideFooter: true,
+    rowHeight: 46,
+    headerFontSize: "16px",
+    customStyles: {
+      borderStyle: "solid",
+      columnHeaderTitleFontSize: "16px",
+      columnHeaderTitleFontWeight: "bold",
+      columnHeaderTitleColor: "#333",
+      rowHoverBackground: "#f0f0f0",
+      cellFontSize: "14px",
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
+    },
+    sx: {
+      backgroundColor: '#f0f0f0',
+      height: 'auto', 
+    },
+  },
+};
+
+export const DataGridWithCustomToolbar: Story = {
+  args: {
+    rows,
+    columns,
+    hideFooter: true,
+    rowHeight: 46,
+    headerFontSize: "16px",
+    customStyles: {
+      borderStyle: "solid",
+      columnHeaderTitleFontSize: "16px",
+      columnHeaderTitleFontWeight: "bold",
+      columnHeaderTitleColor: "#333",
+      rowHoverBackground: "#f0f0f0",
+      cellFontSize: "14px",
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
+    },
+    sx: {
+      backgroundColor: '#f0f0f0',
+      height: 'auto', 
+    },
+    slots: {
+      toolbar: CustomToolbar,
+    },
+    slotProps: {
+      toolbar: {
+        showQuickFilter: true,
+        showFilterButton: true,
+        showAddFileButton: true,
+        showColumnsButton: true,
+        showSortButton: true,
+      },
+    },
+  },
+};
+
+export const DataGridWithCheckboxSelection: Story = {
+  args: {
+    rows,
+    columns,
+    hideFooter: true,
+    rowHeight: 46,
+    headerFontSize: "16px",
+    checkboxSelection: true,
+    customStyles: {
+      borderStyle: "solid",
+      columnHeaderTitleFontSize: "16px",
+      columnHeaderTitleFontWeight: "bold",
+      columnHeaderTitleColor: "#333",
+      rowHoverBackground: "#f0f0f0",
+      cellFontSize: "14px",
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
+    },
+    sx: {
+      backgroundColor: '#f0f0f0',
+      height: 'auto',
+    },
+  },
+};
+
+export const DataGridWithPagination: Story = {
+  args: {
+    rows,
+    columns,
+    hideFooter: false,
+    rowHeight: 46,
+    headerFontSize: "16px",
+    customStyles: {
+      borderStyle: "solid",
+      columnHeaderTitleFontSize: "16px",
+      columnHeaderTitleFontWeight: "bold",
+      columnHeaderTitleColor: "#333",
+      rowHoverBackground: "#f0f0f0",
+      cellFontSize: "14px",
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
+    },
+    sx: {
+      backgroundColor: '#f0f0f0',
+      height: 'auto', 
+    },
+  },
+};
+
+export const DataGridWithSorting: Story = {
+  args: {
+    rows,
+    columns,
+    hideFooter: true,
+    rowHeight: 46,
+    headerFontSize: "16px",
+    sortingOrder: ['asc', 'desc'],
+    customStyles: {
+      borderStyle: "solid",
+      columnHeaderTitleFontSize: "16px",
+      columnHeaderTitleFontWeight: "bold",
+      columnHeaderTitleColor: "#333",
+      rowHoverBackground: "#f0f0f0",
+      cellFontSize: "14px",
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
+    },
+    sx: {
+      backgroundColor: '#f0f0f0',
+      height: 'auto',
+    },
+  },
+};
+
+export const DataGridWithFiltering: Story = {
+  args: {
+    rows,
+    columns,
+    hideFooter: true,
+    rowHeight: 46,
+    headerFontSize: "16px",
+    filterModel: {
+      items: [
+        { field: 'name', operator: 'contains', value: 'Alice' },
+      ],
+    },
+    customStyles: {
+      borderStyle: "solid",
+      columnHeaderTitleFontSize: "16px",
+      columnHeaderTitleFontWeight: "bold",
+      columnHeaderTitleColor: "#333",
+      rowHoverBackground: "#f0f0f0",
+      cellFontSize: "14px",
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
+    },
+    sx: {
+      backgroundColor: '#f0f0f0',
+      height: 'auto', 
+    },
+  },
+};
