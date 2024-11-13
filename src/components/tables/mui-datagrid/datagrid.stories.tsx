@@ -4,7 +4,7 @@ import myDataGrid from "./datagrid";
 import { GridToolbarContainer, GridToolbarQuickFilter } from "@mui/x-data-grid";
 import {columns,rows} from "./data"
 
-
+// Custom toolbar component for the DataGrid
 const CustomToolbar = () => (
   <GridToolbarContainer>
     <GridToolbarQuickFilter />
@@ -15,6 +15,7 @@ const CustomToolbar = () => (
   </GridToolbarContainer>
 );
 
+// Meta configuration for the DataGrid stories
 const meta: Meta<typeof myDataGrid> = {
   title: "Example/Table/DataGrid Tables",
   component: myDataGrid,
@@ -44,6 +45,7 @@ const meta: Meta<typeof myDataGrid> = {
 export default meta;
 type Story = StoryObj<typeof myDataGrid>;
 
+// Default DataGrid story
 export const DefaultDataGrid: Story = {
   args: {
     rows,
@@ -67,7 +69,7 @@ export const DefaultDataGrid: Story = {
     },
   },
 };
-
+// DataGrid story with the custom toolbar
 export const DataGridWithCustomToolbar: Story = {
   args: {
     rows,
@@ -104,6 +106,7 @@ export const DataGridWithCustomToolbar: Story = {
   },
 };
 
+// DataGrid story with checkbox selection
 export const DataGridWithCheckboxSelection: Story = {
   args: {
     rows,
@@ -129,6 +132,7 @@ export const DataGridWithCheckboxSelection: Story = {
   },
 };
 
+// DataGrid story with pagination
 export const DataGridWithPagination: Story = {
   args: {
     rows,
@@ -153,6 +157,7 @@ export const DataGridWithPagination: Story = {
   },
 };
 
+// DataGrid story with sorting
 export const DataGridWithSorting: Story = {
   args: {
     rows,
@@ -177,7 +182,7 @@ export const DataGridWithSorting: Story = {
     },
   },
 };
-
+// DataGrid story with filtering
 export const DataGridWithFiltering: Story = {
   args: {
     rows,

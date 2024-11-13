@@ -1,3 +1,5 @@
+
+// Defining the columns for the data grid
 export const columns = [
   { field: 'id', headerName: 'ID', width: 90 },
   { field: 'name', headerName: 'Name', width: 150 },
@@ -10,7 +12,7 @@ export const columns = [
   { field: 'experience', headerName: 'Experience', width: 150 },
   { field: 'education', headerName: 'Education', width: 150 },
 ];
-
+// Defining the rows for the data grid
 export const rows = [
   { id: 1, name: 'Alice', age: 25, country: 'USA', occupation: 'Engineer', company: 'TechCorp', department: 'R&D', salary: '$100,000', experience: '5 years', education: 'MSc' },
   { id: 2, name: 'Bob', age: 30, country: 'Canada', occupation: 'Designer', company: 'DesignStudio', department: 'Design', salary: '$90,000', experience: '7 years', education: 'BDes' },
