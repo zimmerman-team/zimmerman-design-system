@@ -1,3 +1,4 @@
+// Table data
 export const data = [
     { Name: "Alice", Age: 25, Country: "USA", Occupation: "Engineer", Company: "TechCorp", Department: "R&D", Salary: "$100,000", Experience: "5 years", Education: "MSc", Skills: "React, Node.js", Projects: "Project A" },
     { Name: "Bob", Age: 30, Country: "Canada", Occupation: "Designer", Company: "DesignStudio", Department: "Design", Salary: "$90,000", Experience: "7 years", Education: "BDes", Skills: "Photoshop, Illustrator", Projects: "Project B" },
@@ -26,7 +27,7 @@ export const data = [
     { Name: "Yara", Age: 27, Country: "Egypt", Occupation: "Archaeologist", Company: "HistoryMuseum", Department: "Archaeology", Salary: "$90,000", Experience: "6 years", Education: "MA", Skills: "Excavation, Research", Projects: "Project Y" },
     { Name: "Zane", Age: 28, Country: "Argentina", Occupation: "Economist", Company: "FinanceGroup", Department: "Economics", Salary: "$100,000", Experience: "7 years", Education: "PhD", Skills: "Economic Analysis, Forecasting", Projects: "Project Z" },
   ];
-  
+  // Table headers
   export const headers = [
     { id: "Name", label: "Name" },
     { id: "Age", label: "Age" },

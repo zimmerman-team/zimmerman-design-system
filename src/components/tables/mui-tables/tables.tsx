@@ -15,20 +15,22 @@ import { TableProps as MuiTableProps } from "@mui/material/Table";
 import { fn } from "@storybook/test";
 import orderBy from 'lodash/orderBy';
 
+// Table header props
 interface Header {
-  id:string;
-  label:string;
+  id: string; // Unique identifier for the header
+  label: string; // Display label for the header
 }
 
+// Interface for container props
 interface ContainerProps {
-  componentWidth?: string;
-  componentOverflow?: string;
-  componentPadding?: string;
-  componentBorderRadius?: string;
-  componentBackground?: string;
-  componentBoxShadow?: string;
+  componentWidth?: string; // Width of the table container
+  componentOverflow?: string; // Overflow property of the table container
+  componentPadding?: string; // Padding of the table container
+  componentBorderRadius?: string; // Border radius of the table container
+  componentBackground?: string; // Background color of the table container
+  componentBoxShadow?: string; // Box shadow of the table container
 }
-
+// Interface for Table Header props
 interface TableHeadProps {
   headCursor?: string;
   headFontWeight?: string;
@@ -37,13 +39,12 @@ interface TableHeadProps {
   headPosition?: 'static' | 'relative' | 'absolute' | 'sticky' | 'fixed';
   headColor?: string;
 }
-
+// Interface for Table Body props
 interface TableBodyProps {
-  bodyColor?: string;
+  bodyColor?: string; // Body color of the table body
 }
-
+// Interface for Pagination props
 interface PaginationProps{
-  
 pagination?: boolean;
 page?: number;
 rowsPerPage?: number;
@@ -59,22 +60,21 @@ paginationBorderStyle?: string;
 paginationPadding?: string;
 paginationJustifyContent?: string;
 paginationToolbarMarginLeft?: string;
-
 }
 
-
-
+// Interface for Table props
 interface TableProps extends MuiTableProps,ContainerProps,PaginationProps,TableHeadProps,TableBodyProps {
-    data: Array<{ [key: string]: string | number }>;
-    headers: Header[];
-    rowHeight?: number;
-    borderColor?: string;
-    hover?: boolean;
-    hoverColor?:string;
-    sortIndicatorColor?:string,
-    minWidth?:string
+    data: Array<{ [key: string]: string | number }>;// Array of table data
+    headers: Header[];// Array of table headers
+    rowHeight?: number;// Height of the table rows
+    borderColor?: string; // Border color of the table
+    hover?: boolean; // Whether to enable row hover effect
+    hoverColor?:string; // Background color of rows on hover
+    sortIndicatorColor?:string, // Color of the sort indicator
+    minWidth?:string // Min width of the table
 }
 
+// Table component
 export default function MyTable({
     data,
     headers,
@@ -114,22 +114,26 @@ export default function MyTable({
     minWidth='1500px',
     ...otherProps
   }: Readonly<TableProps>) {
+      // State for pagination
     const [currentPage,setCurrentPage]=React.useState(page||0);
+    // State for the current number of rows per page
     const [currentRowsPerPage,setCurrentRowsPerPage]=React.useState(rowsPerPage||10);
+    // State for the current sort key
     const [currentSortKey, setCurrentSortKey] = React.useState<string | undefined>(sortKey);
+    // State for the current sort direction
     const [currentSortDirection, setCurrentSortDirection] = React.useState<'asc' | 'desc' | undefined>(sortDirection);
 
-
+    // Handle page change
     const handlePageChange=(event:unknown,newPage:number)=>{
        setCurrentPage(newPage);
        if (onPageChange) onPageChange(newPage);
      };
-
+    // Handle rows per page change
      const handleRowsPerPageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       setCurrentRowsPerPage(parseInt(event.target.value, 10));
       setCurrentPage(0);
     };
-  
+    // Handle sort change
     const handleSortChange = (columnId: string) => {
       const isAsc = currentSortKey === columnId && currentSortDirection === 'asc';
       const direction = isAsc ? 'desc' : 'asc';

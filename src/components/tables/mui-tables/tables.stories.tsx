@@ -4,7 +4,7 @@ import React from "react";
 import MyTable from "./tables";
 import {data,headers} from "./data"
 
-
+// Meta configuration for the MUI Tables stories
 const meta: Meta<typeof MyTable> = {
   title: "Example/Table/MUI Tables",
   component: MyTable,
@@ -41,6 +41,7 @@ const meta: Meta<typeof MyTable> = {
 export default meta;
 type Story = StoryObj<typeof MyTable>;
 
+// Default MUI Table story
 export const DefaultTable: Story = {
   args: {
     data,
@@ -56,7 +57,7 @@ export const DefaultTable: Story = {
     componentBoxShadow: 'none',
   },
 };
-
+// MUI Table story with custom styles to messs around with
 export const CustomStyledTable: Story = {
   args: {
     data,
@@ -73,7 +74,7 @@ export const CustomStyledTable: Story = {
     componentBoxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
   },
 };
-
+// MUI Table story with Pagination
 export const PaginatedTable: Story = {
   args: {
     data,
@@ -92,7 +93,7 @@ export const PaginatedTable: Story = {
     onSortChange: (columnId, direction) => console.log('Sort changed:', columnId, direction),
   },
 };
-
+// Mui OpenAidActivitiesTable story
 export const OpenAidActivitiesTable: Story = {
   args: {
     data,
