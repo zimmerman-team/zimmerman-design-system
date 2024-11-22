@@ -20,7 +20,7 @@ const meta = {
 export default meta;
 type StoryType = StoryObj<typeof meta>;
 
-export const Primary: StoryType = {
+export const AIDAPrimary: StoryType = {
   args: {
     id: "select-field",
     onChange: () => {},
@@ -39,7 +39,7 @@ export const Primary: StoryType = {
   },
 };
 
-export const Outlined: StoryType = {
+export const AIDAOutlined: StoryType = {
   args: {
     id: "select-field",
     onChange: () => {},
