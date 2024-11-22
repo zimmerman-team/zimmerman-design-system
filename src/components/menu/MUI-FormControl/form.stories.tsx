@@ -1,0 +1,128 @@
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
+import { withRouter } from "storybook-addon-remix-react-router";
+import {formComponent} from "./index";
+import {ArrowDown} from "./data";
+
+
+const meta = {
+    title: "Examples/menu/MUI-FormControl",
+    component: formComponent,
+    decorators: [withRouter],
+    parameters: {
+      layout: "fullscreen",
+    },
+    tags: ["autodocs"],
+    argTypes: {},
+  } satisfies Meta<typeof formComponent>;
+  
+
+export default meta;
+type StoryType = StoryObj<typeof meta>;
+
+export const Primary: StoryType = {
+  args: {
+    id: "select-field",
+    onChange: () => {},
+    options: [
+      { label: "Option 1", value: "option-1" },
+      { label: "Option 2", value: "option-2" },
+      { label: "Option 3", value: "option-3" },
+    ],
+    value: "option-1",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
+    },
+  },
+};
+
+export const Outlined: StoryType = {
+  args: {
+    id: "select-field",
+    onChange: () => {},
+    options: [
+      { label: "Option 1", value: "option-1" },
+      { label: "Option 2", value: "option-2" },
+      { label: "Option 3", value: "option-3" },
+    ],
+    value: "option-1",
+    variant: "outlined",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
+    },
+  },
+};
+
+export const MultipleSelection: StoryType = {
+    args: {
+      id: "select-field-multiple",
+      onChange: () => {},
+      options: [
+        { label: "Option 1", value: "option-1" },
+        { label: "Option 2", value: "option-2" },
+        { label: "Option 3", value: "option-3" },
+      ],
+      value:[],
+      label: "Multiple Select",
+      placeholder: "Select options",
+      variant: "outlined",
+      multiple: true,
+      width: "300px",
+      height: "40px",
+    },
+  };
+  
+  export const CustomStyles: StoryType = {
+    args: {
+      id: "select-field-custom-styles",
+      onChange: () => {},
+      options: [
+        { label: "Option 1", value: "option-1" },
+        { label: "Option 2", value: "option-2" },
+        { label: "Option 3", value: "option-3" },
+      ],
+      value:[],
+      label: "Custom Styles Select",
+      placeholder: "Select an option",
+      variant: "outlined",
+      width: "300px",
+      height: "40px",
+      sx: {
+        ".MuiInputBase-root": {
+          background: "lightblue",
+          borderRadius: "10px",
+        },
+        ".MuiInputBase-input": {
+          color: "darkblue",
+        },
+        ".MuiSelect-icon": {
+          color: "darkblue",
+        },
+      },
+    },
+  };
+
+  export const WithIconComponent: StoryType = {
+    args: {
+      id: "select-field-icon",
+      onChange: () => {},
+      options: [
+        { label: "Option 1", value: "option-1" },
+        { label: "Option 2", value: "option-2" },
+        { label: "Option 3", value: "option-3" },
+      ],
+      value:[],
+      label: "Select with Custom Icon",
+      placeholder: "Select an option",
+      variant: "outlined",
+      width: "300px",
+      height: "40px",
+      IconComponent: (props) => <ArrowDown {...props} stroke="red" />,
+    },
+  };
