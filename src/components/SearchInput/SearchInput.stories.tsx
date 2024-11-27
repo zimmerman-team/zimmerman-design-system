@@ -1,11 +1,11 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-// import SearchIcon from '@mui/icons-material/Search';
 import { MySearchInput } from './SearchInput';
 import { ReactComponent as ExplorerSearchIcon } from "../../assets/vectors/ExplorerSearchIcon.svg";
 import  colors  from "../../theme/colors";
 import { Box } from '@mui/material';
-import { typography } from '@mui/system';
+import SearchIcon from "@mui/icons-material/Search";
+import ClearIcon from "@mui/icons-material/Clear";
 
 
 const meta = {
@@ -20,13 +20,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof MySearchInput>;
 
-// Basic search input
-export const Default: Story = {
-  args: {
-    placeholder: 'Search...',
-    width: '200px',
-  },
-};
 
 // AIDA search input
 export const AIDASearchInput: Story = {
@@ -49,6 +42,12 @@ export const AIDASearchInput: Story = {
     inputFontSize: '14px',
     inputColor: colors.secondary.grayText,
     inputPlaceholderFontSize: colors.secondary.grayText,
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4',
+    },
   },
 };
 
@@ -89,6 +88,12 @@ export const OpenaidSearchInput: Story = {
     inputWidth:"600px",
     inputpadding: "6px 40px 6px 22px",    
   },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257366&t=bv9BC7T69S3II3az-4',
+    }
+  }
 };
 
 // Data explorer search input
@@ -116,5 +121,35 @@ export const DataExplorerInput: Story = {
     inputBorder: 'none',
     inputBackground: "#F1F3F4",
     inputColor: colors.primary.black,
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=4948-263242&t=NOLx3NFpHxY7gK5x-4'
+    }
+  }
+};
+
+// Search Input with both icons
+export const WithBothIcons: StoryObj = {
+  args: {
+    placeholder: "Search with both icons",
+    startAdornment: <SearchIcon />,
+    endAdornment: <ClearIcon />,
+  },
+};
+
+// Custom style search variant
+export const CustomStyle: StoryObj = {
+  args: {
+    placeholder: "Custom styled input",
+    startAdornment: <SearchIcon />,
+    sx: {
+      backgroundColor: "#f5f5f5",
+      borderRadius: "20px",
+      "& .MuiInputBase-input": {
+        padding: "8px 16px",
+      },
+    },
   },
 };

@@ -4,27 +4,27 @@ import InputBase, { InputBaseProps } from "@mui/material/InputBase";
 import Box from "@mui/material/Box";
 import colors from "../../theme/colors";
 import { SxProps, Theme } from "@mui/material";
-import { typography } from '@mui/system';
 
+interface Boxprops{
 
-interface SearchInputProps {
-  //// Box props
-  icon?: React.ReactNode;
-  placeholder?: string;
-  gap?: string;
-  showBorder?: boolean;
-  fullWidth?: boolean;
-  value?: string;
-  shape?: "rounded" | "sharp" | "circle";
-  background?: string;
-  padding?: string;
-  width?: string;
-  display?: string;
-  alignItems?: string;
-  border?: string;
-  borderRadius?: string;
-  position?: string;
-  ////
+   icon?: React.ReactNode;
+   placeholder?: string;
+   gap?: string;
+   showBorder?: boolean;
+   fullWidth?: boolean;
+   value?: string;
+   shape?: "rounded" | "sharp" | "circle";
+   background?: string;
+   padding?: string;
+   width?: string;
+   display?: string;
+   alignItems?: string;
+   border?: string;
+   borderRadius?: string;
+   position?: string;
+ 
+}
+interface SearchInputProps extends Boxprops {
   // InputBase props
   inputWidth?: string;
   inputBorder?: string;
@@ -45,8 +45,6 @@ interface SearchInputProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   ariaLabel?: string;
   inputpadding?: string;
-  //InputBase props 
-  
 }
 
 
