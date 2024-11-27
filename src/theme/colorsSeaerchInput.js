@@ -18,6 +18,7 @@ const colors = {
       grayLight: "#E3E3E3",
       darkBlueGray: "#4F6797",
       midnightBlue: "#013B82",
+      grayText: "#626262",
     },
     graph: {
       green: {
