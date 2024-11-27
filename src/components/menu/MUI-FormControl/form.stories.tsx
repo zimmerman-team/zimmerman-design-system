@@ -6,7 +6,7 @@ import {ArrowDown} from "./data";
 
 
 const meta = {
-    title: "Examples/menu/MUI-FormControl",
+    title: "Example/Dropdown/MUI-FormControl",
     component: formComponent,
     decorators: [withRouter],
     parameters: {
@@ -43,11 +43,10 @@ export const AIDAOutlined: StoryType = {
   args: {
     id: "select-field",
     onChange: () => {},
-    options: [
-      { label: "Option 1", value: "option-1" },
-      { label: "Option 2", value: "option-2" },
-      { label: "Option 3", value: "option-3" },
-    ],
+    options: Array.from({ length: 50 }, (_, index) => ({
+        label: `Option ${index + 1}`,
+        value: `option-${index + 1}`,
+      })),
     value: "option-1",
     variant: "outlined",
   },
@@ -58,6 +57,38 @@ export const AIDAOutlined: StoryType = {
     },
   },
 };
+
+export const AIDASelectMonth: StoryType = {
+    args: {
+      id: "select-month",
+      onChange: () => {},
+      options: [
+        { label: "January", value: "january" },
+        { label: "February", value: "february" },
+        { label: "March", value: "march" },
+        { label: "April", value: "april" },
+        { label: "May", value: "may" },
+        { label: "June", value: "june" },
+        { label: "July", value: "july" },
+        { label: "August", value: "august" },
+        { label: "September", value: "september" },
+        { label: "October", value: "october" },
+        { label: "November", value: "november" },
+        { label: "December", value: "december" },
+      ],
+      IconComponent: (props) => <ArrowDown {...props} stroke="black" />,
+      value: "january",
+      variant: "outlined",
+      width: "300px",
+      height: "40px",
+    },
+    parameters: {
+        design: {
+          type: "figma",
+          url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=5363-21933&t=3oO3wnK985shYT1C-4",
+        },
+      },
+  };
 
 export const MultipleSelection: StoryType = {
     args: {
