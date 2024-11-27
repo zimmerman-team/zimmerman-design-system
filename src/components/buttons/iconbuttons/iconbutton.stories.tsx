@@ -27,35 +27,6 @@ import MenuRounded from "@mui/icons-material/MenuRounded";
 import IconSearch from "@mui/icons-material/Search";
 import colors from "../../../theme/colors";
 
-// MUI Download Icons
-const downloadIcons = {
-  CloudDownloadIcon: <CloudDownloadIcon />,
-  FileDownloadIcon: <FileDownloadIcon />,
-  DownloadForOfflineIcon: <DownloadForOfflineIcon />,
-  CloudDownloadOutlinedIcon: <CloudDownloadOutlinedIcon />,
-  DownloadForOfflineOutlinedIcon: <DownloadForOfflineOutlinedIcon />,
-  CloudDownloadTwoToneIcon: <CloudDownloadTwoToneIcon />,
-  DownloadForOfflineTwoToneIcon: <DownloadForOfflineTwoToneIcon />,
-  DownloadingTwoToneIcon: <DownloadingTwoToneIcon />,
-  DownloadOutlinedIcon: <DownloadOutlinedIcon />,
-};
-
-// MUI Share Icons
-const shareIcons = {
-   ShareOutlinedIcon: <ShareOutlinedIcon />,
-   ShareIcon: <Share />,
-};
-
-// MUI Info Icons 
-const infoIcons = {
-  InfoIcon: <InfoIcon />,
-  InfoOutlinedIcon: <InfoOutlinedIcon />,
-  InfoRoundedIcon: <InfoRoundedIcon />,
-  InfoTwoToneIcon: <InfoTwoToneIcon />,
-  InfoSharpIcon: <InfoSharpIcon/>,
-};
-
-
 /**
  * Storybook metadata for a button with just an icon 
  */
@@ -118,7 +89,6 @@ export const OpenAidShareButton: Story = {
      
     },
   },
-  render: (args) => <IconButton {...args} />,
 };
 
 /**
@@ -146,7 +116,6 @@ export const OpenAidDownloadButton: Story = {
      
     },
   },
-  render: (args) => <IconButton {...args} />,
 }
 
 /**
