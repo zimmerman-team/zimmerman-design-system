@@ -2,7 +2,7 @@
 import React from "react";
 import InputBase, { InputBaseProps } from "@mui/material/InputBase";
 import Box from "@mui/material/Box";
-import colors from "../../theme/colors";
+import colors from "../../theme/colorsSeaerchInput";
 import { SxProps, Theme } from "@mui/material";
 
 interface Boxprops{

@@ -2,7 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { MySearchInput } from './SearchInput';
 import { ReactComponent as ExplorerSearchIcon } from "../../assets/vectors/ExplorerSearchIcon.svg";
-import  colors  from "../../theme/colors";
+import  colors  from "../../theme/colorsSeaerchInput";
 import { Box } from '@mui/material';
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
