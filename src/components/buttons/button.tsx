@@ -4,6 +4,10 @@ import React, { ElementType } from "react";
 import { SxProps, Theme } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+
+// Add size type definition
+type ButtonSize = 'small' | 'medium' | 'large';
+
 /**
  * Button component props
  */
@@ -51,7 +55,31 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     };
   };
   borderColor?: string;
+  size?: ButtonSize;
 }
+
+// Define size configurations
+const sizeStyles: Record<ButtonSize, {
+  padding: string;
+  height: string;
+  fontSize: string;
+}> = {
+  small: {
+    padding: '4px 12px',
+    height: '32px',
+    fontSize: '14px'
+  },
+  medium: {
+    padding: '8px 16px',
+    height: '40px',
+    fontSize: '16px'
+  },
+  large: {
+    padding: '12px 24px',
+    height: '48px',
+    fontSize: '18px'
+  }
+};
 
 /**
  * Button component props
@@ -87,9 +115,11 @@ export default function MyButton(props: Readonly<ButtonProps>) {
     css,
     borderColor,
     textAlign,
+    size,
     ...otherProps
   } = props;
 
+  const sizeStyle = sizeStyles[size ?? 'medium'];
   /**MUI Button component with its respective components */
   return (
     <Button
@@ -108,8 +138,8 @@ export default function MyButton(props: Readonly<ButtonProps>) {
         display: display ?? "flex",
         width: width,
         lineHeight: lineHeight,
-        fontSize: fontSize ?? "14px",
-        padding: padding ?? "7px 24px",
+        fontSize: fontSize ?? sizeStyle.fontSize,
+        padding: padding ?? sizeStyle.padding,
         fontWeight: "700",
         borderRadius:borderRadius ?? "5px",
         alignContent: alignItems,
@@ -125,7 +155,7 @@ export default function MyButton(props: Readonly<ButtonProps>) {
         background: background,
         border: border,
         textAlign: textAlign,
-        height:height,
+        height: height ?? sizeStyle.height,
        "&:hover": css?.["&:hover"],
        "> .MuiButton-icon": {
           margin: 0,

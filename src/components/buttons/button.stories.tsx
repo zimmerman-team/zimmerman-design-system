@@ -2,21 +2,17 @@ import type { Meta, StoryObj } from "@storybook/react";
 import React, { lazy } from "react";
 import { fn, userEvent, within, expect } from "@storybook/test";
 import Button from "./button";
-import Share from "@mui/icons-material/Share";
 import { Link } from "react-router-dom";
-import ArrowForward from "@mui/icons-material/ArrowForward";
-// import HeaderSignInViewGoogle from '../../svgs/HeaderSignInViewGoogle.svg';
-// import { ReactComponent as GoogleIcon } from "./HeaderSignInViewGoogle.svg";
-// import GoogleIcon from "@mui/icons-material/Google";
-import { ReactComponent as GoogleIcon } from "../../assets/vectors/HeaderSignInViewGoogle.svg";
+import { ReactComponent as GoogleIcon } from "../../assets/vectors/jsx/HeaderSignInViewGoogle.svg";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import colors from '../../theme/colors';
 import { LinkedIn, Microsoft } from "@mui/icons-material";
-import Add from "@mui/icons-material/Add";
 import {useState} from 'react';
 import LogoutIcon from '@mui/icons-material/Logout';
-// import GoogleIcon from "./GoogleIcon.tsx";
+import { Add, ArrowForward, Download, Share } from '@mui/icons-material';
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 
 
@@ -171,9 +167,11 @@ export const AIDASignInLinkedINButton: Story = {
     justifyContent: "center",
     color: colors.primary.white,
     background: "#3B6CD3",
-    // ":hover": {
-    //   background: colors.shades.blue[400],
-    // },
+    css: {
+      "&:hover": {
+        backgroundColor: colors.shades.blue[400],
+      },
+    },
     icon: {
       component: <LinkedIn />,
       position: "left",
@@ -312,3 +310,105 @@ export const AIDALogOutButton: Story = {
   },
 };
 
+/**
+ * Text button without background
+ */
+export const TextButton: Story = {
+  args: {
+    variant: "text",
+    children: "Text Button",
+    textTransform: "none",
+    background:"#fffdfd",
+    label:"TextButton",
+    color: "#000000"
+  }
+};
+
+/**
+ * Small size button
+ */
+export const SmallButton: Story = {
+  args: {
+    variant: "contained",
+    size: "small",
+    children: "Small Button",
+    borderRadius: "6px",
+    background:"colors.primary.white",
+    label:"",
+
+  }
+};
+
+/**
+ * Medium size button
+ */
+export const MediumButton: Story = {
+  args: {
+    variant: "contained",
+    size: "medium",
+    children: "Small Button",
+    borderRadius: "6px",
+    background:"colors.primary.white",
+    label:"",
+
+  }
+};
+
+/**
+ * Large size button
+ */
+export const LargeButton: Story = {
+  args: {
+    variant: "contained",
+    size: "large",
+    height: "48px",
+    fontSize: "16px",
+    padding: "8px 16px",
+    borderRadius: "10px",
+    background:"colors.primary.white",
+    label:"",
+  }
+};
+
+/**
+ * Success  button
+ */
+export const SuccessButton: Story = {
+  args: {
+    variant: "contained",
+    color: "#f8f8f8",
+    label: "Success",
+    background:"#2db300",
+  }
+  
+};
+
+/**
+ * Error  button
+ */
+export const ErrorButton: Story = {
+  args: {
+    variant: "contained",
+    color: "#f7f7f7",
+    background:"#f20000",
+    label: "Error",
+  }
+};
+
+/**
+ * Rounded pill button
+ */
+export const PillButton: Story = {
+  args: {
+    variant: "contained",
+    icon: {
+      component: <Share />,
+      position: "left",
+    },
+    label:"",
+    borderRadius: "24px",
+    padding: "8px 24px",
+    background:"#ffffff",
+    color: "#230000"
+  }
+};
