@@ -6,6 +6,7 @@ import  colors  from "../../theme/colorsSeaerchInput";
 import { Box } from '@mui/material';
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
+import IconButton from '@mui/material/IconButton';
 
 
 const meta = {
@@ -135,7 +136,21 @@ export const WithBothIcons: StoryObj = {
   args: {
     placeholder: "Search with both icons",
     startAdornment: <SearchIcon />,
-    endAdornment: <ClearIcon />,
+    endAdornment: (
+      <IconButton
+        size="small"
+        aria-label="clear search"
+        onClick={() => console.log('clear search')}
+        sx={{ 
+          padding: '4px',
+          '&:hover': {
+            backgroundColor: 'transparent'
+          }
+        }}
+      >
+        <ClearIcon />
+      </IconButton>
+    ),
   },
 };
 
