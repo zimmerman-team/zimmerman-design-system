@@ -53,7 +53,6 @@ sortable?: boolean;
 sortKey?: string;
 sortDirection?: 'asc' | 'desc';
 onSortChange?: (columnId: string, direction: 'asc' | 'desc') => void;
-expandableRows?: boolean;
 onRowExpand?: (rowIndex: number) => void;
 paginationDisplay?: string;
 paginationBorderStyle?: string;
@@ -69,7 +68,6 @@ interface TableProps extends MuiTableProps,ContainerProps,PaginationProps,TableH
     rowHeight?: number;// Height of the table rows
     borderColor?: string; // Border color of the table
     hover?: boolean; // Whether to enable row hover effect
-    hoverColor?:string; // Background color of rows on hover
     sortIndicatorColor?:string, // Color of the sort indicator
     minWidth?:string // Min width of the table
 }
@@ -81,7 +79,6 @@ export default function MyTable({
     rowHeight = 50,
     borderColor = "#ddd",
     hover = true,
-    hoverColor = 'rgba(0, 0, 0, 0.1)', 
     sortIndicatorColor = 'black',
     componentWidth,
     componentOverflow,
@@ -97,7 +94,6 @@ export default function MyTable({
     sortKey,
     sortDirection,
     onSortChange,
-    expandableRows,
     onRowExpand,
     headCursor = 'pointer',
     headFontWeight = '700',
@@ -165,7 +161,7 @@ export default function MyTable({
       <TableContainer>
       <Table {...otherProps} sx={{minWidth:minWidth}}>
           <TableHead>
-            <TableRow>
+          <TableRow >
               {headers.map((header) => (
                <TableCell
                key={header.id}
@@ -195,7 +191,7 @@ export default function MyTable({
               key={rowIndex}
               hover={hover}
               sx={{
-                '&:hover': hover ? { backgroundColor: hoverColor } : {},
+                height: rowHeight, 
               }}
             >
                 {headers.map((header) => (
