@@ -1,9 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { Select, MenuItem, FormControl, InputLabel, SelectChangeEvent, Typography, SxProps } from '@mui/material';
+import { Select, MenuItem, FormControl, SelectChangeEvent, Typography, SxProps } from '@mui/material';
 import {colors} from '../../../theme';
-import { ArrowDown } from './data';
-
 
 interface FormControlProps {
     fullwidth?: boolean;
@@ -33,7 +31,7 @@ interface SelectFieldProps extends FormControlProps {
 
 }
 
-export default function formComponent(props:Readonly<SelectFieldProps>)  {
+export default function MuiForm(props:Readonly<SelectFieldProps>)  {
   const{
   id,
   value,
@@ -49,7 +47,6 @@ export default function formComponent(props:Readonly<SelectFieldProps>)  {
   fontWeight = "700",
   multiple = false,
   sx = {},
-  ...otherProps
 } = props;
 
   return (

@@ -118,7 +118,7 @@ interface DropdownProps extends MuiMenuProps {
   };
 }
 
-export default function MyDropdown(props:Readonly<DropdownProps>) {
+export default function MuiMenu(props:Readonly<DropdownProps>) {
 const {  
 id,
 anchorElement,
@@ -134,10 +134,9 @@ menuItemProps,
 open,
 selected,
 ...otherProps
-}=props; 
+}=props;
 
 const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-const [currentLabel, setCurrentLabel] = React.useState<string | undefined>("");
 
 const handleClick = (event: React.MouseEvent<HTMLElement>) => {
   setAnchorEl(event.currentTarget);
