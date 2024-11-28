@@ -28,8 +28,6 @@ const meta: Meta<typeof MyDropdown> = {
       autoFocus: { control: "boolean" },
       keepMounted: { control: "boolean" },
       sx: { control: "object" },
-      width: { control: "text" },
-      height: { control: "number" },
       menuItemProps: { control: "object" },
     },
   };
@@ -222,3 +220,4 @@ const meta: Meta<typeof MyDropdown> = {
   },
     }
   };
+ 

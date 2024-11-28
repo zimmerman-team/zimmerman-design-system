@@ -39,8 +39,6 @@ interface DropdownProps extends MuiMenuProps {
   };
   autoFocus?: boolean;
   keepMounted?: boolean;
-  width?: number | string;
-  height?: number;
   sx?: {
     "& .MuiPaper-root"?: {
       width?: number | string;
@@ -65,6 +63,7 @@ interface DropdownProps extends MuiMenuProps {
     };
     "& .MuiMenu-list"?: {
       padding?: number;
+      width?: string;
       maxHeight?: number;
     };
     "@media (max-width: 768px)"?: {
@@ -131,8 +130,6 @@ anchorOrigin,
 autoFocus,
 keepMounted,
 sx,
-height,
-width,
 menuItemProps,
 open,
 selected,
@@ -140,6 +137,7 @@ selected,
 }=props; 
 
 const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+const [currentLabel, setCurrentLabel] = React.useState<string | undefined>("");
 
 const handleClick = (event: React.MouseEvent<HTMLElement>) => {
   setAnchorEl(event.currentTarget);
@@ -210,13 +208,9 @@ return (
       keepMounted={keepMounted}
       sx={{
         "& .MuiPaper-root": {
-          width: width,
           borderRadius: props.sx?.["& .MuiPaper-root"]?.borderRadius,
           background: props.sx?.["& .MuiPaper-root"]?.background,
           border: props.sx?.["& .MuiPaper-root"]?.border,
-          "@media (max-width: 767px)": {
-            width: width ?? "180px",
-          },
           "&::-webkit-scrollbar": {
             width: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]?.width,
             borderRadius: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]?.borderRadius,
@@ -234,6 +228,7 @@ return (
         "& .MuiMenu-list": {
           padding: props.sx?.["& .MuiMenu-list"]?.padding,
           maxHeight: props.sx?.["& .MuiMenu-list"]?.maxHeight,
+          width: props.sx?.["& .MuiMenu-list"]?.width,
         },
         "@media (max-width: 768px)": {
           display: props.sx?.["@media (max-width: 768px)"]?.display,
