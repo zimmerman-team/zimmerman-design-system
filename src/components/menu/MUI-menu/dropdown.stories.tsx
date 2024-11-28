@@ -2,7 +2,7 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import MyDropdown from "./dropdown";
 import { colors } from "../../../theme";
-import IconButton, { iconButtonClasses } from "@mui/material/IconButton";
+import IconButton from "@mui/material/IconButton";
 import MenuRounded from "@mui/icons-material/MenuRounded";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -31,10 +31,8 @@ const meta: Meta<typeof MyDropdown> = {
       menuItemProps: { control: "object" },
     },
   };
-  
   export default meta;
   type StoryType = StoryObj<typeof meta>;
-  
   //OpenAidDropdown
   export const OpenAidDropdown: StoryType = {
     args: {
@@ -45,19 +43,19 @@ const meta: Meta<typeof MyDropdown> = {
           </IconButton>
         ),
         items: [
-          { label: "Data Summary", action: () => console.log("Item 1 clicked") },
-          { label: "Disbursements Overview", action: () => console.log("Item 2 clicked") },
-          { label: "Priorities", action: () => console.log("Item 3 clicked") },
-          { label: "Sectors", action: () => console.log("Item 4 clicked") },
-          { label: "Countries & Regions", action: () => console.log("Item 3 clicked") },
-          { label: "Organisations", action: () => console.log("Item 4 clicked") },
-          { label: "Activities", action: () => console.log("Item 3 clicked") },
+          { label: "Data Summary", action: () => console.log("Data Summary clicked") },
+          { label: "Disbursements Overview", action: () => console.log("Disbursements Overview clicked") },
+          { label: "Priorities", action: () => console.log("Priorities clicked") },
+          { label: "Sectors", action: () => console.log("Sectors clicked") },
+          { label: "Countries & Regions", action: () => console.log("Countries & Regions clicked") },
+          { label: "Organisations", action: () => console.log("Organisations clicked") },
+          { label: "Activities", action: () => console.log("Activities clicked") },
           {divider: true  },
-          { label: "About this site", action: () => console.log("Item 4 clicked") },
-          { label: "About Open Aid", action: () => console.log("Item 3 clicked") },
+          { label: "About this site", action: () => console.log("About this site clicked") },
+          { label: "About Open Aid", action: () => console.log("About Open Aid clicked") },
           { divider:true},
-          { label: "Feedback", action: () => console.log("Item 4 clicked") },
-          { label: "Accessibility", action: () => console.log("Item 3 clicked") },
+          { label: "Feedback", action: () => console.log("Feedback clicked") },
+          { label: "Accessibility", action: () => console.log("Accessibility clicked") },
         ],
      transformOrigin:{
       vertical: "top",
