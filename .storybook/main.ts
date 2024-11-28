@@ -11,6 +11,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
     "@storybook/addon-coverage",
+    "storybook-addon-variants",
   ],
   framework: {
     name: "@storybook/react-webpack5",
