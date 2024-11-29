@@ -1,12 +1,13 @@
 /** @jsxImportSource @emotion/react */
 
 import React from "react";
-import IconButton from '@mui/material/IconButton';
+import IconButton from "@mui/material/IconButton";
 
 /**
  * IconButton component props
  */
-interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface IconButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   gap?: string;
   label?: string;
   color?: string;
@@ -14,17 +15,31 @@ interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> 
   fontSize?: string;
   fontFamily?: string;
   height?: string;
-  size?: "small" | "medium" | "large"|string;
+  size?: "small" | "medium" | "large" | string;
   marginRight?: string;
   marginLeft?: string;
   ariaLabel?: string;
   textAlign?: "center" | "left" | "right";
   children?: React.ReactNode;
-  shareIconType ?: "ShareOutlinedIcon";
-  downloadIconType?: "CloudDownloadIcon" | "FileDownloadIcon"| "DownloadForOfflineIcon"| "CloudDownloadOutlinedIcon"|"DownloadForOfflineOutlinedIcon"| "CloudDownloadTwoToneIcon"| "DownloadForOfflineTwoToneIcon"| "DownloadingTwoToneIcon"| "DownloadOutlinedIcon";
-  infoIconType?: "InfoOutlinedIcon"|"InfoIcon"|"InfoRoundedIcon"| "InfoTwoToneIcon"|"InfoSharpIcon";
+  shareIconType?: "ShareOutlinedIcon";
+  downloadIconType?:
+    | "CloudDownloadIcon"
+    | "FileDownloadIcon"
+    | "DownloadForOfflineIcon"
+    | "CloudDownloadOutlinedIcon"
+    | "DownloadForOfflineOutlinedIcon"
+    | "CloudDownloadTwoToneIcon"
+    | "DownloadForOfflineTwoToneIcon"
+    | "DownloadingTwoToneIcon"
+    | "DownloadOutlinedIcon";
+  infoIconType?:
+    | "InfoOutlinedIcon"
+    | "InfoIcon"
+    | "InfoRoundedIcon"
+    | "InfoTwoToneIcon"
+    | "InfoSharpIcon";
   width?: string;
-  borderRadius: "rounded"|"sharp"|"circle"|string;
+  borderRadius: "rounded" | "sharp" | "circle" | string;
   boxShadow?: string;
   datacy?: string;
   border?: string;
@@ -54,19 +69,19 @@ export default function MyIconButton(props: Readonly<IconButtonProps>) {
     background,
     ...otherProps // HTML5 button attributes
   } = props;
-  
-/**
- * Predefined radius sizes as options for the border radius
- */  
-const radiusSize: { [key: string]: string } = {
+
+  /**
+   * Predefined radius sizes as options for the border radius
+   */
+  const radiusSize: { [key: string]: string } = {
     rounded: "30px",
     sharp: "5px",
     circle: "50%",
-};
- 
-/**
- * Return the IconButton component
- */
+  };
+
+  /**
+   * Return the IconButton component
+   */
   return (
     <IconButton
       {...otherProps}
@@ -86,9 +101,9 @@ const radiusSize: { [key: string]: string } = {
         fontSize: fontSize ?? "14px",
         padding: padding ?? "7px 24px",
         borderRadius: radiusSize[borderRadius],
-        color:color ?? "black",
+        color: color ?? "black",
         fontFamily: fontFamily ?? '"Inter", sans-serif',
-        background: background ??"transparent",
+        background: background ?? "transparent",
         boxShadow: boxShadow,
         ":hover": {
           cursor: "pointer",

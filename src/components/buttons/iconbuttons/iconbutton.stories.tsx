@@ -5,19 +5,19 @@ import IconButton from "./iconbutton";
 import { SxProps } from "@mui/system";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
-import DownloadForOfflineOutlinedIcon from '@mui/icons-material/DownloadForOfflineOutlined';
-import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
-import DownloadForOfflineTwoToneIcon from '@mui/icons-material/DownloadForOfflineTwoTone';
-import DownloadingTwoToneIcon from '@mui/icons-material/DownloadingTwoTone';
-import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import InfoIcon from '@mui/icons-material/Info';
-import InfoRoundedIcon from '@mui/icons-material/InfoRounded';
-import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
-import InfoSharpIcon from '@mui/icons-material/InfoSharp';
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
+import CloudDownloadOutlinedIcon from "@mui/icons-material/CloudDownloadOutlined";
+import DownloadForOfflineOutlinedIcon from "@mui/icons-material/DownloadForOfflineOutlined";
+import CloudDownloadTwoToneIcon from "@mui/icons-material/CloudDownloadTwoTone";
+import DownloadForOfflineTwoToneIcon from "@mui/icons-material/DownloadForOfflineTwoTone";
+import DownloadingTwoToneIcon from "@mui/icons-material/DownloadingTwoTone";
+import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import InfoIcon from "@mui/icons-material/Info";
+import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
+import InfoTwoToneIcon from "@mui/icons-material/InfoTwoTone";
+import InfoSharpIcon from "@mui/icons-material/InfoSharp";
 import { Cloud } from "@mui/icons-material";
 import Share from "@mui/icons-material/Share";
 import { Icon } from "@mui/material";
@@ -28,7 +28,7 @@ import IconSearch from "@mui/icons-material/Search";
 import colors from "../../../theme/colors";
 
 /**
- * Storybook metadata for a button with just an icon 
+ * Storybook metadata for a button with just an icon
  */
 const meta = {
   title: "Example/Button/SingleIconButton",
@@ -41,21 +41,37 @@ const meta = {
     background: { control: "color" },
     color: { control: "color" },
     downloadIconType: {
-      options: ['CloudDownloadIcon', 'FileDownloadIcon','DownloadForOfflineIcon','CloudDownloadOutlinedIcon','DownloadForOfflineOutlinedIcon','CloudDownloadTwoToneIcon','DownloadForOfflineTwoToneIcon','DownloadingTwoToneIcon','DownloadOutlinedIcon'],
+      options: [
+        "CloudDownloadIcon",
+        "FileDownloadIcon",
+        "DownloadForOfflineIcon",
+        "CloudDownloadOutlinedIcon",
+        "DownloadForOfflineOutlinedIcon",
+        "CloudDownloadTwoToneIcon",
+        "DownloadForOfflineTwoToneIcon",
+        "DownloadingTwoToneIcon",
+        "DownloadOutlinedIcon",
+      ],
       control: {
-        type: 'select',
+        type: "select",
       },
     },
     shareIconType: {
-      options: ['ShareOutlinedIcon'],
+      options: ["ShareOutlinedIcon"],
       control: {
-        type: 'select',
+        type: "select",
       },
     },
     infoIconType: {
-      options: ['InfoOutlinedIcon','InfoIcon','InfoRoundedIcon','InfoTwoToneIcon','InfoSharpIcon'],
+      options: [
+        "InfoOutlinedIcon",
+        "InfoIcon",
+        "InfoRoundedIcon",
+        "InfoTwoToneIcon",
+        "InfoSharpIcon",
+      ],
       control: {
-        type: 'select',
+        type: "select",
       },
     },
   },
@@ -64,7 +80,6 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
 
 /**
  * OpenAid Share Icon Button
@@ -86,7 +101,6 @@ export const OpenAidShareButton: Story = {
     design: {
       type: "figma",
       url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
-     
     },
   },
 };
@@ -113,16 +127,15 @@ export const OpenAidDownloadButton: Story = {
     design: {
       type: "figma",
       url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
-     
     },
   },
-}
+};
 
 /**
  * OpenAid Select Language Icon Button
  */
 export const OpenAidSelectLanguageButton: Story = {
-   args: {
+  args: {
     width: "34px",
     height: "34px",
     padding: "5px",
@@ -135,54 +148,64 @@ export const OpenAidSelectLanguageButton: Story = {
     color: colors.primary.blue,
     marginRight: "0px",
     onClick: fn(),
-    children: <Icon component={LanguageRounded} 
-    sx={{
-      width: "30px",
-      height: "30px",
-    }} />,
-   }
-  }
+    children: (
+      <Icon
+        component={LanguageRounded}
+        sx={{
+          width: "30px",
+          height: "30px",
+        }}
+      />
+    ),
+  },
+};
 /**
  * OpenAid Menu Icon Button
- */  
-export const  OpenAidMenuButton :Story={
-    args: {
-      width: "34px",
-      height: "34px",
-      padding: "5px",
-      borderRadius: "circle",
-      border:colors.primary.blue,
-      boxShadow: colors.shadows.section,
-      background: colors.primary.white,
-      color: colors.primary.blue,
-      marginRight: "0px",
-      onClick: fn(),
-      children: <Icon component={MenuRounded} 
-      sx={{
-        width: "30px",
-        height: "30px",
-      }} />,
-    }
-  }
+ */
+export const OpenAidMenuButton: Story = {
+  args: {
+    width: "34px",
+    height: "34px",
+    padding: "5px",
+    borderRadius: "circle",
+    border: colors.primary.blue,
+    boxShadow: colors.shadows.section,
+    background: colors.primary.white,
+    color: colors.primary.blue,
+    marginRight: "0px",
+    onClick: fn(),
+    children: (
+      <Icon
+        component={MenuRounded}
+        sx={{
+          width: "30px",
+          height: "30px",
+        }}
+      />
+    ),
+  },
+};
 /**
  * Data Explorer Search Icon Button
- */  
+ */
 export const DataExplorerSearchButton: Story = {
-    args:{
-      datacy: "header-search-btn",
-      onClick: fn(),
-      padding: "0",
-      marginLeft: "10px",
-      background: colors.primary.black, 
-      color: colors.primary.white,
-      borderRadius: "50%", 
-      children: <IconSearch sx={{
-        "> svg": {
-          transform: "scale(0.7)",
-          color: colors.primary.white,
-        },
-      }} />,
-    }
-  } 
-  
-  
+  args: {
+    datacy: "header-search-btn",
+    onClick: fn(),
+    padding: "0",
+    marginLeft: "10px",
+    background: colors.primary.black,
+    color: colors.primary.white,
+    borderRadius: "50%",
+    children: (
+      <IconSearch
+        sx={{
+          "> svg": {
+            transform: "scale(0.7)",
+            color: colors.primary.white,
+          },
+        }}
+      />
+    ),
+  },
+};

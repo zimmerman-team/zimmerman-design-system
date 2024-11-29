@@ -1,18 +1,25 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import { Select, MenuItem, FormControl, SelectChangeEvent, Typography, SxProps } from '@mui/material';
-import {colors} from '../../../theme';
+import React from "react";
+import {
+  Select,
+  MenuItem,
+  FormControl,
+  SelectChangeEvent,
+  Typography,
+  SxProps,
+} from "@mui/material";
+import { colors } from "../../../theme";
 
 interface FormControlProps {
-    fullwidth?: boolean;
-    sx?: SxProps;
-    variant?: string; //outlined & standard
-    height?: string;
-    width?: string;
-    fontweight?: string;
-    padding?: string;
-    borderColor?: string;
-    fontWeight?: string;
+  fullwidth?: boolean;
+  sx?: SxProps;
+  variant?: string; //outlined & standard
+  height?: string;
+  width?: string;
+  fontweight?: string;
+  padding?: string;
+  borderColor?: string;
+  fontWeight?: string;
 }
 
 interface SelectFieldProps extends FormControlProps {
@@ -28,74 +35,73 @@ interface SelectFieldProps extends FormControlProps {
   label?: string;
   width?: string;
   placeholder?: string;
-
 }
 
-export default function MuiForm(props:Readonly<SelectFieldProps>)  {
-  const{
-  id,
-  value,
-  options,
-  variant = "outlined",
-  name,
-  label,
-  onChange,
-  width = "100%",
-  placeholder,
-  height = "40px",
-  borderColor,
-  fontWeight = "700",
-  multiple = false,
-  sx = {},
-} = props;
+export default function MuiForm(props: Readonly<SelectFieldProps>) {
+  const {
+    id,
+    value,
+    options,
+    variant = "outlined",
+    name,
+    label,
+    onChange,
+    width = "100%",
+    placeholder,
+    height = "40px",
+    borderColor,
+    fontWeight = "700",
+    multiple = false,
+    sx = {},
+  } = props;
 
   return (
     <FormControl
-    fullWidth
-    sx={{
-      ".MuiInputBase-root": {
-        width: props.width ?? "100%",
-        height: props.height ?? "32px",
-        borderRadius: "5px",
-        background:
-          props.variant === "outlined"
-            ? colors.secondary.lightGrey
-            : colors.primary.blue,
-        border:
-          props.variant === "outlined"
-            ? `1px solid ${props.borderColor ?? colors.secondary.iconGray}`
-            : "none",
-      },
-      ".MuiInputBase-input": {
-        fontSize: "12px",
-        fontWeight: props.fontWeight ?? "700",
-        lineHeight: "normal",
-        textAlign: "start",
-        padding: props.variant === "outlined" ? "10px 20px" : "0px 8px",
-        color:
-          props.variant === "outlined"
-            ? colors.text.title
-            : colors.primary.white,
-      },
-      ".MuiOutlinedInput-notchedOutline": {
-        borderStyle: "none",
-      },
-      ".MuiSelect-icon": {
-        color: colors.primary.white,
-      },
-      ".MuiMenuItem-root": {
-        fontSize: "12px",
-        fontWeight: "700",
-      },
-      ".MuiSelect-paper": {
-        background: `colors.primary.green !important`,
-        padding: "100px",
-        borderRadius: "10px",
-        border: `1px solid ${colors.secondary.iconGray}`,
-      },
-    }}
+      fullWidth
+      sx={{
+        ".MuiInputBase-root": {
+          width: props.width ?? "100%",
+          height: props.height ?? "32px",
+          borderRadius: "5px",
+          background:
+            props.variant === "outlined"
+              ? colors.secondary.lightGrey
+              : colors.primary.blue,
+          border:
+            props.variant === "outlined"
+              ? `1px solid ${props.borderColor ?? colors.secondary.iconGray}`
+              : "none",
+        },
+        ".MuiInputBase-input": {
+          fontSize: "12px",
+          fontWeight: props.fontWeight ?? "700",
+          lineHeight: "normal",
+          textAlign: "start",
+          padding: props.variant === "outlined" ? "10px 20px" : "0px 8px",
+          color:
+            props.variant === "outlined"
+              ? colors.text.title
+              : colors.primary.white,
+        },
+        ".MuiOutlinedInput-notchedOutline": {
+          borderStyle: "none",
+        },
+        ".MuiSelect-icon": {
+          color: colors.primary.white,
+        },
+        ".MuiMenuItem-root": {
+          fontSize: "12px",
+          fontWeight: "700",
+        },
+        ".MuiSelect-paper": {
+          background: `colors.primary.green !important`,
+          padding: "100px",
+          borderRadius: "10px",
+          border: `1px solid ${colors.secondary.iconGray}`,
+        },
+      }}
     >
-       {props.label ? (
+      {props.label ? (
         <Typography
           lineHeight={"normal"}
           variant="body2"
@@ -176,4 +182,4 @@ export default function MuiForm(props:Readonly<SelectFieldProps>)  {
       </Select>
     </FormControl>
   );
-};
+}

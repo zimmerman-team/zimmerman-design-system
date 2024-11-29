@@ -1,15 +1,12 @@
 import React from "react";
-import colors from '../../../theme/colors';
+import colors from "../../../theme/colors";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import ButtonBase from "@mui/material/ButtonBase";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
-import {
-  CtaCommonBtnProps,
-  CtaCommonBtnVariantStyles,
-} from "./data";
+import { CtaCommonBtnProps, CtaCommonBtnVariantStyles } from "./data";
 import { Color } from "@mui/material";
 
 export const CtaCommonBtn: React.FC<CtaCommonBtnProps> = (
@@ -38,13 +35,21 @@ export const CtaCommonBtn: React.FC<CtaCommonBtnProps> = (
         alignItems: "flex-start",
         background: colors.primary[props.bgColor ?? "blue"],
         ":hover": {
-          background: colors.shades[props.bgColor as keyof typeof colors.shades ?? "blue"][400],
+          background:
+            colors.shades[
+              (props.bgColor as keyof typeof colors.shades) ?? "blue"
+            ][400],
           "> svg": {
-            background: colors.shades[props.bgColor as keyof typeof colors.shades?? "blue"][500],
+            background:
+              colors.shades[
+                (props.bgColor as keyof typeof colors.shades) ?? "blue"
+              ][500],
           },
           "> div > svg": {
             path: {
-              fill: colors.shades[props.bgColor as keyof typeof colors.shades ?? "blue"][500],
+              fill: colors.shades[
+                (props.bgColor as keyof typeof colors.shades) ?? "blue"
+              ][500],
             },
           },
         },
@@ -93,9 +98,15 @@ export const CtaCommonBtn: React.FC<CtaCommonBtnProps> = (
           padding: 0,
           borderRadius: "50%",
           position: "absolute",
-          background: colors.shades[props.bgColor as keyof typeof colors.shades ?? "blue"][200],
+          background:
+            colors.shades[
+              (props.bgColor as keyof typeof colors.shades) ?? "blue"
+            ][200],
           ":hover": {
-            background: colors.shades[props.bgColor  as keyof typeof colors.shades ?? "blue"][500],
+            background:
+              colors.shades[
+                (props.bgColor as keyof typeof colors.shades) ?? "blue"
+              ][500],
           },
         }}
       />

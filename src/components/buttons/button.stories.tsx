@@ -5,16 +5,13 @@ import Button from "./button";
 import { Link } from "react-router-dom";
 import { ReactComponent as GoogleIcon } from "../../assets/vectors/jsx/HeaderSignInViewGoogle.svg";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import colors from '../../theme/colors';
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import colors from "../../theme/colors";
 import { LinkedIn, Microsoft } from "@mui/icons-material";
-import {useState} from 'react';
-import LogoutIcon from '@mui/icons-material/Logout';
-import { Add, ArrowForward, Download, Share } from '@mui/icons-material';
-import CircularProgress from '@mui/material/CircularProgress';
-
-
-
+import { useState } from "react";
+import LogoutIcon from "@mui/icons-material/Logout";
+import { Add, ArrowForward, Download, Share } from "@mui/icons-material";
+import CircularProgress from "@mui/material/CircularProgress";
 
 /**
  * Storybook metadata for the Button component
@@ -46,9 +43,9 @@ export const AIDAExplorerButton: Story = {
       url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1558-371876&t=HZkq8tIk68Zpdhux-4",
     },
   },
-  args:{
+  args: {
     variant: "contained",
-    background :"#3B6CD3",
+    background: "#3B6CD3",
     icon: {
       component: <ArrowForward />,
       position: "right",
@@ -60,7 +57,7 @@ export const AIDAExplorerButton: Story = {
     fontSize: "18px",
     lineHeight: "normal",
   },
-}
+};
 
 /**
  * Used for the Aida Header Product Button
@@ -71,7 +68,7 @@ const ToggleAidaIconButton = ({ ...args }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleClick = () => {
-    setExpanded((prev) => !prev); 
+    setExpanded((prev) => !prev);
   };
 
   return (
@@ -79,8 +76,10 @@ const ToggleAidaIconButton = ({ ...args }) => {
       {...args}
       onClick={handleClick}
       borderColor={expanded ? colors.secondary.iconGray : "transparent"}
-      background={expanded ? colors.secondary.disableButton : colors.primary.white}
-      icon= {{
+      background={
+        expanded ? colors.secondary.disableButton : colors.primary.white
+      }
+      icon={{
         component: expanded ? <ExpandLess /> : <ExpandMore />,
         position: "right",
       }}
@@ -94,7 +93,7 @@ const ToggleAidaIconButton = ({ ...args }) => {
  * AIDA Header Product Button
  */
 export const AIDAHeaderProductButton: Story = {
-  render: (args) => <ToggleAidaIconButton {...args} />, 
+  render: (args) => <ToggleAidaIconButton {...args} />,
   args: {
     label: "Product",
     fontSize: "14px",
@@ -105,7 +104,7 @@ export const AIDAHeaderProductButton: Story = {
     height: "32px",
     css: {
       "&:hover": {
-        backgroundColor:"#EBEBEB",
+        backgroundColor: "#EBEBEB",
       },
     },
   },
@@ -121,10 +120,9 @@ export const AIDAHeaderProductButton: Story = {
  * AIDA Sign In Button Google
  */
 export const AIDASignInGoogleButton: Story = {
-
-  args :{
+  args: {
     gap: "10px",
-    width: "300px", // should be 190 
+    width: "300px", // should be 190
     height: "32px",
     display: "flex",
     fontSize: "12px",
@@ -146,15 +144,14 @@ export const AIDASignInGoogleButton: Story = {
     },
     onClick: fn(),
     label: "Sign in with Google",
-
-  }
-}
+  },
+};
 
 /**
  * AIDA Sign In Button LinkedIn
  */
 export const AIDASignInLinkedINButton: Story = {
-  args :{
+  args: {
     gap: "10px",
     width: "300px",
     height: "32px",
@@ -178,15 +175,14 @@ export const AIDASignInLinkedINButton: Story = {
     },
     onClick: fn(),
     label: "Sign in with LinkedIn",
-
-  }
-}
+  },
+};
 
 /**
  * AIDA Sign In Button Facebook
  */
 export const AIDASignInFacebookButton: Story = {
-  args :{
+  args: {
     gap: "10px",
     width: "300px",
     height: "32px",
@@ -208,15 +204,14 @@ export const AIDASignInFacebookButton: Story = {
     },
     onClick: fn(),
     label: "Sign in with Microsoft",
-
-  }
-}
+  },
+};
 
 /**
  * AIDA Open Aid Add Filter Button
  */
 export const OpenAidAddfilterButton: Story = {
-  args:{
+  args: {
     color: "primary",
     background: colors.primary.blue,
     variant: "contained",
@@ -239,7 +234,7 @@ export const OpenAidAddfilterButton: Story = {
 
     onClick: fn(),
   },
-}
+};
 /**
  * AIDA Open Aid Year Display Button in a Graph
  */
@@ -264,7 +259,7 @@ export const OpenAidYearDisplayGraphButton: Story = {
   },
   render: (args) => {
     const [isClicked, setIsClicked] = React.useState(false);
-    
+
     return (
       <Button
         {...args}
@@ -277,7 +272,7 @@ export const OpenAidYearDisplayGraphButton: Story = {
         }}
       />
     );
-  }
+  },
 };
 
 /**
@@ -318,10 +313,10 @@ export const TextButton: Story = {
     variant: "text",
     children: "Text Button",
     textTransform: "none",
-    background:"#fffdfd",
-    label:"TextButton",
-    color: "#000000"
-  }
+    background: "#fffdfd",
+    label: "TextButton",
+    color: "#000000",
+  },
 };
 
 /**
@@ -333,10 +328,9 @@ export const SmallButton: Story = {
     size: "small",
     children: "Small Button",
     borderRadius: "6px",
-    background:"colors.primary.white",
-    label:"",
-
-  }
+    background: "colors.primary.white",
+    label: "",
+  },
 };
 
 /**
@@ -348,10 +342,9 @@ export const MediumButton: Story = {
     size: "medium",
     children: "Small Button",
     borderRadius: "6px",
-    background:"colors.primary.white",
-    label:"",
-
-  }
+    background: "colors.primary.white",
+    label: "",
+  },
 };
 
 /**
@@ -365,9 +358,9 @@ export const LargeButton: Story = {
     fontSize: "16px",
     padding: "8px 16px",
     borderRadius: "10px",
-    background:"colors.primary.white",
-    label:"",
-  }
+    background: "colors.primary.white",
+    label: "",
+  },
 };
 
 /**
@@ -378,9 +371,8 @@ export const SuccessButton: Story = {
     variant: "contained",
     color: "#f8f8f8",
     label: "Success",
-    background:"#2db300",
-  }
-  
+    background: "#2db300",
+  },
 };
 
 /**
@@ -390,9 +382,9 @@ export const ErrorButton: Story = {
   args: {
     variant: "contained",
     color: "#f7f7f7",
-    background:"#f20000",
+    background: "#f20000",
     label: "Error",
-  }
+  },
 };
 
 /**
@@ -405,10 +397,10 @@ export const PillButton: Story = {
       component: <Share />,
       position: "left",
     },
-    label:"",
+    label: "",
     borderRadius: "24px",
     padding: "8px 24px",
-    background:"#ffffff",
-    color: "#230000"
-  }
+    background: "#ffffff",
+    color: "#230000",
+  },
 };

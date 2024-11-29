@@ -4,21 +4,20 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu, { MenuProps as MuiMenuProps } from "@mui/material/Menu";
 import { SxProps } from "@mui/material";
 import { colors } from "../../../theme";
-import Divider from '@mui/material/Divider';
-
+import Divider from "@mui/material/Divider";
 
 // MenuItemProps
-interface MenuItemProps  {
-key?: string;
-label?: string;
-icon?: React.ReactNode;
-code?: string;
-link?: string;
-divider?: boolean;
-action?: () => void;
-selected?:boolean;
-onClick?: (event: React.MouseEvent<HTMLLIElement, MouseEvent>) => void;
-sx?: SxProps;
+interface MenuItemProps {
+  key?: string;
+  label?: string;
+  icon?: React.ReactNode;
+  code?: string;
+  link?: string;
+  divider?: boolean;
+  action?: () => void;
+  selected?: boolean;
+  onClick?: (event: React.MouseEvent<HTMLLIElement, MouseEvent>) => void;
+  sx?: SxProps;
 }
 
 // Dropdown Menu Props
@@ -73,7 +72,7 @@ interface DropdownProps extends MuiMenuProps {
   itemsSx?: SxProps;
   menuItemProps?: {
     sx?: {
-      width?:string;
+      width?: string;
       height?: string;
       fontSize?: string;
       padding?: string;
@@ -91,7 +90,7 @@ interface DropdownProps extends MuiMenuProps {
         fill?: string;
         filter?: string;
         gap?: string;
-      }
+      };
       "> a"?: {
         width?: string;
         textDecoration?: string;
@@ -109,57 +108,57 @@ interface DropdownProps extends MuiMenuProps {
         background?: string;
         color?: string;
       };
-      "@media (max-width: 767px)"?:{
+      "@media (max-width: 767px)"?: {
         height?: string;
         minHeight?: string;
-      }
-
+      };
     };
   };
 }
 
-export default function MuiMenu(props:Readonly<DropdownProps>) {
-const {  
-id,
-anchorElement,
-onClose,
-items = [],
-elevation,
-transformOrigin,
-anchorOrigin,
-autoFocus,
-keepMounted,
-sx,
-menuItemProps,
-open,
-selected,
-...otherProps
-}=props;
+export default function MuiMenu(props: Readonly<DropdownProps>) {
+  const {
+    id,
+    anchorElement,
+    onClose,
+    items = [],
+    elevation,
+    transformOrigin,
+    anchorOrigin,
+    autoFocus,
+    keepMounted,
+    sx,
+    menuItemProps,
+    open,
+    selected,
+    ...otherProps
+  } = props;
 
-const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-  setAnchorEl(event.currentTarget);
-};
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
 
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
-const handleClose = () => {
-  setAnchorEl(null);
-};
-
-/**
+  /**
    * Generates styles for menu items including hover states and icons
    * @param item Individual menu item props
    * @returns Combined styles object with defaults and overrides
    */
-const getMenuItemStyles = (item: MenuItemProps) => ({
+  const getMenuItemStyles = (item: MenuItemProps) => ({
     height: menuItemProps?.sx?.height ?? "40px",
     fontSize: menuItemProps?.sx?.fontSize ?? "16px",
     padding: menuItemProps?.sx?.padding ?? "4px 12px",
     borderRadius: menuItemProps?.sx?.borderRadius ?? "8px",
     color: menuItemProps?.sx?.color ?? colors.secondary.midnightBlue,
     "&:hover": {
-      background: menuItemProps?.sx?.["&:hover"]?.background ?? colors.secondary.blueGrayDark,
+      background:
+        menuItemProps?.sx?.["&:hover"]?.background ??
+        colors.secondary.blueGrayDark,
     },
     "> a": {
       width: menuItemProps?.sx?.["> a"]?.width ?? "100%",
@@ -169,13 +168,19 @@ const getMenuItemStyles = (item: MenuItemProps) => ({
       padding: menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.padding ?? 0,
       height: menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.height ?? "1px",
       margin: menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.margin ?? "12px 0",
-      boxShadow: menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.boxShadow ?? "none",
-      pointerEvents: menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.pointerEvents ?? "none",
-      backgroundColor: menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.backgroundColor ?? colors.secondary.iconGray,
+      boxShadow:
+        menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.boxShadow ?? "none",
+      pointerEvents:
+        menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.pointerEvents ?? "none",
+      backgroundColor:
+        menuItemProps?.sx?.["&.MuiMenuItem-divider"]?.backgroundColor ??
+        colors.secondary.iconGray,
     },
     "&.Mui-selected": {
       fontWeight: menuItemProps?.sx?.["&.Mui-selected"]?.fontWeight ?? "700",
-      background: menuItemProps?.sx?.["&.Mui-selected"]?.background ?? colors.primary.white,
+      background:
+        menuItemProps?.sx?.["&.Mui-selected"]?.background ??
+        colors.primary.white,
       color: menuItemProps?.sx?.["&.Mui-selected"]?.color,
     },
     "& svg": {
@@ -185,58 +190,69 @@ const getMenuItemStyles = (item: MenuItemProps) => ({
       marginRight: menuItemProps?.sx?.["& svg"]?.marginRight ?? "0",
       color: menuItemProps?.sx?.["& svg"]?.color ?? colors.secondary.iconGray,
     },
-    ...item.sx // Allow individual item overrides
+    ...item.sx, // Allow individual item overrides
   });
 
-return (
-  <>
+  return (
+    <>
       {/* Anchor Element Wrapper */}
-     <div onClick={handleClick}>
-        {anchorElement}
-      </div>
+      <div onClick={handleClick}>{anchorElement}</div>
 
-    {/* Dropdown Menu */} 
-    <Menu
-      id={id}
-      anchorEl={anchorEl}
-      open={Boolean(anchorEl)}
-      onClose={handleClose}
-      elevation={elevation}
-      transformOrigin={transformOrigin}
-      autoFocus={autoFocus}
-      keepMounted={keepMounted}
-      sx={{
-        "& .MuiPaper-root": {
-          borderRadius: props.sx?.["& .MuiPaper-root"]?.borderRadius,
-          background: props.sx?.["& .MuiPaper-root"]?.background,
-          border: props.sx?.["& .MuiPaper-root"]?.border,
-          "&::-webkit-scrollbar": {
-            width: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]?.width,
-            borderRadius: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]?.borderRadius,
-            background: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]?.background,
+      {/* Dropdown Menu */}
+      <Menu
+        id={id}
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+        elevation={elevation}
+        transformOrigin={transformOrigin}
+        autoFocus={autoFocus}
+        keepMounted={keepMounted}
+        sx={{
+          "& .MuiPaper-root": {
+            borderRadius: props.sx?.["& .MuiPaper-root"]?.borderRadius,
+            background: props.sx?.["& .MuiPaper-root"]?.background,
+            border: props.sx?.["& .MuiPaper-root"]?.border,
+            "&::-webkit-scrollbar": {
+              width:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]?.width,
+              borderRadius:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]
+                  ?.borderRadius,
+              background:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar"]
+                  ?.background,
+            },
+            "&::-webkit-scrollbar-track": {
+              borderRadius:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-track"]
+                  ?.borderRadius,
+              background:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-track"]
+                  ?.background,
+            },
+            "&::-webkit-scrollbar-thumb": {
+              borderRadius:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-thumb"]
+                  ?.borderRadius,
+              background:
+                props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-thumb"]
+                  ?.background,
+            },
           },
-          "&::-webkit-scrollbar-track": {
-            borderRadius: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-track"]?.borderRadius,
-            background: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-track"]?.background,
+          "& .MuiMenu-list": {
+            padding: props.sx?.["& .MuiMenu-list"]?.padding,
+            maxHeight: props.sx?.["& .MuiMenu-list"]?.maxHeight,
+            width: props.sx?.["& .MuiMenu-list"]?.width,
           },
-          "&::-webkit-scrollbar-thumb": {
-            borderRadius: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-thumb"]?.borderRadius,
-            background: props.sx?.["& .MuiPaper-root"]?.["&::-webkit-scrollbar-thumb"]?.background,
+          "@media (max-width: 768px)": {
+            display: props.sx?.["@media (max-width: 768px)"]?.display,
           },
-        },
-        "& .MuiMenu-list": {
-          padding: props.sx?.["& .MuiMenu-list"]?.padding,
-          maxHeight: props.sx?.["& .MuiMenu-list"]?.maxHeight,
-          width: props.sx?.["& .MuiMenu-list"]?.width,
-        },
-        "@media (max-width: 768px)": {
-          display: props.sx?.["@media (max-width: 768px)"]?.display,
-        },
-        ...sx, 
-      }}
-      {...otherProps}
-    >
-      {items.map((item, index) => {
+          ...sx,
+        }}
+        {...otherProps}
+      >
+        {items.map((item, index) => {
           if (item.divider) {
             return (
               <Divider
@@ -248,7 +264,7 @@ return (
               />
             );
           }
-          if (item.icon!==undefined) {
+          if (item.icon !== undefined) {
             return (
               <MenuItem
                 key={index}
