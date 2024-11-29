@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import myDataGrid from "./datagrid";
 import { GridToolbarContainer, GridToolbarQuickFilter } from "@mui/x-data-grid";
-import {columns,rows} from "./data"
+import { columns, rows } from "./data";
 
 // Custom toolbar component for the DataGrid
 const CustomToolbar = () => (
@@ -64,8 +64,8 @@ export const DefaultDataGrid: Story = {
       cellActiveOutline: "2px solid red",
     },
     sx: {
-      backgroundColor: '#f0f0f0',
-      height: 'auto', 
+      backgroundColor: "#f0f0f0",
+      height: "auto",
     },
   },
 };
@@ -88,8 +88,8 @@ export const DataGridWithCustomToolbar: Story = {
       cellActiveOutline: "2px solid red",
     },
     sx: {
-      backgroundColor: '#f0f0f0',
-      height: 'auto', 
+      backgroundColor: "#f0f0f0",
+      height: "auto",
     },
     slots: {
       toolbar: CustomToolbar,
@@ -126,8 +126,8 @@ export const DataGridWithCheckboxSelection: Story = {
       cellActiveOutline: "2px solid red",
     },
     sx: {
-      backgroundColor: '#f0f0f0',
-      height: 'auto',
+      backgroundColor: "#f0f0f0",
+      height: "auto",
     },
   },
 };
@@ -151,8 +151,8 @@ export const DataGridWithPagination: Story = {
       cellActiveOutline: "2px solid red",
     },
     sx: {
-      backgroundColor: '#f0f0f0',
-      height: 'auto', 
+      backgroundColor: "#f0f0f0",
+      height: "auto",
     },
   },
 };
@@ -165,7 +165,7 @@ export const DataGridWithSorting: Story = {
     hideFooter: true,
     rowHeight: 46,
     headerFontSize: "16px",
-    sortingOrder: ['asc', 'desc'],
+    sortingOrder: ["asc", "desc"],
     customStyles: {
       borderStyle: "solid",
       columnHeaderTitleFontSize: "16px",
@@ -177,8 +177,8 @@ export const DataGridWithSorting: Story = {
       cellActiveOutline: "2px solid red",
     },
     sx: {
-      backgroundColor: '#f0f0f0',
-      height: 'auto',
+      backgroundColor: "#f0f0f0",
+      height: "auto",
     },
   },
 };
@@ -191,9 +191,7 @@ export const DataGridWithFiltering: Story = {
     rowHeight: 46,
     headerFontSize: "16px",
     filterModel: {
-      items: [
-        { field: 'name', operator: 'contains', value: 'Alice' },
-      ],
+      items: [{ field: "name", operator: "contains", value: "Alice" }],
     },
     customStyles: {
       borderStyle: "solid",
@@ -206,8 +204,8 @@ export const DataGridWithFiltering: Story = {
       cellActiveOutline: "2px solid red",
     },
     sx: {
-      backgroundColor: '#f0f0f0',
-      height: 'auto', 
+      backgroundColor: "#f0f0f0",
+      height: "auto",
     },
   },
 };

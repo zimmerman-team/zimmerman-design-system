@@ -1,12 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import {
-  DataGrid,
-  DataGridProps,
-  GridSlotsComponent,
-} from "@mui/x-data-grid";
-import { SxProps } from '@mui/system';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import { DataGrid, DataGridProps, GridSlotsComponent } from "@mui/x-data-grid";
+import { SxProps } from "@mui/system";
 
 //Css props that can be manipulated
 interface CustomStyles {
@@ -52,7 +48,7 @@ export default function myDataGrid({
   autoHeight,
   autoPageSize,
   autosizeOnMount,
-  checkboxSelection=false,
+  checkboxSelection = false,
   columnHeaderHeight,
   rowHeight,
   rowSelection,
@@ -63,9 +59,9 @@ export default function myDataGrid({
   sx,
   slots,
   slotProps,
-  disableRowSelectionOnClick=false,
+  disableRowSelectionOnClick = false,
   ...otherProps
-}: Readonly <GridProps>) {
+}: Readonly<GridProps>) {
   return (
     <Box
       sx={{
@@ -91,7 +87,10 @@ export default function myDataGrid({
         sx={{
           borderStyle: customStyles.borderStyle ?? "none",
           ".MuiDataGrid-columnHeaderTitle": {
-            fontSize: customStyles.columnHeaderTitleFontSize ?? headerFontSize ?? "14px",
+            fontSize:
+              customStyles.columnHeaderTitleFontSize ??
+              headerFontSize ??
+              "14px",
             fontWeight: customStyles.columnHeaderTitleFontWeight ?? "700",
             color: customStyles.columnHeaderTitleColor ?? "#0C162A",
           },

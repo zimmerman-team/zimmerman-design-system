@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import MyTable from "./tables";
-import {data,headers} from "./data"
+import { data, headers } from "./data";
 
 // Meta configuration for the MUI Tables stories
 const meta: Meta<typeof MyTable> = {
@@ -33,7 +33,7 @@ const meta: Meta<typeof MyTable> = {
     paginationPadding: { control: "text" },
     paginationJustifyContent: { control: "text" },
     paginationToolbarMarginLeft: { control: "text" },
-    minWidth:{control:"text"},
+    minWidth: { control: "text" },
   },
 };
 
@@ -46,13 +46,13 @@ export const DefaultTable: Story = {
     data,
     headers,
     rowHeight: 50,
-    borderColor: 'grey',
+    borderColor: "grey",
     hover: true,
-    sortIndicatorColor: 'black',
-    componentPadding: '10px 16px',
-    componentBorderRadius: '4px',
-    componentBackground: '#fff',
-    componentBoxShadow: 'none',
+    sortIndicatorColor: "black",
+    componentPadding: "10px 16px",
+    componentBorderRadius: "4px",
+    componentBackground: "#fff",
+    componentBoxShadow: "none",
   },
 };
 // MUI Table story with custom styles to messs around with
@@ -61,14 +61,14 @@ export const CustomStyledTable: Story = {
     data,
     headers,
     rowHeight: 60,
-    borderColor: 'blue',
+    borderColor: "blue",
     hover: true,
-    sortable:true,
-    sortIndicatorColor: 'red',
-    componentPadding: '20px',
-    componentBorderRadius: '10px',
-    componentBackground: '#f0f0f0',
-    componentBoxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+    sortable: true,
+    sortIndicatorColor: "red",
+    componentPadding: "20px",
+    componentBorderRadius: "10px",
+    componentBackground: "#f0f0f0",
+    componentBoxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
   },
 };
 // MUI Table story with Pagination
@@ -79,15 +79,16 @@ export const PaginatedTable: Story = {
     pagination: true,
     rowsPerPage: 2,
     sortable: true,
-    sortKey: 'Age',
-    sortDirection: 'desc',
-    paginationDisplay: 'flex',
-    paginationBorderStyle: 'none',
-    paginationPadding: '10px 16px',
-    paginationJustifyContent: 'flex-start',
-    paginationToolbarMarginLeft: '0',
-    onPageChange: (page) => console.log('Page changed to:', page),
-    onSortChange: (columnId, direction) => console.log('Sort changed:', columnId, direction),
+    sortKey: "Age",
+    sortDirection: "desc",
+    paginationDisplay: "flex",
+    paginationBorderStyle: "none",
+    paginationPadding: "10px 16px",
+    paginationJustifyContent: "flex-start",
+    paginationToolbarMarginLeft: "0",
+    onPageChange: (page) => console.log("Page changed to:", page),
+    onSortChange: (columnId, direction) =>
+      console.log("Sort changed:", columnId, direction),
   },
 };
 // Mui OpenAidActivitiesTable story
@@ -96,7 +97,8 @@ export const OpenAidActivitiesTable: Story = {
     data,
     headers,
     sortable: true,
-    onSortChange: (columnId, direction) => console.log('Sort changed:', columnId, direction),
+    onSortChange: (columnId, direction) =>
+      console.log("Sort changed:", columnId, direction),
     componentWidth: "100%",
     componentOverflow: "hidden",
     componentPadding: "10px 16px",
@@ -116,7 +118,7 @@ export const OpenAidActivitiesTable: Story = {
     paginationPadding: "10px 16px",
     paginationJustifyContent: "flex-start",
     paginationToolbarMarginLeft: "0",
-    sortIndicatorColor:"#002561",
+    sortIndicatorColor: "#002561",
   },
   parameters: {
     design: {
