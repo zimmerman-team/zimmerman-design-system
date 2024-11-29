@@ -1,5 +1,5 @@
 export * from "./components/buttons";
-export * from "./components/Grids";
+export * from "./components/grids";
 export * from "./components/Tables/MuiDatagrid";
 export * from "./components/Tables/MuiTables";
 export * from "./components/Tables/TabulatorTables";

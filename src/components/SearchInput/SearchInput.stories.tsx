@@ -170,16 +170,6 @@ export const CustomStyle: StoryObj = {
 export const BlackInput: Story = {
   args: {
     placeholder: "Search",
-
-    startAdornment: {
-      "type": {},
-      "key": null,
-      "ref": null,
-      "props": {},
-      "_owner": null,
-      "_store": {}
-    },
-
     showBorder: true,
     gap: "4px",
     display: "flex",
@@ -195,13 +185,13 @@ export const BlackInput: Story = {
     inputLineHeight: "20px",
     inputFontSize: "14px",
     inputColor: "#626262",
-    inputPlaceholderFontSize: "#626262"
+    inputPlaceholderFontSize: "#626262",
   },
 
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4"
-    }
-  }
+      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4",
+    },
+  },
 };
