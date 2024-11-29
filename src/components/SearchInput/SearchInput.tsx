@@ -5,24 +5,22 @@ import Box from "@mui/material/Box";
 import colors from "../../theme/colorsSeaerchInput";
 import { SxProps, Theme } from "@mui/material";
 
-interface Boxprops{
-
-   icon?: React.ReactNode;
-   placeholder?: string;
-   gap?: string;
-   showBorder?: boolean;
-   fullWidth?: boolean;
-   value?: string;
-   shape?: "rounded" | "sharp" | "circle";
-   background?: string;
-   padding?: string;
-   width?: string;
-   display?: string;
-   alignItems?: string;
-   border?: string;
-   borderRadius?: string;
-   position?: string;
- 
+interface Boxprops {
+  icon?: React.ReactNode;
+  placeholder?: string;
+  gap?: string;
+  showBorder?: boolean;
+  fullWidth?: boolean;
+  value?: string;
+  shape?: "rounded" | "sharp" | "circle";
+  background?: string;
+  padding?: string;
+  width?: string;
+  display?: string;
+  alignItems?: string;
+  border?: string;
+  borderRadius?: string;
+  position?: string;
 }
 interface SearchInputProps extends Boxprops {
   // InputBase props
@@ -31,10 +29,10 @@ interface SearchInputProps extends Boxprops {
   inputOutline?: string;
   inputBackground?: string;
   inputLineHeight?: string;
-  inputFontSize?: string|number;
+  inputFontSize?: string | number;
   inputPlaceholderFontSize?: string;
   inputColor?: string;
-  inputBorderRadius?: string|number;
+  inputBorderRadius?: string | number;
   inputBoxShadow?: string;
   inputOpacity?: number;
   inputFontWeight?: number;
@@ -46,7 +44,6 @@ interface SearchInputProps extends Boxprops {
   ariaLabel?: string;
   inputpadding?: string;
 }
-
 
 export function MySearchInput(props: Readonly<SearchInputProps>) {
   const {
@@ -66,17 +63,25 @@ export function MySearchInput(props: Readonly<SearchInputProps>) {
 
   return (
     <Box
-      sx={{
-        display: display,
-        alignItems: "center",
-        border: showBorder ? "1px solid #A1AEBD" : "none",
-        backgroundColor: background,
-        gap: gap,
-        position: position,
-        padding: padding,
-        borderRadius: borderRadius ? borderRadius : shape === "circle" ? "50%" : shape === "rounded" ? "30px" : "5px",
-        width: width,
-      } as SxProps<Theme>}
+      sx={
+        {
+          display: display,
+          alignItems: "center",
+          border: showBorder ? "1px solid #A1AEBD" : "none",
+          backgroundColor: background,
+          gap: gap,
+          position: position,
+          padding: padding,
+          borderRadius: borderRadius
+            ? borderRadius
+            : shape === "circle"
+              ? "50%"
+              : shape === "rounded"
+                ? "30px"
+                : "5px",
+          width: width,
+        } as SxProps<Theme>
+      }
     >
       <InputBase
         placeholder={placeholder}
@@ -87,7 +92,7 @@ export function MySearchInput(props: Readonly<SearchInputProps>) {
         onFocus={props.onFocus}
         onBlur={props.onBlur}
         aria-label={props.ariaLabel}
-        sx={{ 
+        sx={{
           width: props.inputWidth,
           border: props.inputBorder,
           outline: props.inputOutline,
@@ -95,20 +100,20 @@ export function MySearchInput(props: Readonly<SearchInputProps>) {
           lineHeight: props.inputLineHeight,
           fontSize: props.inputFontSize,
           borderRadius: props.inputBorderRadius,
-          color:props.inputColor,
+          color: props.inputColor,
           boxShadow: props.inputBoxShadow,
-          opacity:props.inputOpacity,
+          opacity: props.inputOpacity,
           fontWeight: props.inputFontWeight,
           padding: props.inputpadding,
-          '& .MuiInputBase-input': {
-            paddingLeft: props.startAdornment ? '8px' : '0', 
+          "& .MuiInputBase-input": {
+            paddingLeft: props.startAdornment ? "8px" : "0",
           },
         }}
         inputProps={{
           style: {
-            textIndent: props.startAdornment ? '8px' : '0',  
+            textIndent: props.startAdornment ? "8px" : "0",
           },
-        }}      
+        }}
       />
     </Box>
   );
