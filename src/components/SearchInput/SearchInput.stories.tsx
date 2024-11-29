@@ -9,7 +9,7 @@ import ClearIcon from "@mui/icons-material/Clear";
 import IconButton from "@mui/material/IconButton";
 
 const meta = {
-  title: "Example/SearchInput",
+  title: "Example/Search  Input",
   component: MySearchInput,
   parameters: {
     layout: "centered",
@@ -23,7 +23,7 @@ type Story = StoryObj<typeof MySearchInput>;
 // AIDA search input
 export const AIDASearchInput: Story = {
   args: {
-    placeholder: "Search",
+    placeholder: "SearchSS",
     startAdornment: <ExplorerSearchIcon />,
     showBorder: true,
     gap: "4px",
@@ -165,4 +165,43 @@ export const CustomStyle: StoryObj = {
       },
     },
   },
+};
+
+export const BlackInput: Story = {
+  args: {
+    placeholder: "Search",
+
+    startAdornment: {
+      "type": {},
+      "key": null,
+      "ref": null,
+      "props": {},
+      "_owner": null,
+      "_store": {}
+    },
+
+    showBorder: true,
+    gap: "4px",
+    display: "flex",
+    alignItems: "center",
+    background: "#480303",
+    padding: "4px 8px",
+    borderRadius: "5px",
+    width: "100%",
+    inputBorder: "none",
+    inputWidth: "255px",
+    inputOutline: "none",
+    inputBackground: "transparent",
+    inputLineHeight: "20px",
+    inputFontSize: "14px",
+    inputColor: "#626262",
+    inputPlaceholderFontSize: "#626262"
+  },
+
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4"
+    }
+  }
 };

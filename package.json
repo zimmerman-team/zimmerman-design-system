@@ -100,7 +100,10 @@
   "description": "A design system library that contains components shared across projects in the Zimmerman organisation",
   "main": "zimmerman-DS.js",
   "types": "zimmerman-DS.d.ts",
-  "repository": "https://github.com/zimmerman-team/zimmerman-design-system.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zimmerman-team/zimmerman-design-system.git"
+  },
   "author": "okorie2 <ellahokorie@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -112,5 +115,17 @@
     "react-router-dom": "^6.28.0",
     "storybook-addon-remix-react-router": "^3.0.1",
     "tabulator-tables": "^6.3.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/zimmerman-team/zimmerman-design-system/issues"
+  },
+  "homepage": "https://github.com/zimmerman-team/zimmerman-design-system#readme",
+  "keywords": [
+    "Zimmerman",
+    "React",
+    "MUI",
+    "Component",
+    "Design",
+    "System"
+  ]
 }

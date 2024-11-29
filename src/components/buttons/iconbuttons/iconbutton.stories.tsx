@@ -13,7 +13,7 @@ import colors from "../../../theme/colors";
  * Storybook metadata for a button with just an icon
  */
 const meta = {
-  title: "Example/Button/SingleIconButton",
+  title: "Example/Button/Single Icon Button",
   component: IconButton,
   parameters: {
     layout: "centered",
