@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React, { lazy } from "react";
-import { fn, userEvent, within, expect } from "@storybook/test";
+import React from "react";
+import { fn } from "@storybook/test";
 import Button from "./button";
-import { Link } from "react-router-dom";
 import { ReactComponent as GoogleIcon } from "../../assets/vectors/jsx/HeaderSignInViewGoogle.svg";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import ExpandLess from "@mui/icons-material/ExpandLess";
@@ -11,7 +10,6 @@ import { LinkedIn, Microsoft } from "@mui/icons-material";
 import { useState } from "react";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Add, ArrowForward, Download, Share } from "@mui/icons-material";
-import CircularProgress from "@mui/material/CircularProgress";
 
 /**
  * Storybook metadata for the Button component
