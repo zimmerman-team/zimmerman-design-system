@@ -1,7 +1,9 @@
 const locale = "en-US";
 
 export function formatLocale(value: number | bigint): string {
-  if (!value) return "";
+  if (!value) {
+    return "";
+  }
   return `US$ ${Number(value)
     .toLocaleString(locale, {
       style: "currency",
@@ -13,6 +15,8 @@ export function formatLocale(value: number | bigint): string {
 }
 
 export function formatLocaleN(value: number | bigint): string {
-  if (!value) return "0";
+  if (!value) {
+    return "0";
+  }
   return Number(value).toLocaleString(locale);
 }

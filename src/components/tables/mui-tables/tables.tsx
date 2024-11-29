@@ -133,7 +133,9 @@ export default function MyTable({
   // Handle page change
   const handlePageChange = (event: unknown, newPage: number) => {
     setCurrentPage(newPage);
-    if (onPageChange) onPageChange(newPage);
+    if (onPageChange) {
+      onPageChange(newPage);
+    }
   };
   // Handle rows per page change
   const handleRowsPerPageChange = (
@@ -148,7 +150,9 @@ export default function MyTable({
     const direction = isAsc ? "desc" : "asc";
     setCurrentSortKey(columnId);
     setCurrentSortDirection(direction);
-    if (onSortChange) onSortChange(columnId, direction);
+    if (onSortChange) {
+      onSortChange(columnId, direction);
+    }
   };
 
   const sortedData = React.useMemo(() => {
