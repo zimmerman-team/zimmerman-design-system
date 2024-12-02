@@ -20,6 +20,8 @@ interface MenuItemProps {
   sx?: SxProps;
 }
 
+type HorizontalAlignment = "left" | "right" | "center";
+type VerticalAlignment = "top" | "center" | "bottom";
 // Dropdown Menu Props
 interface DropdownProps extends MuiMenuProps {
   id?: string;
@@ -29,12 +31,12 @@ interface DropdownProps extends MuiMenuProps {
   items?: MenuItemProps[];
   elevation?: number;
   transformOrigin?: {
-    vertical: number | "center" | "bottom" | "top";
-    horizontal: number | "center" | "left" | "right";
+    vertical: number | VerticalAlignment;
+    horizontal: number | HorizontalAlignment;
   };
   anchorOrigin?: {
-    vertical: number | "center" | "bottom" | "top";
-    horizontal: number | "center" | "left" | "right";
+    vertical: number | VerticalAlignment;
+    horizontal: number | HorizontalAlignment;
   };
   autoFocus?: boolean;
   keepMounted?: boolean;

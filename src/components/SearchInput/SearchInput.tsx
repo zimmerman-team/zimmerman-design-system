@@ -55,12 +55,23 @@ export function MySearchInput(props: Readonly<SearchInputProps>) {
     showBorder,
     value,
     onChange,
-    shape = "default",
+    shape = "circle",
     gap,
     borderRadius,
     position,
   } = props;
 
+  // Helper function to get border radius based on shape
+  const getBorderRadius = (shape?: "circle" | "rounded" | "sharp") => {
+    switch (shape) {
+      case "circle":
+        return "50%";
+      case "rounded":
+        return "30px";
+      default:
+        return "5px";
+    }
+  };
   return (
     <Box
       sx={
@@ -72,13 +83,7 @@ export function MySearchInput(props: Readonly<SearchInputProps>) {
           gap: gap,
           position: position,
           padding: padding,
-          borderRadius: borderRadius
-            ? borderRadius
-            : shape === "circle"
-              ? "50%"
-              : shape === "rounded"
-                ? "30px"
-                : "5px",
+          borderRadius: borderRadius ?? getBorderRadius(shape),
           width: width,
         } as SxProps<Theme>
       }

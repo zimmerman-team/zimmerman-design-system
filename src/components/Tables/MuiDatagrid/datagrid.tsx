@@ -35,7 +35,7 @@ interface GridProps extends DataGridProps {
   headerFontSize?: string; // Font size of the header
   sx?: SxProps; // Custom styles for the DataGrid
   customStyles?: CustomStyles; // Custom styles for the DataGrid
-  slots?: Partial<GridSlotsComponent> | undefined; // Custom slots for the DataGrid
+  slots?: Partial<GridSlotsComponent>; // Custom slots for the DataGrid
   slotProps?: object; // Custom slot props for the DataGrid
   disableRowSelectionOnClick?: boolean; // Whether to disable row selection on click
 }

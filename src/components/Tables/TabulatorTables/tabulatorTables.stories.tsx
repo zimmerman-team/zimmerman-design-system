@@ -18,6 +18,7 @@ import {
   TABLE_VARIATION_11_COLUMNS,
   TABLE_VARIATION_12_DATA,
   TABLE_VARIATION_12_COLUMNS,
+  TABULATOR_BORDER_STYLES,
 } from "./data";
 
 const meta = {
@@ -71,8 +72,8 @@ export const Variant1: StoryType = {
     columnHeaderTitleFontWeight: "bold",
     rowHoverBackground: "#f0f0f0",
     cellFontSize: "14px",
-    cellFocusOutline: "2px solid blue",
-    cellActiveOutline: "2px solid red",
+    cellFocusOutline: TABULATOR_BORDER_STYLES.BLUE,
+    cellActiveOutline: TABULATOR_BORDER_STYLES.RED,
     sx: {
       backgroundColor: "#f0f0f0",
       height: "auto",
@@ -92,8 +93,8 @@ export const Variant2: StoryType = {
     columnHeaderTitleFontWeight: "bold",
     rowHoverBackground: "#f0f0f0",
     cellFontSize: "14px",
-    cellFocusOutline: "2px solid blue",
-    cellActiveOutline: "2px solid red",
+    cellFocusOutline: TABULATOR_BORDER_STYLES.BLUE,
+    cellActiveOutline: TABULATOR_BORDER_STYLES.RED,
     sx: {
       backgroundColor: "#f0f0f0",
       height: "auto",
@@ -113,11 +114,11 @@ export const Variant3: StoryType = {
     columnHeaderTitleFontWeight: "bold",
     rowHoverBackground: "#f0f0f0",
     cellFontSize: "14px",
-    cellFocusOutline: "2px solid blue",
-    cellActiveOutline: "2px solid red",
+    cellFocusOutline: TABULATOR_BORDER_STYLES.BLUE,
+    cellActiveOutline: TABULATOR_BORDER_STYLES.RED,
     sx: {
       backgroundColor: "#f0f0f0",
-      height: "auto", // Use CSS for height
+      height: "auto",
     },
   },
 };
@@ -137,11 +138,11 @@ export const Variant4: StoryType = {
     columnHeaderTitleFontWeight: "bold",
     rowHoverBackground: "#f0f0f0",
     cellFontSize: "14px",
-    cellFocusOutline: "2px solid blue",
-    cellActiveOutline: "2px solid red",
+    cellFocusOutline: TABULATOR_BORDER_STYLES.BLUE,
+    cellActiveOutline: TABULATOR_BORDER_STYLES.RED,
     sx: {
       backgroundColor: "#f0f0f0",
-      height: "auto", // Use CSS for height
+      height: "auto",
     },
   },
 };

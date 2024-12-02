@@ -21,23 +21,6 @@ interface IconButtonProps
   ariaLabel?: string;
   textAlign?: "center" | "left" | "right";
   children?: React.ReactNode;
-  shareIconType?: "ShareOutlinedIcon";
-  downloadIconType?:
-    | "CloudDownloadIcon"
-    | "FileDownloadIcon"
-    | "DownloadForOfflineIcon"
-    | "CloudDownloadOutlinedIcon"
-    | "DownloadForOfflineOutlinedIcon"
-    | "CloudDownloadTwoToneIcon"
-    | "DownloadForOfflineTwoToneIcon"
-    | "DownloadingTwoToneIcon"
-    | "DownloadOutlinedIcon";
-  infoIconType?:
-    | "InfoOutlinedIcon"
-    | "InfoIcon"
-    | "InfoRoundedIcon"
-    | "InfoTwoToneIcon"
-    | "InfoSharpIcon";
   width?: string;
   borderRadius: "rounded" | "sharp" | "circle" | string;
   boxShadow?: string;

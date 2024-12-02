@@ -22,40 +22,6 @@ const meta = {
   argTypes: {
     background: { control: "color" },
     color: { control: "color" },
-    downloadIconType: {
-      options: [
-        "CloudDownloadIcon",
-        "FileDownloadIcon",
-        "DownloadForOfflineIcon",
-        "CloudDownloadOutlinedIcon",
-        "DownloadForOfflineOutlinedIcon",
-        "CloudDownloadTwoToneIcon",
-        "DownloadForOfflineTwoToneIcon",
-        "DownloadingTwoToneIcon",
-        "DownloadOutlinedIcon",
-      ],
-      control: {
-        type: "select",
-      },
-    },
-    shareIconType: {
-      options: ["ShareOutlinedIcon"],
-      control: {
-        type: "select",
-      },
-    },
-    infoIconType: {
-      options: [
-        "InfoOutlinedIcon",
-        "InfoIcon",
-        "InfoRoundedIcon",
-        "InfoTwoToneIcon",
-        "InfoSharpIcon",
-      ],
-      control: {
-        type: "select",
-      },
-    },
   },
   args: { onClick: fn() },
 } satisfies Meta<typeof IconButton>;

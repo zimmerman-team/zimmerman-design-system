@@ -7,6 +7,11 @@ import {
 } from "tabulator-tables";
 import { TableDataItem } from "./tabulatorTables";
 
+export const TABULATOR_BORDER_STYLES = {
+  BLUE: "2px solid blue",
+  RED: "2px solid red",
+} as const;
+
 export const cellBGColorFormatter = (cell: CellComponent) => {
   const cellValue = cell.getValue();
   let text = "";

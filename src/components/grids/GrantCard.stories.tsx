@@ -28,7 +28,7 @@ export const Primary: StoryType = {
     startDate: "12.02.2021",
     endDate: "12.02.2023",
     title:
-      "Scaling up the response to the HIV epidemic through strengthening national capacities, prevention and treatment services for most at risk population and maintaining access to and quality of essential MDR/XDR TB services in the Republic of Azerbaijan",
+      "Scaling up the response to the HIV epidemic through strengthening national capacities",
     signed: 1000000,
     disbursed: 1000000,
     percentage: 80.5,
