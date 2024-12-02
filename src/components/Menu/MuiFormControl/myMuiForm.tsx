@@ -37,7 +37,7 @@ interface SelectFieldProps extends FormControlProps {
   placeholder?: string;
 }
 
-export default function MuiForm(props: Readonly<SelectFieldProps>) {
+export default function myMuiForm(props: Readonly<SelectFieldProps>) {
   const { id, options } = props;
 
   return (

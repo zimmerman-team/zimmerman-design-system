@@ -118,7 +118,7 @@ interface DropdownProps extends MuiMenuProps {
   };
 }
 
-export default function MuiMenu(props: Readonly<DropdownProps>) {
+export default function myDropdown(props: Readonly<DropdownProps>) {
   const {
     id,
     anchorElement,
