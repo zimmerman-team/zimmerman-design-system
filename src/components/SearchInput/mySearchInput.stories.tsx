@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { MySearchInput } from "./SearchInput";
+import { mySearchInput } from "./mySearchInput";
 import { ReactComponent as ExplorerSearchIcon } from "../../assets/vectors/ExplorerSearchIcon.svg";
 import colors from "../../theme/colorsSeaerchInput";
 import { Box } from "@mui/material";
@@ -10,15 +10,15 @@ import IconButton from "@mui/material/IconButton";
 
 const meta = {
   title: "Example/Search  Input",
-  component: MySearchInput,
+  component: mySearchInput,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof MySearchInput>;
+} satisfies Meta<typeof mySearchInput>;
 
 export default meta;
-type Story = StoryObj<typeof MySearchInput>;
+type Story = StoryObj<typeof mySearchInput>;
 
 // AIDA search input
 export const AIDASearchInput: Story = {

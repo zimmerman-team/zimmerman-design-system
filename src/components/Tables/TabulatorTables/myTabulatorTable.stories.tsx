@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import TabulatorTable from "./tabulatorTables";
+import TabulatorTable from "./myTabulatorTable";
 import { withRouter } from "storybook-addon-remix-react-router";
 import {
   TABLE_VARIATION_5_DATA,

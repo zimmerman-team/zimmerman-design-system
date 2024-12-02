@@ -1,1 +1,1 @@
-export { default as formComponent } from "./MuiForm";
+export { default as formComponent } from "./myMuiForm";

@@ -5,7 +5,7 @@ import {
   ColumnDefinition,
   TabulatorFull as Tabulator,
 } from "tabulator-tables";
-import { TableDataItem } from "./tabulatorTables";
+import { TableDataItem } from "./myTabulatorTable";
 
 export const TABULATOR_BORDER_STYLES = {
   BLUE: "2px solid blue",
