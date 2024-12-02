@@ -272,7 +272,9 @@ export default function MuiMenu(props: Readonly<DropdownProps>) {
                 key={index}
                 selected={selected === item.label}
                 onClick={() => {
-                  if (item.action) item.action();
+                  if (item.action) {
+                    item.action();
+                  }
                   handleClose();
                 }}
                 divider={item.divider}
@@ -289,7 +291,9 @@ export default function MuiMenu(props: Readonly<DropdownProps>) {
               key={index}
               selected={selected === item.label}
               onClick={() => {
-                if (item.action) item.action();
+                if (item.action) {
+                  item.action();
+                }
                 handleClose();
               }}
               divider={item.divider}

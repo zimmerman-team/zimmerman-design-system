@@ -62,8 +62,8 @@ export function MySearchInput(props: Readonly<SearchInputProps>) {
   } = props;
 
   // Helper function to get border radius based on shape
-  const getBorderRadius = (shape?: "circle" | "rounded" | "sharp") => {
-    switch (shape) {
+  const getBorderRadius = (borderShape?: "circle" | "rounded" | "sharp") => {
+    switch (borderShape) {
       case "circle":
         return "50%";
       case "rounded":
