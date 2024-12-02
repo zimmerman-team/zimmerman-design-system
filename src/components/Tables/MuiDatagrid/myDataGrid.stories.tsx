@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import myDataGrid from "./datagrid";
+import myDataGrid from "./myDataGrid";
 import { GridToolbarContainer, GridToolbarQuickFilter } from "@mui/x-data-grid";
 import { columns, rows } from "./data";
 

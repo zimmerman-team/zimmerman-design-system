@@ -27,6 +27,7 @@ interface ContainerProps {
   componentBackground?: string; // Background color of the table container
   componentBoxShadow?: string; // Box shadow of the table container
 }
+
 // Interface for Table Header props
 interface TableHeadProps {
   headCursor?: string;
@@ -75,7 +76,7 @@ interface TableProps
 }
 
 // Table component
-export default function MyTable({
+export default function myTable({
   data,
   headers,
   rowHeight = 50,

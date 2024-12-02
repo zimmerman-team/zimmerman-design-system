@@ -1,1 +1,1 @@
-export { default as MyDataGrid } from "./datagrid";
+export { default as MyDataGrid } from "./myDataGrid";
