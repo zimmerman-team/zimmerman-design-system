@@ -151,18 +151,3 @@ export const WithBothIcons: StoryObj = {
     ),
   },
 };
-
-// Custom style search variant
-export const CustomStyle: StoryObj = {
-  args: {
-    placeholder: "Custom styled input",
-    startAdornment: <SearchIcon />,
-    sx: {
-      backgroundColor: "#f5f5f5",
-      borderRadius: "20px",
-      "& .MuiInputBase-input": {
-        padding: "8px 16px",
-      },
-    },
-  },
-};

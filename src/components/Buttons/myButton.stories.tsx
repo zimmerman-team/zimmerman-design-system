@@ -150,66 +150,6 @@ export const AIDASignInGoogleButton: Story = {
 };
 
 /**
- * AIDA Sign In Button LinkedIn
- */
-export const AIDASignInLinkedINButton: Story = {
-  args: {
-    gap: "10px",
-    width: "300px",
-    height: "32px",
-    display: "flex",
-    fontSize: "12px",
-    fontWeight: "700",
-    borderRadius: "5px",
-    alignItems: "center",
-    textTransform: "none",
-    justifyContent: "center",
-    color: colors.primary.white,
-    background: "#3B6CD3",
-    css: {
-      "&:hover": {
-        backgroundColor: colors.shades.blue[400],
-      },
-    },
-    icon: {
-      component: <LinkedIn />,
-      position: "left",
-    },
-    onClick: fn(),
-    label: "Sign in with LinkedIn",
-  },
-};
-
-/**
- * AIDA Sign In Button Facebook
- */
-export const AIDASignInFacebookButton: Story = {
-  args: {
-    gap: "10px",
-    width: "300px",
-    height: "32px",
-    display: "flex",
-    fontSize: "12px",
-    fontWeight: "700",
-    borderRadius: "5px",
-    alignItems: "center",
-    textTransform: "none",
-    justifyContent: "center",
-    color: colors.primary.white,
-    background: "#3B6CD3",
-    // ":hover": {
-    //   background: colors.shades.blue[400],
-    // },
-    icon: {
-      component: <Microsoft />,
-      position: "left",
-    },
-    onClick: fn(),
-    label: "Sign in with Microsoft",
-  },
-};
-
-/**
  * AIDA Open Aid Add Filter Button
  */
 export const OpenAidAddfilterButton: Story = {
@@ -304,20 +244,6 @@ export const AIDALogOutButton: Story = {
     },
     onClick: fn(),
     label: "Log Out",
-  },
-};
-
-/**
- * Text button without background
- */
-export const TextButton: Story = {
-  args: {
-    variant: "text",
-    children: "Text Button",
-    textTransform: "none",
-    background: "#fffdfd",
-    label: "TextButton",
-    color: "#000000",
   },
 };
 

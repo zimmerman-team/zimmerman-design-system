@@ -55,22 +55,7 @@ export const DefaultTable: Story = {
     componentBoxShadow: "none",
   },
 };
-// MUI Table story with custom styles to messs around with
-export const CustomStyledTable: Story = {
-  args: {
-    data,
-    headers,
-    rowHeight: 60,
-    borderColor: "blue",
-    hover: true,
-    sortable: true,
-    sortIndicatorColor: "red",
-    componentPadding: "20px",
-    componentBorderRadius: "10px",
-    componentBackground: "#f0f0f0",
-    componentBoxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-  },
-};
+
 // MUI Table story with Pagination
 export const PaginatedTable: Story = {
   args: {
