@@ -32,7 +32,7 @@ interface IconButtonProps
 /**
  * IconButton component props
  */
-export default function MyIconButton(props: Readonly<IconButtonProps>) {
+export default function myIconButton(props: Readonly<IconButtonProps>) {
   const {
     gap,
     size,
@@ -72,6 +72,7 @@ export default function MyIconButton(props: Readonly<IconButtonProps>) {
       aria-label={props.ariaLabel}
       style={{ textAlign: textAlign }}
       data-cy={props.datacy}
+      children={props.children}
       sx={{
         display: "flex",
         outline: "none",
@@ -92,8 +93,6 @@ export default function MyIconButton(props: Readonly<IconButtonProps>) {
           cursor: "pointer",
         },
       }}
-    >
-      {children}
-    </IconButton>
+    ></IconButton>
   );
 }

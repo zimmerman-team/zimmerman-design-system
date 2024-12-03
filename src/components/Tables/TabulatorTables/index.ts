@@ -1,1 +1,1 @@
-export { default as TabulatorTable } from "./tabulatorTables";
+export { default as TabulatorTable } from "./myTabulatorTable";

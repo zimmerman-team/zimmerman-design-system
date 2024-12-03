@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import MyDropdown from "./mydropdown";
+import MyDropdown from "./myDropdown";
 import { colors } from "../../../theme";
 import IconButton from "@mui/material/IconButton";
 import MenuRounded from "@mui/icons-material/MenuRounded";

@@ -76,7 +76,7 @@ interface TableProps
 }
 
 // Table component
-export default function myTable({
+export default function MyTable({
   data,
   headers,
   rowHeight = 50,
