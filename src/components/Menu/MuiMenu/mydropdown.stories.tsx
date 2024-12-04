@@ -138,16 +138,120 @@ export const OpenAidDropdown: StoryType = {
     },
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6410-276271&t=AR8QHB5BZiod5OHq-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6410-276271&t=AR8QHB5BZiod5OHq-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6410-276271&t=AR8QHB5BZiod5OHq-4",
+      },
+    ],
   },
 };
 
 // Data Explorer Dropdown
 //TODO:MAKE IT DYNAMIC
 export const DataExplorerDropdown: StoryType = {
+  args: {
+    anchorElement: (
+      <Button
+        variant="contained"
+        endIcon={<KeyboardArrowDownIcon />}
+        sx={{
+          backgroundColor: "white",
+          color: "black",
+          "&:hover": {
+            backgroundColor: "white",
+          },
+          "& .MuiButton-endIcon": {
+            color: "black",
+          },
+        }}
+      >
+        2023-2024
+      </Button>
+    ),
+    items: [
+      {
+        label: "2021-2022",
+      },
+      {
+        label: "2020-2021",
+      },
+      {
+        label: "2019-2020",
+      },
+    ],
+    elevation: 0,
+    transformOrigin: {
+      vertical: "top",
+      horizontal: "left",
+    },
+    autoFocus: false,
+    sx: {
+      "& .MuiPaper-root": {
+        width: 200,
+        borderRadius: "4px",
+        background: "#fff",
+        border: `1px solid ${"#DFE3E5"}`,
+        "&::-webkit-scrollbar": {
+          width: 5,
+          borderRadius: "2",
+          background: "transparent",
+        },
+        "&::-webkit-scrollbar-track": {
+          borderRadius: "2",
+          background: "transparent",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          borderRadius: "2",
+          background: "#000",
+        },
+      },
+      "& .MuiMenu-list": {
+        padding: 4,
+        maxHeight: 280,
+      },
+    },
+    menuItemProps: {
+      sx: {
+        width: "100%",
+        fontSize: "14px",
+        padding: "2px 4px",
+        borderRadius: "4px",
+        color: "#000",
+        "& svg": {
+          marginRight: "8px",
+          filter: "invert(1)",
+        },
+        "&:hover": {
+          color: "#ffffff",
+          background: "#FFF",
+        },
+        "@media (max-width: 767px)": {
+          height: "auto",
+          minHeight: "32px",
+        },
+      },
+    },
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=6000-186681&t=o2z1XhZ3yrBk16Ym-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=6000-186681&t=o2z1XhZ3yrBk16Ym-4",
+      },
+    ],
+  },
+};
+
+export const AcountDropdown: StoryType = {
   args: {
     anchorElement: (
       <Button
@@ -228,8 +332,7 @@ export const DataExplorerDropdown: StoryType = {
           filter: "invert(1)",
         },
         "&:hover": {
-          // color:"#ffffff",
-          color: "#000",
+          color: "#ffffff",
           background: "#FFF",
         },
         "@media (max-width: 767px)": {
