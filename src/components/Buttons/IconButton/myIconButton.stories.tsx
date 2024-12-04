@@ -46,10 +46,16 @@ export const OpenAidShareButton: Story = {
     children: <Icon component={Share} />,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
+      },
+    ],
   },
 };
 
@@ -72,10 +78,16 @@ export const OpenAidDownloadButton: Story = {
     children: <Icon component={CloudDownload} />,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7295-264691&t=jo15UJTsJr465OD6-4",
+      },
+    ],
   },
 };
 
@@ -106,7 +118,20 @@ export const OpenAidSelectLanguageButton: Story = {
       />
     ),
   },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257269&t=uvs9wD4RYJITKMF3-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257269&t=uvs9wD4RYJITKMF3-4",
+      },
+    ],
+  },
 };
+
 /**
  * OpenAid Menu Icon Button
  */
@@ -132,6 +157,18 @@ export const OpenAidMenuButton: Story = {
       />
     ),
   },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257269&t=uvs9wD4RYJITKMF3-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257269&t=uvs9wD4RYJITKMF3-4",
+      },
+    ],
+  },
 };
 /**
  * Data Explorer Search Icon Button
@@ -155,5 +192,17 @@ export const DataExplorerSearchButton: Story = {
         }}
       />
     ),
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=1889-63700&t=o2z1XhZ3yrBk16Ym-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=1889-63700&t=o2z1XhZ3yrBk16Ym-4",
+      },
+    ],
   },
 };
