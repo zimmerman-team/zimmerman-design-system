@@ -33,4 +33,16 @@ export const Primary: StoryType = {
     disbursed: 1000000,
     percentage: 80.5,
   },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=1889-47467&t=o2z1XhZ3yrBk16Ym-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=1889-47467&t=o2z1XhZ3yrBk16Ym-4",
+      },
+    ],
+  },
 };
