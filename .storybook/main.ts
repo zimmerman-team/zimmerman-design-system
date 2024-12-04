@@ -7,15 +7,18 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "@storybook/addon-designs",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
     "@storybook/addon-coverage",
-    "storybook-addon-variants",
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
+  },
+  docs: {
+    autodocs: true,
   },
   staticDirs: ["../public"],
 };
