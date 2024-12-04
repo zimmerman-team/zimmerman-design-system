@@ -52,10 +52,16 @@ export const Footer: StoryType = {
     ),
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1619-64470",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1619-64470",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1619-64470",
+      },
+    ],
   },
 };
 
@@ -96,10 +102,16 @@ export const Small: StoryType = {
     ),
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=971-43503",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=971-43503",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=971-43503",
+      },
+    ],
   },
 };
 
@@ -124,10 +136,16 @@ export const Medium: StoryType = {
     ),
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1065-30810",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1065-30810",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1065-30810",
+      },
+    ],
   },
 };
 
@@ -140,9 +158,15 @@ export const Large: StoryType = {
     bgIcon: <ExplorerLargeCtaIcon />,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1143-36947",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1143-36947",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1143-36947",
+      },
+    ],
   },
 };

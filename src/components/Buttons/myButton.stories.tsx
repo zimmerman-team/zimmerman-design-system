@@ -39,12 +39,6 @@ type Story = StoryObj<typeof meta>;
  * AIDA Explorer Button
  */
 export const AIDAExplorerButton: Story = {
-  parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1558-371876&t=HZkq8tIk68Zpdhux-4",
-    },
-  },
   args: {
     variant: "contained",
     background: "#3B6CD3",
@@ -58,6 +52,18 @@ export const AIDAExplorerButton: Story = {
     width: "max-content",
     fontSize: "18px",
     lineHeight: "normal",
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1558-371876&t=HZkq8tIk68Zpdhux-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1558-371876&t=HZkq8tIk68Zpdhux-4",
+      },
+    ],
   },
 };
 
@@ -111,10 +117,16 @@ export const AIDAHeaderProductButton: Story = {
     },
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2969-370244&t=UWDlwi3KDi9FEr1G-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2969-370244&t=UWDlwi3KDi9FEr1G-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2969-370244&t=UWDlwi3KDi9FEr1G-4",
+      },
+    ],
   },
 };
 
@@ -147,6 +159,18 @@ export const AIDASignInGoogleButton: Story = {
     onClick: fn(),
     label: "Sign in with Google",
   },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=3050-19820&t=MRU2lCADUEXdtGMH-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=3050-19820&t=MRU2lCADUEXdtGMH-4",
+      },
+    ],
+  },
 };
 
 /**
@@ -175,6 +199,18 @@ export const OpenAidAddfilterButton: Story = {
     label: "Add filter",
 
     onClick: fn(),
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=8591-116512&t=uvs9wD4RYJITKMF3-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=8591-116512&t=uvs9wD4RYJITKMF3-4",
+      },
+    ],
   },
 };
 /**
@@ -215,6 +251,18 @@ export const OpenAidYearDisplayGraphButton: Story = {
       />
     );
   },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=4949-269175&t=GTJU1KB97PfgiDTN-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=4949-269175&t=GTJU1KB97PfgiDTN-4",
+      },
+    ],
+  },
 };
 
 /**
@@ -244,6 +292,18 @@ export const AIDALogOutButton: Story = {
     },
     onClick: fn(),
     label: "Log Out",
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1855-195604&t=C3CM89TvL7w7gKU1-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=1855-195604&t=C3CM89TvL7w7gKU1-4",
+      },
+    ],
   },
 };
 
