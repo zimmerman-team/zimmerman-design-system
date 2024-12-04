@@ -23,7 +23,7 @@ type Story = StoryObj<typeof mySearchInput>;
 // AIDA search input
 export const AIDASearchInput: Story = {
   args: {
-    placeholder: "SearchSS",
+    placeholder: "Search",
     startAdornment: <ExplorerSearchIcon />,
     showBorder: true,
     gap: "4px",
@@ -43,10 +43,16 @@ export const AIDASearchInput: Story = {
     inputPlaceholderFontSize: colors.secondary.grayText,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=1545-368913&t=NBjQ0fD59Wjtejp8-4",
+      },
+    ],
   },
 };
 
@@ -88,10 +94,16 @@ export const OpenaidSearchInput: Story = {
     inputpadding: "6px 40px 6px 22px",
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257366&t=bv9BC7T69S3II3az-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257366&t=bv9BC7T69S3II3az-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=7038-257366&t=bv9BC7T69S3II3az-4",
+      },
+    ],
   },
 };
 
@@ -122,10 +134,16 @@ export const DataExplorerInput: Story = {
     inputColor: colors.primary.black,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=4948-263242&t=NOLx3NFpHxY7gK5x-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=4948-263242&t=NOLx3NFpHxY7gK5x-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=4948-263242&t=NOLx3NFpHxY7gK5x-4",
+      },
+    ],
   },
 };
 
