@@ -30,10 +30,16 @@ export const AIDAPrimary: StoryType = {
     value: "option-1",
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
+      },
+    ],
   },
 };
 
@@ -49,10 +55,16 @@ export const AIDAOutlined: StoryType = {
     variant: "outlined",
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2413-43104",
+      },
+    ],
   },
 };
 
@@ -81,10 +93,16 @@ export const AIDASelectMonth: StoryType = {
     height: "40px",
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=5363-21933&t=3oO3wnK985shYT1C-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=5363-21933&t=3oO3wnK985shYT1C-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-Main-Design?node-id=5363-21933&t=3oO3wnK985shYT1C-4",
+      },
+    ],
   },
 };
 
