@@ -106,9 +106,15 @@ export const OpenAidActivitiesTable: Story = {
     sortIndicatorColor: "#002561",
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6305-222433&t=tqOyzQnwJakGTFif-4",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6305-222433&t=tqOyzQnwJakGTFif-4",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6305-222433&t=tqOyzQnwJakGTFif-4",
+      },
+    ],
   },
 };
