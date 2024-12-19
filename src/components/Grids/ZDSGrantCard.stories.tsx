@@ -1,10 +1,20 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
+<<<<<<< Updated upstream:src/components/Grids/ZDSGrantCard.stories.tsx
+// import { withRouter } from "storybook-addon-remix-react-router";
 import { ZDSGrantCard } from "./ZDSGrantCard";
 
 const meta = {
   title: "Example/Grid",
   component: ZDSGrantCard,
+  // decorators: [withRouter],
+=======
+import { GrantCard } from "./GrantCard";
+
+const meta = {
+  title: "Example/Grid",
+  component: GrantCard,
+>>>>>>> Stashed changes:src/components/grids/GrantCard.stories.tsx
   parameters: {
     layout: "fullscreen",
   },

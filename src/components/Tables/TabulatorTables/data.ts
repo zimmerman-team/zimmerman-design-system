@@ -1,9 +1,20 @@
+<<<<<<< Updated upstream
+import { appColors } from "./../../../app/theme/index";
+import { formatLocale } from "./../../../app/utils/formatLocale";
+import {
+  CellComponent,
+  ColumnDefinition,
+  TabulatorFull as Tabulator,
+} from "tabulator-tables";
+import { TableDataItem } from "./ZDSTabulatorTable";
+=======
 import { appColors } from "app/theme/index";
 import { formatLocale } from "app/utils/formatLocale";
 import { CellComponent } from "tabulator-tables";
 import { ColumnDefinition } from "tabulator-tables";
 import { TabulatorFull as Tabulator } from "tabulator-tables";
-import { TableDataItem } from "./ZDSTabulatorTable";
+import { TableDataItem } from "./myTabulatorTable";
+>>>>>>> Stashed changes
 
 export const TABULATOR_BORDER_STYLES = {
   BLUE: "2px solid blue",
