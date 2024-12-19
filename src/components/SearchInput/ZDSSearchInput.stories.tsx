@@ -1,14 +1,8 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-<<<<<<< Updated upstream:src/components/SearchInput/ZDSSearchInput.stories.tsx
 import { ZDSSearchInput } from "./ZDSSearchInput";
 import { ReactComponent as ExplorerSearchIcon } from "../../assets/OpenAid/vectors/ExplorerSearchIcon.svg";
 import colors from "../../theme/colorsSeaerchInput";
-=======
-import { mySearchInput } from "./mySearchInput";
-import { ReactComponent as ExplorerSearchIcon } from "assets/vectors/ExplorerSearchIcon.svg";
-import colors from "theme/colorsSeaerchInput";
->>>>>>> Stashed changes:src/components/SearchInput/mySearchInput.stories.tsx
 import { Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
