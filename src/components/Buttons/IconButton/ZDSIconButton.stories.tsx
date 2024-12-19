@@ -7,7 +7,7 @@ import CloudDownload from "@mui/icons-material/CloudDownload";
 import LanguageRounded from "@mui/icons-material/LanguageRounded";
 import MenuRounded from "@mui/icons-material/MenuRounded";
 import IconSearch from "@mui/icons-material/Search";
-import colors from "../../../theme/colors";
+import colors from "theme/colors";
 
 /**
  * Storybook metadata for a button with just an icon

@@ -1,9 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
-import Menu, { MenuProps as MuiMenuProps } from "@mui/material/Menu";
+import Menu from "@mui/material/Menu";
+import { MenuProps as MuiMenuProps } from "@mui/material/Menu";
 import { SxProps } from "@mui/material";
-import { colors } from "../../../theme";
+import { colors } from "theme";
 import Divider from "@mui/material/Divider";
 
 // MenuItemProps

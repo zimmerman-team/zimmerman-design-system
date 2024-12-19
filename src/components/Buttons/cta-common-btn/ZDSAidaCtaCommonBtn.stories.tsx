@@ -1,8 +1,13 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
+<<<<<<< Updated upstream:src/components/Buttons/cta-common-btn/ZDSAidaCtaCommonBtn.stories.tsx
 import { ExplorerLargeCtaIcon } from "../../../assets/AIDA/jsx/ExplorerLargeCtaIcon";
 
 import { ZDSAidaCtaCommonBtn } from ".";
+=======
+import { ExplorerLargeCtaIcon } from "assets/vectors/jsx/ExplorerLargeCtaIcon";
+import { CtaCommonBtn } from ".";
+>>>>>>> Stashed changes:src/components/buttons/cta-common-btn/CtaCommonBtn.stories.tsx
 import { withRouter } from "storybook-addon-remix-react-router";
 
 const meta = {

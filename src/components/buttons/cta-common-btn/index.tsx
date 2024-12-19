@@ -1,13 +1,17 @@
 import React from "react";
-import colors from "../../../theme/colors";
+import colors from "theme/colors";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import ButtonBase from "@mui/material/ButtonBase";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
+<<<<<<< Updated upstream
 import { CtaCommonBtnProps, ZDSAidaCtaCommonBtnVariantStyles } from "./data";
 import { Color } from "@mui/material";
+=======
+import { CtaCommonBtnVariantStyles } from "./data";
+import { CtaCommonBtnProps } from "./data";
+>>>>>>> Stashed changes
 
 export const ZDSAidaCtaCommonBtn: React.FC<CtaCommonBtnProps> = (
   props: CtaCommonBtnProps

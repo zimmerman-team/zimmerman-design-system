@@ -3,7 +3,11 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import LocationIcon from "@mui/icons-material/LocationOn";
+<<<<<<< Updated upstream:src/components/Grids/ZDSGrantCard.tsx
 import { GrantCardProps } from "./data"; // Ensure this path is correct and the file exists
+=======
+import { GrantCardProps } from "./data";
+>>>>>>> Stashed changes:src/components/grids/GrantCard.tsx
 
 export const ZDSGrantCard: React.FC<GrantCardProps> = (
   props: GrantCardProps

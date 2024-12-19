@@ -1,11 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import * as React from "react";
 import Box from "@mui/material/Box";
-import {
-  TabulatorFull as Tabulator,
-  ColumnDefinition,
-  RowComponent,
-} from "tabulator-tables";
+import { TabulatorFull as Tabulator } from "tabulator-tables";
+import { ColumnDefinition } from "tabulator-tables";
+import { RowComponent } from "tabulator-tables";
 import "tabulator-tables/dist/css/tabulator.min.css";
 import { SxProps } from "@mui/system";
 

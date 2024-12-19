@@ -1,13 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import {
-  Select,
-  MenuItem,
-  FormControl,
-  SelectChangeEvent,
-  Typography,
-  SxProps,
-} from "@mui/material";
+import { MenuItem } from "@mui/material";
+import { FormControl } from "@mui/material";
+import { Select } from "@mui/material";
+import { Typography } from "@mui/material";
+import { SelectChangeEvent } from "@mui/material";
+import { SxProps } from "@mui/material";
 import { colors } from "../../../theme";
 
 interface FormControlProps {

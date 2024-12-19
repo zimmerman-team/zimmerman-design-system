@@ -1,7 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { DataGrid, DataGridProps, GridSlotsComponent } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
+import { DataGridProps } from "@mui/x-data-grid";
+import { GridSlotsComponent } from "@mui/x-data-grid";
 import { SxProps } from "@mui/system";
 
 //Css props that can be manipulated
