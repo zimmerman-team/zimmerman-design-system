@@ -1,18 +1,18 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 // import { withRouter } from "storybook-addon-remix-react-router";
-import { GrantCard } from "./GrantCard";
+import { ZDSGrantCard } from "./ZDSGrantCard";
 
 const meta = {
   title: "Example/Grid",
-  component: GrantCard,
+  component: ZDSGrantCard,
   // decorators: [withRouter],
   parameters: {
     layout: "fullscreen",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof GrantCard>;
+} satisfies Meta<typeof ZDSGrantCard>;
 
 export default meta;
 type StoryType = StoryObj<typeof meta>;

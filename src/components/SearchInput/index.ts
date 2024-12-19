@@ -1,1 +1,1 @@
-export { mySearchInput } from "./mySearchInput";
+export { ZDSSearchInput } from "./ZDSSearchInput";

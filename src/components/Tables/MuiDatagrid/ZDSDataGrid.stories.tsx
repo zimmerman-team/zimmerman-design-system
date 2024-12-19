@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import myDataGrid from "./myDataGrid";
+import ZDSDataGrid from "./ZDSDataGrid";
 import { GridToolbarContainer, GridToolbarQuickFilter } from "@mui/x-data-grid";
 import { columns, rows } from "./data";
 
@@ -22,9 +22,9 @@ const CustomToolbar = () => (
 );
 
 // Meta configuration for the DataGrid stories
-const meta: Meta<typeof myDataGrid> = {
+const meta: Meta<typeof ZDSDataGrid> = {
   title: "Example/Table/DataGrid Tables",
-  component: myDataGrid,
+  component: ZDSDataGrid,
   parameters: {
     layout: "centered",
   },
@@ -49,7 +49,7 @@ const meta: Meta<typeof myDataGrid> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof myDataGrid>;
+type Story = StoryObj<typeof ZDSDataGrid>;
 
 // Default DataGrid story
 export const DefaultDataGrid: Story = {

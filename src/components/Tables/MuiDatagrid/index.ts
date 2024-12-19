@@ -1,1 +1,1 @@
-export { default as MyDataGrid } from "./myDataGrid";
+export { default as ZDSDataGrid } from "./ZDSDataGrid";

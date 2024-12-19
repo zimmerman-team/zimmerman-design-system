@@ -1,1 +1,1 @@
-export { default as formComponent } from "./myMuiForm";
+export { default as ZDSFormComponent } from "./ZDSMuiForm";

@@ -41,7 +41,7 @@ interface GridProps extends DataGridProps {
 }
 
 // DataGrid component with custom styles and props
-export default function myDataGrid({
+export default function ZDSDataGrid({
   arialabel,
   arialabelledby,
   hideFooter,

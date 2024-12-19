@@ -2,19 +2,19 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { ExplorerLargeCtaIcon } from "../../../assets/AIDA/jsx/ExplorerLargeCtaIcon";
 
-import { CtaCommonBtn } from ".";
+import { ZDSAidaCtaCommonBtn } from ".";
 import { withRouter } from "storybook-addon-remix-react-router";
 
 const meta = {
   title: "Example/Button/CtaCommonBtn",
-  component: CtaCommonBtn,
+  component: ZDSAidaCtaCommonBtn,
   decorators: [withRouter],
   parameters: {
     layout: "fullscreen",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof CtaCommonBtn>;
+} satisfies Meta<typeof ZDSAidaCtaCommonBtn>;
 
 export default meta;
 type StoryType = StoryObj<typeof meta>;

@@ -3,11 +3,11 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import LocationIcon from "@mui/icons-material/LocationOn";
-// import { formatFinancialValue } from "../../utils/formatFinancialValue";
 import { GrantCardProps } from "./data"; // Ensure this path is correct and the file exists
-// import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 
-export const GrantCard: React.FC<GrantCardProps> = (props: GrantCardProps) => {
+export const ZDSGrantCard: React.FC<GrantCardProps> = (
+  props: GrantCardProps
+) => {
   const dates = React.useMemo(() => {
     const res: string[] = [];
     if (props.startDate) {

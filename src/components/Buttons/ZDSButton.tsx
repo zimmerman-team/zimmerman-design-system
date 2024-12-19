@@ -87,7 +87,7 @@ const sizeStyles: Record<
 /**
  * Button component props
  */
-export default function MyButton(props: Readonly<ButtonProps>) {
+export default function ZDSButton(props: Readonly<ButtonProps>) {
   const {
     gap,
     display,

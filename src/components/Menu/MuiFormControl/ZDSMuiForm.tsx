@@ -37,7 +37,7 @@ interface SelectFieldProps extends FormControlProps {
   placeholder?: string;
 }
 
-export default function myMuiForm(props: Readonly<SelectFieldProps>) {
+export default function ZDSMuiForm(props: Readonly<SelectFieldProps>) {
   const { id, options } = props;
 
   return (

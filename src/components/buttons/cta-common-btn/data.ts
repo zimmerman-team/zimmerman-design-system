@@ -9,7 +9,7 @@ export interface CtaCommonBtnProps {
   variant: "footer" | "small" | "medium" | "large";
 }
 
-export const CtaCommonBtnVariantStyles = {
+export const ZDSAidaCtaCommonBtnVariantStyles = {
   footer: {
     width: "205px",
     height: "68px",

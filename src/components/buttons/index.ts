@@ -1,2 +1,2 @@
-export { default as Button } from "./myButton";
-export { default as IconButton } from "./IconButton/myIconButton";
+export { default as ZDSButton } from "./ZDSButton";
+export { default as ZDSIconButton } from "./IconButton/ZDSIconButton";

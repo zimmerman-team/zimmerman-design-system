@@ -1,19 +1,19 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { withRouter } from "storybook-addon-remix-react-router";
-import { formComponent } from "./index";
+import { ZDSFormComponent } from "./index";
 import { ArrowDown } from "./data";
 
 const meta = {
   title: "Example/Dropdown/MUI-FormControl",
-  component: formComponent,
+  component: ZDSFormComponent,
   decorators: [withRouter],
   parameters: {
     layout: "fullscreen",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof formComponent>;
+} satisfies Meta<typeof ZDSFormComponent>;
 
 export default meta;
 type StoryType = StoryObj<typeof meta>;

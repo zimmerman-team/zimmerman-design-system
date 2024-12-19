@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
-import IconButton from "./myIconButton";
+import IconButton from "./ZDSIconButton";
 import Share from "@mui/icons-material/Share";
 import { Icon } from "@mui/material";
 import CloudDownload from "@mui/icons-material/CloudDownload";

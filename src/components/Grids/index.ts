@@ -1,1 +1,1 @@
-export { GrantCard } from "./GrantCard";
+export { ZDSGrantCard } from "./ZDSGrantCard";

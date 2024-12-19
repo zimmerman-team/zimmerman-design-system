@@ -5,7 +5,7 @@ import {
   ColumnDefinition,
   TabulatorFull as Tabulator,
 } from "tabulator-tables";
-import { TableDataItem } from "./myTabulatorTable";
+import { TableDataItem } from "./ZDSTabulatorTable";
 
 export const TABULATOR_BORDER_STYLES = {
   BLUE: "2px solid blue",

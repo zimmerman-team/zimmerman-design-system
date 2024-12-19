@@ -32,7 +32,7 @@ interface IconButtonProps
 /**
  * IconButton component props
  */
-export default function myIconButton(props: Readonly<IconButtonProps>) {
+export default function ZDSIconButton(props: Readonly<IconButtonProps>) {
   const {
     gap,
     size,

@@ -6,16 +6,16 @@ import ButtonBase from "@mui/material/ButtonBase";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
-import { CtaCommonBtnProps, CtaCommonBtnVariantStyles } from "./data";
+import { CtaCommonBtnProps, ZDSAidaCtaCommonBtnVariantStyles } from "./data";
 import { Color } from "@mui/material";
 
-export const CtaCommonBtn: React.FC<CtaCommonBtnProps> = (
+export const ZDSAidaCtaCommonBtn: React.FC<CtaCommonBtnProps> = (
   props: CtaCommonBtnProps
 ) => {
   const navigate = useNavigate();
 
   const variantStyles = React.useMemo(() => {
-    return CtaCommonBtnVariantStyles[props.variant];
+    return ZDSAidaCtaCommonBtnVariantStyles[props.variant];
   }, [props.variant]);
 
   const handleClick = React.useCallback(() => {

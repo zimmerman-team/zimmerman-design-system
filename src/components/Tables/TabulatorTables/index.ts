@@ -1,1 +1,1 @@
-export { default as TabulatorTable } from "./myTabulatorTable";
+export { default as ZDSTabulatorTable } from "./ZDSTabulatorTable";

@@ -45,7 +45,7 @@ interface SearchInputProps extends Boxprops {
   inputpadding?: string;
 }
 
-export function mySearchInput(props: Readonly<SearchInputProps>) {
+export function ZDSSearchInput(props: Readonly<SearchInputProps>) {
   const {
     display,
     background = colors.secondary.disableButton,

@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { mySearchInput } from "./mySearchInput";
-import { ReactComponent as ExplorerSearchIcon } from "../../assets/vectors/ExplorerSearchIcon.svg";
+import { ZDSSearchInput } from "./ZDSSearchInput";
+import { ReactComponent as ExplorerSearchIcon } from "../../assets/OpenAid/vectors/ExplorerSearchIcon.svg";
 import colors from "../../theme/colorsSeaerchInput";
 import { Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -10,15 +10,15 @@ import IconButton from "@mui/material/IconButton";
 
 const meta = {
   title: "Example/Search  Input",
-  component: mySearchInput,
+  component: ZDSSearchInput,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof mySearchInput>;
+} satisfies Meta<typeof ZDSSearchInput>;
 
 export default meta;
-type Story = StoryObj<typeof mySearchInput>;
+type Story = StoryObj<typeof ZDSSearchInput>;
 
 // AIDA search input
 export const AIDASearchInput: Story = {

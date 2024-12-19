@@ -1,13 +1,13 @@
 // Table.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import MyTable from "./myTable";
+import ZDSTable from "./ZDSTable";
 import { data, headers } from "./data";
 
 // Meta configuration for the MUI Tables stories
-const meta: Meta<typeof MyTable> = {
+const meta: Meta<typeof ZDSTable> = {
   title: "Example/Table/MUI Tables",
-  component: MyTable,
+  component: ZDSTable,
   parameters: {
     layout: "centered",
   },
@@ -38,7 +38,7 @@ const meta: Meta<typeof MyTable> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof MyTable>;
+type Story = StoryObj<typeof ZDSTable>;
 
 // Default MUI Table story
 export const DefaultTable: Story = {
