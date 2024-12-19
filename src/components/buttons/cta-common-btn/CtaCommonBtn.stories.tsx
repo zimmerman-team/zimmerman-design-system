@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { ExplorerLargeCtaIcon } from "../../../assets/vectors/jsx/ExplorerLargeCtaIcon";
+import { ExplorerLargeCtaIcon } from "../../../assets/AIDA/jsx/ExplorerLargeCtaIcon";
 
 import { CtaCommonBtn } from ".";
 import { withRouter } from "storybook-addon-remix-react-router";
