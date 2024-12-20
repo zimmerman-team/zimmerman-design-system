@@ -2,7 +2,8 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { withRouter } from "storybook-addon-remix-react-router";
 import { ZDSFormComponent } from "./index";
-import { ArrowDown } from "./data";
+import { ArrowDown } from "./const";
+import data from "./data.json";
 
 const meta = {
   title: "Example/Dropdown/MUI-FormControl",
@@ -22,11 +23,7 @@ export const AIDAPrimary: StoryType = {
   args: {
     id: "select-field",
     onChange: () => {},
-    options: [
-      { label: "Option 1", value: "option-1" },
-      { label: "Option 2", value: "option-2" },
-      { label: "Option 3", value: "option-3" },
-    ],
+    options: data.primarySelect.options,
     value: "option-1",
   },
   parameters: {
@@ -47,10 +44,7 @@ export const AIDAOutlined: StoryType = {
   args: {
     id: "select-field",
     onChange: () => {},
-    options: Array.from({ length: 50 }, (_, index) => ({
-      label: `Option ${index + 1}`,
-      value: `option-${index + 1}`,
-    })),
+    options: data.numberedSelect.options,
     value: "option-1",
     variant: "outlined",
   },
@@ -72,20 +66,7 @@ export const AIDASelectMonth: StoryType = {
   args: {
     id: "select-month",
     onChange: () => {},
-    options: [
-      { label: "January", value: "january" },
-      { label: "February", value: "february" },
-      { label: "March", value: "march" },
-      { label: "April", value: "april" },
-      { label: "May", value: "may" },
-      { label: "June", value: "june" },
-      { label: "July", value: "july" },
-      { label: "August", value: "august" },
-      { label: "September", value: "september" },
-      { label: "October", value: "october" },
-      { label: "November", value: "november" },
-      { label: "December", value: "december" },
-    ],
+    options: data.monthSelect.options,
     IconComponent: (props) => <ArrowDown {...props} stroke="black" />,
     value: "january",
     variant: "outlined",
@@ -110,11 +91,7 @@ export const MultipleSelection: StoryType = {
   args: {
     id: "select-field-multiple",
     onChange: () => {},
-    options: [
-      { label: "Option 1", value: "option-1" },
-      { label: "Option 2", value: "option-2" },
-      { label: "Option 3", value: "option-3" },
-    ],
+    options: data.primarySelect.options,
     value: [],
     label: "Multiple Select",
     placeholder: "Select options",
@@ -129,11 +106,7 @@ export const CustomStyles: StoryType = {
   args: {
     id: "select-field-custom-styles",
     onChange: () => {},
-    options: [
-      { label: "Option 1", value: "option-1" },
-      { label: "Option 2", value: "option-2" },
-      { label: "Option 3", value: "option-3" },
-    ],
+    options: data.primarySelect.options,
     value: [],
     label: "Custom Styles Select",
     placeholder: "Select an option",
@@ -159,11 +132,7 @@ export const WithIconComponent: StoryType = {
   args: {
     id: "select-field-icon",
     onChange: () => {},
-    options: [
-      { label: "Option 1", value: "option-1" },
-      { label: "Option 2", value: "option-2" },
-      { label: "Option 3", value: "option-3" },
-    ],
+    options: data.primarySelect.options,
     value: [],
     label: "Select with Custom Icon",
     placeholder: "Select an option",

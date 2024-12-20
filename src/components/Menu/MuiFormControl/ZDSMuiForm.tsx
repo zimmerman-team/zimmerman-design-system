@@ -4,36 +4,8 @@ import { MenuItem } from "@mui/material";
 import { FormControl } from "@mui/material";
 import { Select } from "@mui/material";
 import { Typography } from "@mui/material";
-import { SelectChangeEvent } from "@mui/material";
-import { SxProps } from "@mui/material";
 import { colors } from "../../../theme";
-
-interface FormControlProps {
-  fullwidth?: boolean;
-  sx?: SxProps;
-  variant?: string; //outlined & standard
-  height?: string;
-  width?: string;
-  fontweight?: string;
-  padding?: string;
-  borderColor?: string;
-  fontWeight?: string;
-}
-
-interface SelectFieldProps extends FormControlProps {
-  id: string;
-  value: string | string[];
-  name?: string;
-  multiple?: boolean;
-  IconComponent?: React.ElementType;
-  labelId?: string;
-  variant?: "outlined" | "standard";
-  onChange?: (event: SelectChangeEvent) => void;
-  options: { value: string; label: string | React.ReactNode }[];
-  label?: string;
-  width?: string;
-  placeholder?: string;
-}
+import { SelectFieldProps } from "./interface";
 
 export default function ZDSMuiForm(props: Readonly<SelectFieldProps>) {
   const { id, options } = props;
