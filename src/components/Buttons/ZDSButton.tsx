@@ -4,85 +4,8 @@ import React, { ElementType } from "react";
 import { SxProps, Theme } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-
-// Add size type definition
-type ButtonSize = "small" | "medium" | "large";
-
-/**
- * Button component props
- */
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  gap?: string;
-  label?: string;
-  component?: ElementType;
-  expandable?: boolean;
-  link?: string;
-  display?: string;
-  borderRadius?: string;
-  textTransform?: string;
-  opacity?: string;
-  visibility?: string;
-  ariaLabel?: string;
-  alignItems?: string;
-  variant?: "contained" | "outlined" | "text";
-  background?: string;
-  icon?: {
-    component: React.ReactNode;
-    position: "left" | "right";
-  };
-  color?: string;
-  padding?: string;
-  width?: string;
-  fontSize?: string;
-  fontWeight?: string;
-  lineHeight?: string;
-  to?: string;
-  border?: string;
-  height?: string;
-  justifyContent?: string;
-  right?: string;
-  zIndex?: string;
-  position?: string;
-  transition?: string;
-  textAlign?: string;
-  css?: {
-    "&:hover"?: {
-      backgroundColor?: string;
-      color?: string;
-      cursor?: string;
-      fontWeight?: string;
-      background?: string;
-    };
-  };
-  borderColor?: string;
-  size?: ButtonSize;
-}
-
-// Define size configurations
-const sizeStyles: Record<
-  ButtonSize,
-  {
-    padding: string;
-    height: string;
-    fontSize: string;
-  }
-> = {
-  small: {
-    padding: "4px 12px",
-    height: "32px",
-    fontSize: "14px",
-  },
-  medium: {
-    padding: "8px 16px",
-    height: "40px",
-    fontSize: "16px",
-  },
-  large: {
-    padding: "12px 24px",
-    height: "48px",
-    fontSize: "18px",
-  },
-};
+import ButtonProps from "./interface";
+import { sizeStyles } from "./const";
 
 /**
  * Button component props
