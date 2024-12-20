@@ -1,12 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-<<<<<<< Updated upstream:src/components/Menu/MuiMenu/ZDSDropdown.stories.tsx
 import MyDropdown from "./ZDSDropdown";
-import { colors } from "../../../theme";
-=======
-import MyDropdown from "./myDropdown";
 import { colors } from "theme";
->>>>>>> Stashed changes:src/components/Menu/MuiMenu/mydropdown.stories.tsx
 import IconButton from "@mui/material/IconButton";
 import MenuRounded from "@mui/icons-material/MenuRounded";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";

@@ -5,13 +5,8 @@ import { useNavigate } from "react-router-dom";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import ArrowOutward from "@mui/icons-material/ArrowOutward";
-<<<<<<< Updated upstream
-import { CtaCommonBtnProps, ZDSAidaCtaCommonBtnVariantStyles } from "./data";
-import { Color } from "@mui/material";
-=======
-import { CtaCommonBtnVariantStyles } from "./data";
+import { ZDSAidaCtaCommonBtnVariantStyles } from "./data";
 import { CtaCommonBtnProps } from "./data";
->>>>>>> Stashed changes
 
 export const ZDSAidaCtaCommonBtn: React.FC<CtaCommonBtnProps> = (
   props: CtaCommonBtnProps

@@ -5,6 +5,9 @@
     "outDir": "dist",
     "declarationDir": "dist/types",
     "baseUrl": "./src",
+    "paths": {
+      "theme/*": ["theme/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
