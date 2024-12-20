@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import LocationIcon from "@mui/icons-material/LocationOn";
-import { GrantCardProps } from "./data";
+import { GrantCardProps } from "./interface";
 
 export const ZDSGrantCard: React.FC<GrantCardProps> = (
   props: GrantCardProps
