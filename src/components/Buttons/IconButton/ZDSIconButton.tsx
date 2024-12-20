@@ -2,33 +2,8 @@
 
 import React from "react";
 import IconButton from "@mui/material/IconButton";
-
-/**
- * IconButton component props
- */
-interface IconButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  gap?: string;
-  label?: string;
-  color?: string;
-  padding?: string;
-  fontSize?: string;
-  fontFamily?: string;
-  height?: string;
-  size?: "small" | "medium" | "large" | string;
-  marginRight?: string;
-  marginLeft?: string;
-  ariaLabel?: string;
-  textAlign?: "center" | "left" | "right";
-  children?: React.ReactNode;
-  width?: string;
-  borderRadius: "rounded" | "sharp" | "circle" | string;
-  boxShadow?: string;
-  datacy?: string;
-  border?: string;
-  background?: string;
-}
-
+import { radiusSize } from "./const";
+import { IconButtonProps } from "./interface";
 /**
  * IconButton component props
  */
@@ -52,15 +27,6 @@ export default function ZDSIconButton(props: Readonly<IconButtonProps>) {
     background,
     ...otherProps // HTML5 button attributes
   } = props;
-
-  /**
-   * Predefined radius sizes as options for the border radius
-   */
-  const radiusSize: { [key: string]: string } = {
-    rounded: "30px",
-    sharp: "5px",
-    circle: "50%",
-  };
 
   /**
    * Return the IconButton component
