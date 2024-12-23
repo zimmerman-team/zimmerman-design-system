@@ -4,46 +4,7 @@ import InputBase from "@mui/material/InputBase";
 import Box from "@mui/material/Box";
 import colors from "theme/colorsSeaerchInput";
 import { SxProps, Theme } from "@mui/material";
-
-interface Boxprops {
-  icon?: React.ReactNode;
-  placeholder?: string;
-  gap?: string;
-  showBorder?: boolean;
-  fullWidth?: boolean;
-  value?: string;
-  shape?: "rounded" | "sharp" | "circle";
-  background?: string;
-  padding?: string;
-  width?: string;
-  display?: string;
-  alignItems?: string;
-  border?: string;
-  borderRadius?: string;
-  position?: string;
-}
-interface SearchInputProps extends Boxprops {
-  // InputBase props
-  inputWidth?: string;
-  inputBorder?: string;
-  inputOutline?: string;
-  inputBackground?: string;
-  inputLineHeight?: string;
-  inputFontSize?: string | number;
-  inputPlaceholderFontSize?: string;
-  inputColor?: string;
-  inputBorderRadius?: string | number;
-  inputBoxShadow?: string;
-  inputOpacity?: number;
-  inputFontWeight?: number;
-  startAdornment?: React.ReactNode;
-  endAdornment?: React.ReactNode;
-  onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  ariaLabel?: string;
-  inputpadding?: string;
-}
+import SearchInputProps from "./interface";
 
 export function ZDSSearchInput(props: Readonly<SearchInputProps>) {
   const {
