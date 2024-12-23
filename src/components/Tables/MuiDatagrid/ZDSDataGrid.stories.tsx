@@ -1,25 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import ZDSDataGrid from "./ZDSDataGrid";
-import { GridToolbarContainer, GridToolbarQuickFilter } from "@mui/x-data-grid";
-import { columns, rows } from "./data";
-
-// Add at the top of datagrid.stories.tsx
-const BORDER_STYLES = {
-  RED: "2px solid red",
-  BLUE: "2px solid blue",
-} as const;
-
-// Custom toolbar component for the DataGrid
-const CustomToolbar = () => (
-  <GridToolbarContainer>
-    <GridToolbarQuickFilter />
-    <button>Custom Filter</button>
-    <button>Custom Add File</button>
-    <button>Custom Columns</button>
-    <button>Custom Sort</button>
-  </GridToolbarContainer>
-);
+import columns from "./data/columns.json";
+import rows from "./data/rows.json";
+import { CustomToolbar } from "./const";
 
 // Meta configuration for the DataGrid stories
 const meta: Meta<typeof ZDSDataGrid> = {
@@ -66,8 +50,8 @@ export const DefaultDataGrid: Story = {
       columnHeaderTitleColor: "#333",
       rowHoverBackground: "#f0f0f0",
       cellFontSize: "14px",
-      cellFocusOutline: BORDER_STYLES.BLUE,
-      cellActiveOutline: BORDER_STYLES.RED,
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
     },
     sx: {
       backgroundColor: "#f0f0f0",
@@ -90,8 +74,8 @@ export const DataGridWithCustomToolbar: Story = {
       columnHeaderTitleColor: "#333",
       rowHoverBackground: "#f0f0f0",
       cellFontSize: "14px",
-      cellFocusOutline: BORDER_STYLES.BLUE,
-      cellActiveOutline: BORDER_STYLES.RED,
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
     },
     sx: {
       backgroundColor: "#f0f0f0",
@@ -128,8 +112,8 @@ export const DataGridWithCheckboxSelection: Story = {
       columnHeaderTitleColor: "#333",
       rowHoverBackground: "#f0f0f0",
       cellFontSize: "14px",
-      cellFocusOutline: BORDER_STYLES.BLUE,
-      cellActiveOutline: BORDER_STYLES.RED,
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
     },
     sx: {
       backgroundColor: "#f0f0f0",
@@ -153,8 +137,8 @@ export const DataGridWithPagination: Story = {
       columnHeaderTitleColor: "#333",
       rowHoverBackground: "#f0f0f0",
       cellFontSize: "14px",
-      cellFocusOutline: BORDER_STYLES.BLUE,
-      cellActiveOutline: BORDER_STYLES.RED,
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
     },
     sx: {
       backgroundColor: "#f0f0f0",
@@ -179,8 +163,8 @@ export const DataGridWithSorting: Story = {
       columnHeaderTitleColor: "#333",
       rowHoverBackground: "#f0f0f0",
       cellFontSize: "14px",
-      cellFocusOutline: BORDER_STYLES.BLUE,
-      cellActiveOutline: BORDER_STYLES.RED,
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
     },
     sx: {
       backgroundColor: "#f0f0f0",
@@ -206,8 +190,8 @@ export const DataGridWithFiltering: Story = {
       columnHeaderTitleColor: "#333",
       rowHoverBackground: "#f0f0f0",
       cellFontSize: "14px",
-      cellFocusOutline: BORDER_STYLES.BLUE,
-      cellActiveOutline: BORDER_STYLES.RED,
+      cellFocusOutline: "2px solid blue",
+      cellActiveOutline: "2px solid red",
     },
     sx: {
       backgroundColor: "#f0f0f0",

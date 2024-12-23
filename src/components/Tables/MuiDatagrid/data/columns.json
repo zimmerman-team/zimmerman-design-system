@@ -1,0 +1,12 @@
+[
+    { "field": "id", "headerName": "ID", "width": 90 },
+    { "field": "name", "headerName": "Name", "width": 150 },
+    { "field": "age", "headerName": "Age", "width": 110 },
+    { "field": "country", "headerName": "Country", "width": 150 },
+    { "field": "occupation", "headerName": "Occupation", "width": 150 },
+    { "field": "company", "headerName": "Company", "width": 150 },
+    { "field": "department", "headerName": "Department", "width": 150 },
+    { "field": "salary", "headerName": "Salary", "width": 150 },
+    { "field": "experience", "headerName": "Experience", "width": 150 },
+    { "field": "education", "headerName": "Education", "width": 150 }
+  ]
