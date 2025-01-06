@@ -1,0 +1,13 @@
+[
+    { "headerId": "Name", "label": "Name" },
+    { "headerId": "Age", "label": "Age" },
+    { "headerId": "Country", "label": "Country" },
+    { "headerId": "Occupation", "label": "Occupation" },
+    { "headerId": "Company", "label": "Company" },
+    { "headerId": "Department", "label": "Department" },
+    { "headerId": "Salary", "label": "Salary" },
+    { "headerId": "Experience", "label": "Experience" },
+    { "headerId": "Education", "label": "Education" },
+    { "headerId": "Skills", "label": "Skills" },
+    { "headerId": "Projects", "label": "Projects" }
+  ]
