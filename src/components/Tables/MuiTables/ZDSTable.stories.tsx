@@ -2,7 +2,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import ZDSTable from "./ZDSTable";
-import { data, headers } from "./data";
+import data from "./data/sampledata.json";
+import headers from "./data/sampleheaders.json";
+import AidaGenericData from "./data/AidaGeneriTabledata.json";
+import { SAMPLE_LOCATION_COLUMNS } from "./const";
 
 // Meta configuration for the MUI Tables stories
 const meta: Meta<typeof ZDSTable> = {
@@ -114,6 +117,36 @@ export const OpenAidActivitiesTable: Story = {
       {
         type: "link",
         url: "https://www.figma.com/design/uZX8k1fv1MfzGTEBXuvjeV/MFA---Main-Design-2.0?node-id=6305-222433&t=tqOyzQnwJakGTFif-4",
+      },
+    ],
+  },
+};
+
+export const AidaGenericTable: Story = {
+  args: {
+    tableId: "aida-generic-table",
+    maxHeight: "500px",
+    headers: SAMPLE_LOCATION_COLUMNS,
+    headPosition: "sticky",
+    data: AidaGenericData,
+    headerTextStyle: {
+      display: "flex",
+      alignItems: "center",
+      gap: "5px",
+      variant: "body2",
+      fontSize: "12px",
+      fontWeight: 700,
+    },
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2183-273894",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=2183-273894",
       },
     ],
   },

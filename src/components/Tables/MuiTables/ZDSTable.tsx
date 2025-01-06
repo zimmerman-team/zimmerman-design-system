@@ -2,82 +2,22 @@
 
 import React from "react";
 import TableBody from "@mui/material/TableBody";
+import get from "lodash/get";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import { TablePagination } from "@mui/material";
+import { TablePagination, Typography } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import Table, { TableProps as MuiTableProps } from "@mui/material/Table";
+import Table from "@mui/material/Table";
 import orderBy from "lodash/orderBy";
-
-// Table header props
-interface Header {
-  id: string; // Unique identifier for the header
-  label: string; // Display label for the header
-}
-
-// Interface for container props
-interface ContainerProps {
-  componentWidth?: string; // Width of the table container
-  componentOverflow?: string; // Overflow property of the table container
-  componentPadding?: string; // Padding of the table container
-  componentBorderRadius?: string; // Border radius of the table container
-  componentBackground?: string; // Background color of the table container
-  componentBoxShadow?: string; // Box shadow of the table container
-}
-
-// Interface for Table Header props
-interface TableHeadProps {
-  headCursor?: string;
-  headFontWeight?: string;
-  headTextWrap?: string;
-  headBorderStyle?: string;
-  headPosition?: "static" | "relative" | "absolute" | "sticky" | "fixed";
-  headColor?: string;
-}
-// Interface for Table Body props
-interface TableBodyProps {
-  bodyColor?: string; // Body color of the table body
-}
-// Interface for Pagination props
-interface PaginationProps {
-  pagination?: boolean;
-  page?: number;
-  rowsPerPage?: number;
-  onPageChange?: (page: number) => void;
-  sortable?: boolean;
-  sortKey?: string;
-  sortDirection?: "asc" | "desc";
-  onSortChange?: (columnId: string, direction: "asc" | "desc") => void;
-  onRowExpand?: (rowIndex: number) => void;
-  paginationDisplay?: string;
-  paginationBorderStyle?: string;
-  paginationPadding?: string;
-  paginationJustifyContent?: string;
-  paginationToolbarMarginLeft?: string;
-}
-
-// Interface for Table props
-interface TableProps
-  extends MuiTableProps,
-    ContainerProps,
-    PaginationProps,
-    TableHeadProps,
-    TableBodyProps {
-  data: Array<{ [key: string]: string | number }>; // Array of table data
-  headers: Header[]; // Array of table headers
-  rowHeight?: number; // Height of the table rows
-  borderColor?: string; // Border color of the table
-  hover?: boolean; // Whether to enable row hover effect
-  sortIndicatorColor?: string; // Color of the sort indicator
-  minWidth?: string; // Min width of the table
-}
+import TableProps from "./interface";
 
 // Table component
 export default function MyTable({
   data,
+  tableId,
   headers,
   rowHeight = 50,
   borderColor = "#ddd",
@@ -111,6 +51,8 @@ export default function MyTable({
   paginationJustifyContent = "flex-start",
   paginationToolbarMarginLeft = "0",
   minWidth = "1500px",
+  maxHeight,
+  headerTextStyle,
   ...otherProps
 }: Readonly<TableProps>) {
   // State for pagination
@@ -171,14 +113,16 @@ export default function MyTable({
       }}
     >
       <Box sx={{ overflowX: "auto" }}>
-        <TableContainer>
+        <TableContainer id={tableId} sx={{ maxHeight: maxHeight }}>
           <Table {...otherProps} sx={{ minWidth: minWidth }}>
             <TableHead>
               <TableRow>
                 {headers.map((header) => (
                   <TableCell
-                    key={header.id}
-                    onClick={() => handleSortChange(header.id)}
+                    key={header.headerId}
+                    onClick={() => handleSortChange(header.headerId)}
+                    align={header.headerAlign ?? "left"}
+                    width={header.headerWidth}
                     style={{
                       cursor: headCursor,
                       fontWeight: headFontWeight,
@@ -188,12 +132,19 @@ export default function MyTable({
                       color: headColor || sortIndicatorColor,
                     }}
                   >
-                    {header.label}
-                    {sortable && currentSortKey === header.id && (
-                      <span style={{ color: sortIndicatorColor }}>
-                        {currentSortDirection === "asc" ? " ▲" : " ▼"}
-                      </span>
-                    )}
+                    <Typography
+                      sx={{
+                        ...headerTextStyle,
+                      }}
+                    >
+                      {header.label}
+                      {/* {column.headerInfo && <InfoIcon width={14} height={14} />} */}
+                      {sortable && currentSortKey === header.headerId && (
+                        <span style={{ color: sortIndicatorColor }}>
+                          {currentSortDirection === "asc" ? " ▲" : " ▼"}
+                        </span>
+                      )}
+                    </Typography>
                   </TableCell>
                 ))}
               </TableRow>
@@ -214,10 +165,19 @@ export default function MyTable({
                   >
                     {headers.map((header) => (
                       <TableCell
-                        key={header.id}
+                        key={header.headerId}
                         style={{ borderColor, color: bodyColor }}
                       >
-                        {row[header.id]}
+                        {header.renderCell ? (
+                          header.renderCell({
+                            row,
+                            value: get(row, header.headerId),
+                          })
+                        ) : (
+                          <Typography variant="body2" fontSize={"12px"}>
+                            {get(row, header.headerId)}
+                          </Typography>
+                        )}
                       </TableCell>
                     ))}
                   </TableRow>
