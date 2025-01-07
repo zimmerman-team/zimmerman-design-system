@@ -27,7 +27,7 @@ const config: StorybookConfig = {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
-        theme: path.resolve(__dirname, "../src/theme"),
+        theme: path.resolve(__dirname, "../src/app/theme"),
         assets: path.resolve(__dirname, "../src/assets"),
         app: path.resolve(__dirname, "../src/app"),
       };

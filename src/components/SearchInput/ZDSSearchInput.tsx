@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import InputBase from "@mui/material/InputBase";
+import { colors } from "theme";
 import Box from "@mui/material/Box";
-import colors from "theme/colorsSeaerchInput";
-import { SxProps, Theme } from "@mui/material";
 import SearchInputProps from "./interface";
+import InputBase from "@mui/material/InputBase";
+import { SxProps, Theme } from "@mui/material";
 
 export function ZDSSearchInput(props: Readonly<SearchInputProps>) {
   const {

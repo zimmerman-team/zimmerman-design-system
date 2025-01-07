@@ -1,12 +1,12 @@
 import React from "react";
-import type { Meta, StoryObj } from "@storybook/react";
-import { ZDSSearchInput } from "./ZDSSearchInput";
-import { ReactComponent as ExplorerSearchIcon } from "../../assets/OpenAid/vectors/ExplorerSearchIcon.svg";
-import colors from "../../theme/colorsSeaerchInput";
+import { colors } from "theme";
 import { Box } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import IconButton from "@mui/material/IconButton";
+import { ZDSSearchInput } from "./ZDSSearchInput";
+import SearchIcon from "@mui/icons-material/Search";
+import type { Meta, StoryObj } from "@storybook/react";
+import { ReactComponent as ExplorerSearchIcon } from "assets/OpenAid/vectors/ExplorerSearchIcon.svg";
 
 const meta = {
   title: "Example/Search  Input",

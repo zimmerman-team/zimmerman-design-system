@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
+import { colors } from "theme";
 import Button from "./ZDSButton";
-import { ReactComponent as GoogleIcon } from "assets/AIDA/vectors/HeaderSignInViewGoogle.svg";
+import { fn } from "@storybook/test";
+import React, { useState } from "react";
+import { Add } from "@mui/icons-material";
+import { Share } from "@mui/icons-material";
+import { ArrowForward } from "@mui/icons-material";
+import LogoutIcon from "@mui/icons-material/Logout";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import ExpandLess from "@mui/icons-material/ExpandLess";
-import colors from "../../theme/colors";
-import React, { useState } from "react";
-import LogoutIcon from "@mui/icons-material/Logout";
-import { Add } from "@mui/icons-material";
-import { ArrowForward } from "@mui/icons-material";
-import { Share } from "@mui/icons-material";
+import type { Meta, StoryObj } from "@storybook/react";
+import { ReactComponent as GoogleIcon } from "assets/AIDA/vectors/HeaderSignInViewGoogle.svg";
 
 /**
  * Storybook metadata for the Button component

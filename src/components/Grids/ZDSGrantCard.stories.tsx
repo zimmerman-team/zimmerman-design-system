@@ -1,6 +1,6 @@
 import React from "react";
-import type { Meta, StoryObj } from "@storybook/react";
 import { ZDSGrantCard } from "./ZDSGrantCard";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Example/Grid",

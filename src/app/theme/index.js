@@ -5,18 +5,24 @@ export const colors = {
   primary: {
     blue: "#002561",
     gray: "#F8F8F8",
-    black: "#000000",
     white: "#FFFFFF",
     lightBlue: "#82C9F0",
     lightBlueGray: "#4F6797",
+    black: "#000000",
   },
   secondary: {
+    lightGrey: "#f7f7f7",
+    iconGray: "#A1AEBD",
+    disableButton: "#EBEBEB",
     blueGrayLight: "#ECF1FA",
     blueGrayDark: "#BCC6D6",
     grayDark: "#888888",
     grayLight: "#E3E3E3",
     darkBlueGray: "#4F6797",
     midnightBlue: "#013B82",
+    red: "#ED6060",
+    darkRed: "#B23D3E",
+    grayText: "#626262",
   },
   graph: {
     green: {
@@ -136,282 +142,27 @@ export const colors = {
     section:
       "0px 1.446765661239624px 2.893531322479248px 0px rgba(97, 97, 97, 0.2)",
   },
+  text: {
+    title: "#0C162A",
+    body: "#454545",
+  },
+  shades: {
+    blue: {
+      100: "#ebf0fb",
+      200: "#9db6e9",
+      400: "#294c94",
+      500: "#182b54",
+      600: "#0c162a",
+    },
+    green: {
+      100: "#e9f5f4",
+      200: "#66bcb9",
+      400: "#00726e",
+      500: "#004845",
+      600: "#001d1c",
+    },
+  },
 };
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: colors.primary.blue,
-    },
-    secondary: {
-      main: colors.secondary.blueGrayLight,
-    },
-    error: {
-      main: red.A400,
-    },
-  },
-  typography: {
-    fontFamily: "Inter, sans-serif",
-    h1: {
-      fontSize: "80px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    h2: {
-      fontSize: "60px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    h3: {
-      fontSize: "40px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    h4: {
-      fontSize: "32px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    h5: {
-      fontSize: "24px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    h6: {
-      fontSize: "18px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    subtitle1: {
-      fontSize: "16px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    subtitle2: {
-      fontSize: "14px",
-      fontWeight: "400",
-      color: colors.primary.black,
-    },
-    body1: {
-      fontSize: "16px",
-      fontWeight: "400",
-      color: colors.primary.black,
-    },
-    body2: {
-      fontSize: "14px",
-      fontWeight: "400",
-      color: colors.primary.black,
-    },
-    button: {
-      fontSize: "14px",
-      fontWeight: "700",
-      color: colors.primary.black,
-    },
-    overline: {
-      fontSize: "12px",
-      fontWeight: "400",
-      textTransform: "none",
-      color: colors.primary.black,
-    },
-  },
-  components: {
-    MuiAppBar: {
-      styleOverrides: {
-        root: {
-          boxShadow: "none",
-          borderBottom: "1px solid #000",
-          background: colors.primary.white,
-        },
-      },
-    },
-    MuiToolbar: {
-      styleOverrides: {
-        root: {
-          height: "90px",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          background: colors.primary.white,
-          "@media (min-width: 920px)": {
-            padding: 0,
-          },
-          "@media (max-width: 1280px)": {
-            width: "100vw",
-          },
-          "@media (max-width: 920px)": {
-            padding: "0 48px",
-          },
-          "@media (max-width: 768px)": {
-            padding: "0 24px",
-          },
-        },
-      },
-    },
-    MuiPopover: {
-      styleOverrides: {
-        paper: {
-          borderRadius: 0,
-          boxShadow: "none",
-        },
-      },
-    },
-    MuiAccordion: {
-      styleOverrides: {
-        root: {
-          width: "100%",
-          borderRadius: 0,
-          boxShadow: "none",
-          borderBottom: "1px solid #CFD4DA",
-          "&:before": {
-            display: "none",
-          },
-          "&.Mui-expanded": {
-            margin: 0,
-            paddingBottom: "10px",
-          },
-          "&:last-of-type": {
-            borderBottomStyle: "none",
-          },
-        },
-      },
-    },
-    MuiAccordionSummary: {
-      styleOverrides: {
-        root: {
-          padding: 0,
-          minHeight: "30px",
-          maxHeight: "50px",
-          flexDirection: "row",
-          "&.Mui-expanded": {
-            minHeight: "30px",
-            maxHeight: "30px",
-          },
-        },
-        content: {
-          margin: 0,
-          "&.Mui-expanded": {
-            margin: 0,
-          },
-        },
-      },
-    },
-    MuiAccordionDetails: {
-      styleOverrides: {
-        root: {
-          margin: 0,
-          padding: 0,
-          display: "flex",
-          ".MuiGrid-container": {
-            width: "calc(100% - 50px)",
-          },
-        },
-      },
-    },
-    MuiFormControlLabel: {
-      styleOverrides: {
-        root: {
-          padding: "4px 0",
-          // userSelect: "none",
-          alignItems: "flex-start",
-        },
-      },
-    },
-    MuiCheckbox: {
-      styleOverrides: {
-        root: {
-          color: "#000 !important",
-          padding: "0 4px 0 0",
-        },
-      },
-    },
-    MuiTable: {
-      styleOverrides: {
-        root: {
-          "*": {
-            borderColor: colors.secondary.grayLight,
-          },
-        },
-      },
-    },
-    MuiTableHead: {
-      styleOverrides: {
-        root: {
-          padding: "10px 16px",
-        },
-      },
-    },
-    MuiTableCell: {
-      styleOverrides: {
-        root: {
-          padding: "10px 16px",
-        },
-        head: {
-          cursor: "pointer",
-          fontWeight: "700",
-          textWrap: "nowrap",
-          borderStyle: "none",
-          position: "relative",
-          color: colors.primary.blue,
-        },
-        body: {
-          color: colors.primary.blue,
-        },
-      },
-    },
-    MuiTablePagination: {
-      styleOverrides: {
-        root: {
-          display: "flex",
-          borderStyle: "none",
-          padding: "10px 16px",
-          justifyContent: "flex-start",
-        },
-        toolbar: {
-          marginLeft: 0,
-        },
-      },
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          color: colors.primary.black,
-        },
-        outlined: {
-          fontWeight: "400",
-          padding: "2px 12px",
-          textTransform: "none",
-          borderColor: "#DFE3E5",
-        },
-      },
-    },
-    MuiTooltip: {
-      styleOverrides: {
-        arrow: {
-          color: colors.primary.white,
-        },
-        tooltip: {
-          fontSize: "12px",
-          fontWeight: "400",
-          fontFamily: "Inter",
-          borderRadius: "4px",
-          color: colors.primary.black,
-          background: colors.primary.white,
-          boxShadow: "0px 2px 7px 0px rgba(0, 0, 0, 0.12)",
-        },
-      },
-    },
-    MuiIcon: {
-      styleOverrides: {
-        colorPrimary: {
-          color: colors.primary.black,
-        },
-      },
-    },
-  },
-});
-
-export default theme;
-
 // COMMON
 const WHITE = "#fff";
 const BLACK = "#000";
@@ -461,8 +212,6 @@ const GRAPH_COLOR_20 = "#97FF46";
 const GRAPH_COLOR_21 = "#60FF46";
 const GRAPH_COLOR_22 = "#73D3CD";
 const GRAPH_COLOR_23 = "#11AD6B";
-
-const GRADIENT = "linear-gradient(90deg, #cdd4df 0%, #252c34 100%)";
 
 export const appColors = {
   COMMON: {
@@ -930,3 +679,222 @@ export const appColors = {
     ],
   },
 };
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: colors.primary.blue,
+    },
+    secondary: {
+      main: colors.secondary.blueGrayLight,
+    },
+    error: {
+      main: red.A400,
+    },
+  },
+  typography: {
+    fontFamily: "Finlandica",
+    h1: {
+      fontSize: "64px",
+      fontWeight: "400",
+      color: colors.primary.blue,
+    },
+    h2: {
+      fontSize: "48px",
+      fontWeight: "400",
+      color: colors.primary.blue,
+    },
+    h3: {
+      fontSize: "36px",
+      fontWeight: "400",
+      color: colors.primary.blue,
+    },
+    h4: {
+      fontSize: "32px",
+      fontWeight: "700",
+      color: colors.primary.blue,
+    },
+    h5: {
+      fontSize: "24px",
+      fontWeight: "700",
+      color: colors.primary.blue,
+    },
+    h6: {
+      fontSize: "18px",
+      fontWeight: "700",
+      color: colors.primary.blue,
+    },
+    subtitle1: {
+      fontSize: "16px",
+      fontWeight: "700",
+      color: colors.primary.blue,
+    },
+    subtitle2: {
+      fontSize: "14px",
+      fontWeight: "700",
+      color: colors.primary.blue,
+    },
+    body1: {
+      fontSize: "16px",
+      fontWeight: "400",
+      color: colors.primary.blue,
+    },
+    body2: {
+      fontSize: "14px",
+      fontWeight: "400",
+      color: colors.primary.blue,
+    },
+    button: {
+      fontSize: "14px",
+      fontWeight: "700",
+      color: colors.primary.blue,
+    },
+    overline: {
+      fontSize: "12px",
+      fontWeight: "400",
+      textTransform: "none",
+      color: colors.primary.blue,
+    },
+  },
+  components: {
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          height: "60px",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          "@media (min-width: 920px)": {
+            padding: 0,
+            marginLeft: "-55px",
+          },
+          "@media (max-width: 1280px)": {
+            width: "100vw",
+          },
+          "@media (max-width: 920px)": {
+            padding: "0 48px",
+          },
+          "@media (max-width: 768px)": {
+            padding: "0 24px",
+          },
+        },
+      },
+    },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: colors.primary.blue,
+        },
+      },
+    },
+    MuiPopover: {
+      styleOverrides: {
+        paper: {
+          borderRadius: "20px",
+          boxShadow: colors.shadows.main,
+        },
+      },
+    },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          width: "100%",
+          borderBottom: `3px solid ${colors.primary.gray}`,
+          "&:before": {
+            display: "none",
+          },
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          padding: 0,
+          minHeight: "50px",
+          flexDirection: "row",
+        },
+        content: {
+          margin: 0,
+        },
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          padding: 0,
+          display: "flex",
+          margin: "15px 0",
+          justifyContent: "flex-end",
+          ".MuiGrid-container": {
+            width: "calc(100% - 50px)",
+          },
+        },
+      },
+    },
+    MuiFormControlLabel: {
+      styleOverrides: {
+        root: {
+          padding: "4px 0",
+          userSelect: "none",
+          alignItems: "flex-start",
+        },
+      },
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          padding: "0 4px 0 0",
+        },
+      },
+    },
+    MuiTable: {
+      styleOverrides: {
+        root: {
+          "*": {
+            borderColor: colors.secondary.grayLight,
+          },
+        },
+      },
+    },
+    MuiTableHead: {
+      styleOverrides: {
+        root: {
+          padding: "10px 16px",
+        },
+      },
+    },
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+          padding: "10px 16px",
+        },
+        head: {
+          cursor: "pointer",
+          fontWeight: "700",
+          textWrap: "nowrap",
+          borderStyle: "none",
+          position: "relative",
+          color: colors.primary.blue,
+        },
+        body: {
+          color: colors.primary.blue,
+        },
+      },
+    },
+    MuiTablePagination: {
+      styleOverrides: {
+        root: {
+          display: "flex",
+          borderStyle: "none",
+          padding: "10px 16px",
+          justifyContent: "flex-start",
+        },
+        toolbar: {
+          marginLeft: 0,
+        },
+      },
+    },
+  },
+});
+
+export default theme;

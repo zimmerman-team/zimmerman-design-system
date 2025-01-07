@@ -6,7 +6,8 @@
     "declarationDir": "dist/types",
     "baseUrl": "./src",
     "paths": {
-      "theme/*": ["theme/*"]
+      "theme": ["app/theme/index.js"],
+       "assets":["app/assets"],
     },
     "lib": [
       "dom",

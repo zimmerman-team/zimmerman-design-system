@@ -1,11 +1,10 @@
-// Table.stories.tsx
-import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import ZDSTable from "./ZDSTable";
 import data from "./data/sampledata.json";
 import headers from "./data/sampleheaders.json";
-import AidaGenericData from "./data/AidaGeneriTabledata.json";
 import { SAMPLE_LOCATION_COLUMNS } from "./const";
+import type { Meta, StoryObj } from "@storybook/react";
+import AidaGenericData from "./data/AidaGeneriTabledata.json";
 
 // Meta configuration for the MUI Tables stories
 const meta: Meta<typeof ZDSTable> = {

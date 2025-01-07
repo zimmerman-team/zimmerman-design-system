@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { DataGrid } from "@mui/x-data-grid";
 import GridProps from "./interface";
+import { DataGrid } from "@mui/x-data-grid";
 
 // DataGrid component with custom styles and props
 export default function ZDSDataGrid({

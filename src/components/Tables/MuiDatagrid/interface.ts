@@ -1,6 +1,6 @@
+import { SxProps } from "@mui/system";
 import { DataGridProps } from "@mui/x-data-grid";
 import { GridSlotsComponent } from "@mui/x-data-grid";
-import { SxProps } from "@mui/system";
 
 //Css props that can be manipulated
 export interface CustomStyles {

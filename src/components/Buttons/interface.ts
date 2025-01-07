@@ -1,5 +1,5 @@
-import { ButtonSize } from "./types";
 import { ElementType } from "react";
+import { ButtonSize } from "./types";
 /**
  * Button component props
  */

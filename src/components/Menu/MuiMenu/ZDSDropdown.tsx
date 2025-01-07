@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import { SxProps } from "@mui/material";
 import { colors } from "theme";
-import Divider from "@mui/material/Divider";
+import Menu from "@mui/material/Menu";
 import MenuItemProps from "./interface";
 import { DropdownProps } from "./interface";
+import Divider from "@mui/material/Divider";
+import MenuItem from "@mui/material/MenuItem";
 
 export default function MyDropdown(props: Readonly<DropdownProps>) {
   const {

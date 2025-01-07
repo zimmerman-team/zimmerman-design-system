@@ -1,8 +1,8 @@
-import { ArrowRight } from "@mui/icons-material";
-import { Box, SxProps, TableCellProps, Typography } from "@mui/material";
-import { ReactComponent as ListIcon } from "../../../assets/AIDA/vectors/GenericListIcon.svg";
-import { CircleFlag } from "react-circle-flags";
 import { TableHeadProps } from "./interface";
+import { CircleFlag } from "react-circle-flags";
+import { Box, Typography } from "@mui/material";
+import { ArrowRight } from "@mui/icons-material";
+import { ReactComponent as ListIcon } from "assets/AIDA/vectors/GenericListIcon.svg";
 
 export const SAMPLE_LOCATION_COLUMNS: TableHeadProps[] = [
   {

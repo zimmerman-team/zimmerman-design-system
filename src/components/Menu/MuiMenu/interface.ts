@@ -1,7 +1,7 @@
 import { SxProps } from "@mui/material";
-import { MenuProps as MuiMenuProps } from "@mui/material/Menu";
 import { VerticalAlignment } from "./type";
 import { HorizontalAlignment } from "./type";
+import { MenuProps as MuiMenuProps } from "@mui/material/Menu";
 
 // MenuItemProps
 export default interface MenuItemProps {

@@ -1,11 +1,10 @@
 /** @jsxImportSource @emotion/react */
 
-import React, { ElementType } from "react";
-import { SxProps, Theme } from "@mui/material/styles";
-import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
-import ButtonProps from "./interface";
 import { sizeStyles } from "./const";
+import ButtonProps from "./interface";
+import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+import { SxProps, Theme } from "@mui/material/styles";
 
 /**
  * Button component props

@@ -1,4 +1,5 @@
-import colors from "theme/colors";
+import { colors } from "theme";
+
 export interface CtaCommonBtnProps {
   label: string;
   text?: string;

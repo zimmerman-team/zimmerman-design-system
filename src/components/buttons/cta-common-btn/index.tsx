@@ -1,12 +1,12 @@
 import React from "react";
-import colors from "theme/colors";
+import { colors } from "theme";
 import Box from "@mui/material/Box";
+import { CtaCommonBtnProps } from "./data";
 import { useNavigate } from "react-router-dom";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
-import ArrowOutward from "@mui/icons-material/ArrowOutward";
 import { ZDSAidaCtaCommonBtnVariantStyles } from "./data";
-import { CtaCommonBtnProps } from "./data";
+import ArrowOutward from "@mui/icons-material/ArrowOutward";
 
 export const ZDSAidaCtaCommonBtn: React.FC<CtaCommonBtnProps> = (
   props: CtaCommonBtnProps
