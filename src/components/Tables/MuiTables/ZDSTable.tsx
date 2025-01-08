@@ -15,7 +15,7 @@ import TableContainer from "@mui/material/TableContainer";
 import { TablePagination, Typography } from "@mui/material";
 
 // Table component
-export default function MyTable({
+export default function ZDSTable({
   data,
   tableId,
   headers,
