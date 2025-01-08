@@ -7,7 +7,7 @@ import { DropdownProps } from "./interface";
 import Divider from "@mui/material/Divider";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function MyDropdown(props: Readonly<DropdownProps>) {
+export default function ZDSDropdown(props: Readonly<DropdownProps>) {
   const {
     id,
     anchorElement,

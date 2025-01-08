@@ -138,7 +138,6 @@ export default function MyTable({
                       }}
                     >
                       {header.label}
-                      {/* {column.headerInfo && <InfoIcon width={14} height={14} />} */}
                       {sortable && currentSortKey === header.headerId && (
                         <span style={{ color: sortIndicatorColor }}>
                           {currentSortDirection === "asc" ? " ▲" : " ▼"}

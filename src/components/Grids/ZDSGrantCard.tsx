@@ -4,6 +4,7 @@ import Divider from "@mui/material/Divider";
 import { GrantCardProps } from "./interface";
 import Typography from "@mui/material/Typography";
 import LocationIcon from "@mui/icons-material/LocationOn";
+import { formatFinancialValue } from "utils/formatFinancialValue";
 
 export const ZDSGrantCard: React.FC<GrantCardProps> = (
   props: GrantCardProps
@@ -75,12 +76,6 @@ export const ZDSGrantCard: React.FC<GrantCardProps> = (
             {props.location}
           </Typography>
         </Box>
-        {/* <Box gap="4px" display="flex" alignItems="center">
-            <SignalCellularAltIcon fontSize="small" />
-            <Typography fontSize="12px" fontWeight="700">
-              {props.rating}
-            </Typography>
-          </Box> */}
       </Box>
       <Typography variant="body1" fontWeight="700">
         {props.number}
@@ -126,7 +121,7 @@ export const ZDSGrantCard: React.FC<GrantCardProps> = (
             Signed
           </Typography>
           <Typography fontSize="12px" letterSpacing="normal">
-            {/* {formatFinancialValue(props.signed)} */}
+            {formatFinancialValue(props.signed)}
           </Typography>
         </Box>
         <Box width="100%" display="flex" justifyContent="space-between">
@@ -134,7 +129,7 @@ export const ZDSGrantCard: React.FC<GrantCardProps> = (
             Disbursed · {props.percentage}%
           </Typography>
           <Typography fontSize="12px" letterSpacing="normal">
-            {/* {formatFinancialValue(props.disbursed)} */}
+            {formatFinancialValue(props.disbursed)}
           </Typography>
         </Box>
         <Box

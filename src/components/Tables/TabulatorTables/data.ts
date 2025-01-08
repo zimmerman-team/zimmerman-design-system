@@ -1,9 +1,7 @@
-import { TableDataItem } from "./types";
 import { financialFormatter } from "./const";
 import { cellBGColorFormatter } from "./const";
 import { CellComponent } from "tabulator-tables";
 import { ColumnDefinition } from "tabulator-tables";
-import { formatLocale } from "app/utils/formatLocale";
 import { TabulatorFull as Tabulator } from "tabulator-tables";
 
 export const TABLE_VARIATION_1_COLUMNS: ColumnDefinition[] = [

@@ -8,7 +8,7 @@ import { RowComponent } from "tabulator-tables";
 import "tabulator-tables/dist/css/tabulator.min.css";
 import { TabulatorFull as Tabulator } from "tabulator-tables";
 
-export default function TabulatorTable({
+export default function ZDSTabulatorTable({
   id,
   data,
   columns,
