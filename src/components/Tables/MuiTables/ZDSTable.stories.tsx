@@ -4,7 +4,7 @@ import data from "./data/sampledata.json";
 import headers from "./data/sampleheaders.json";
 import { SAMPLE_LOCATION_COLUMNS } from "./const";
 import type { Meta, StoryObj } from "@storybook/react";
-import AidaGenericData from "./data/AidaGeneriTabledata.json";
+import AidaGenericData from "./data/aidaGeneriTabledata.json";
 
 // Meta configuration for the MUI Tables stories
 const meta: Meta<typeof ZDSTable> = {

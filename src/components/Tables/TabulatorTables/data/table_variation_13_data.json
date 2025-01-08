@@ -1,0 +1,44 @@
+[
+    {
+      "component": "HIV/AIDS",
+      "grants": 593,
+      "signed": 29276661067.43,
+      "committed": 27230518396.57,
+      "disbursed": 26387750549.6
+    },
+    {
+      "component": "Malaria",
+      "grants": 380,
+      "signed": 21772422774.93,
+      "committed": 19601032601.56,
+      "disbursed": 18749842379.82
+    },
+    {
+      "component": "Tuberculosis",
+      "grants": 397,
+      "signed": 11188367142.65,
+      "committed": 10354246800.06,
+      "disbursed": 9728602404.67
+    },
+    {
+      "component": "HIV/TB",
+      "grants": 116,
+      "signed": 9872930982.46,
+      "committed": 8063100176.66,
+      "disbursed": 7063645064.53
+    },
+    {
+      "component": "RSSH",
+      "grants": 51,
+      "signed": 1823833440.67,
+      "committed": 1485211366.37,
+      "disbursed": 1258115789.13
+    },
+    {
+      "component": "Multi-Component",
+      "grants": 24,
+      "signed": 1770608991.38,
+      "committed": 1230893645.88,
+      "disbursed": 971523102.53
+    }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "name": "TB CARE AND PREVENTION",
+    "_children": [
+      {
+        "name": "Number of notified cases of all forms of TB (i.e. bacteriologically confirmed + clinically diagnosed), new and relapse cases",
+        "_children": [
+          {
+            "reversed": "No",
+            "geoCoverage": "National",
+            "cumulation": "Annually",
+            "baselineValue": "T:0.5%",
+            "baselineYear": "2018",
+            "baselineSource": "--",
+            "2020": [
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              }
+            ],
+            "2021": [
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TB CARE AND PREVENTION",
+    "_children": [
+      {
+        "name": "Number of notified cases of all forms of TB (i.e. bacteriologically confirmed + clinically diagnosed), new and relapse cases",
+        "_children": [
+          {
+            "reversed": "No",
+            "geoCoverage": "National",
+            "cumulation": "Annually",
+            "baselineValue": "T:0.5%",
+            "baselineYear": "2018",
+            "baselineSource": "--",
+            "2020": [
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              }
+            ],
+            "2021": [
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              },
+              {
+                "target": "T:0.5%",
+                "result": "T:0.5%",
+                "achievement": "100%"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

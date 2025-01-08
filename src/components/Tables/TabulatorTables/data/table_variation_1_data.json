@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Africa",
+    "2002": 100,
+    "2003": 120,
+    "2004": 140,
+    "2005": 160,
+    "HIV": 10,
+    "Tuberculosis": 20,
+    "Malaria": 30,
+    "Others": 40,
+    "_children": [
+      {
+        "name": "Eastern Africa",
+        "2002": 10,
+        "2003": 12,
+        "2004": 14,
+        "2005": 16,
+        "HIV": 1,
+        "Tuberculosis": 2,
+        "Malaria": 3,
+        "Others": 4,
+        "_children": [
+          {
+            "name": "Kenya",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          },
+          {
+            "name": "Uganda",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          }
+        ]
+      },
+      {
+        "name": "Western Africa",
+        "2002": 10,
+        "2003": 12,
+        "2004": 14,
+        "2005": 16,
+        "HIV": 1,
+        "Tuberculosis": 2,
+        "Malaria": 3,
+        "Others": 4,
+        "_children": [
+          {
+            "name": "Nigeria",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          },
+          {
+            "name": "Ghana",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Asia",
+    "2002": 100,
+    "2003": 120,
+    "2004": 140,
+    "2005": 160,
+    "HIV": 10,
+    "Tuberculosis": 20,
+    "Malaria": 30,
+    "Others": 40,
+    "_children": [
+      {
+        "name": "Eastern Asia",
+        "2002": 10,
+        "2003": 12,
+        "2004": 14,
+        "2005": 16,
+        "HIV": 1,
+        "Tuberculosis": 2,
+        "Malaria": 3,
+        "Others": 4,
+        "_children": [
+          {
+            "name": "China",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          },
+          {
+            "name": "Japan",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          }
+        ]
+      },
+      {
+        "name": "Southern Asia",
+        "2002": 10,
+        "2003": 12,
+        "2004": 14,
+        "2005": 16,
+        "HIV": 1,
+        "Tuberculosis": 2,
+        "Malaria": 3,
+        "Others": 4,
+        "_children": [
+          {
+            "name": "India",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          },
+          {
+            "name": "Pakistan",
+            "2002": 1,
+            "2003": 1.2,
+            "2004": 1.4,
+            "2005": 1.6,
+            "HIV": 0.1,
+            "Tuberculosis": 0.2,
+            "Malaria": 0.3,
+            "Others": 0.4
+          }
+        ]
+      }
+    ]
+  }
+]

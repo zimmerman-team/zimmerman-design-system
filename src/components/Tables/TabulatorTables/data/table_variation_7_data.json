@@ -1,0 +1,42 @@
+[
+  {
+    "description": "People on antiretroviral therapy for HIV",
+    "component": "HIV",
+    "result": 1965401
+  },
+  {
+    "description": "People with TB treated",
+    "component": "Tuberculosis",
+    "result": 1965401
+  },
+  {
+    "description": "Mosquito nets distributed",
+    "component": "Malaria",
+    "result": 10000000
+  },
+  {
+    "description": "People using pre-exposure prophylaxis",
+    "component": "HIV",
+    "result": 1000000
+  },
+  {
+    "description": "Other vulnerable populations reached with HIV prevention programs",
+    "component": "HIV",
+    "result": 100000
+  },
+  {
+    "description": "People in contact with TB patients received preventive therapy",
+    "component": "Tuberculosis",
+    "result": 100000
+  },
+  {
+    "description": "Rifampicin - and/or multidrug-resistant TB cases notified",
+    "component": "Tuberculosis",
+    "result": 10000
+  },
+  {
+    "description": "People in contact with TB patients received preventive therapy",
+    "component": "Tuberculosis",
+    "result": 200000
+  }
+]

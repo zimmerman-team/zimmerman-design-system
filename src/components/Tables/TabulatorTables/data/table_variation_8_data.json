@@ -1,0 +1,823 @@
+[
+  {
+    "name": "Affordable Medicines Facility - malaria (AMFm)",
+    "pledge": 537458185.43,
+    "contribution": 537458185.43,
+    "_children": [
+      {
+        "name": "AMFm Bill & Melinda Gates Foundation",
+        "pledge": 24365000,
+        "contribution": 24365000
+      },
+      {
+        "name": "AMFm Canada",
+        "pledge": 39596763.03,
+        "contribution": 39596763.03
+      },
+      {
+        "name": "AMFm United Kingdom",
+        "pledge": 273496422.4,
+        "contribution": 273496422.4
+      },
+      {
+        "name": "AMFm World Health Organization-Unitaid",
+        "pledge": 200000000,
+        "contribution": 200000000
+      }
+    ]
+  },
+  {
+    "name": "Corporation",
+    "pledge": 655304646.01,
+    "contribution": 695475765.3599999,
+    "_children": [
+      {
+        "name": "Absa Group Ltd",
+        "pledge": 150000,
+        "contribution": 150000
+      },
+      {
+        "name": "Anglo American plc",
+        "pledge": 18500000,
+        "contribution": 7125000
+      },
+      {
+        "name": "BHP Billiton Sustainable Communities",
+        "pledge": 10000000,
+        "contribution": 10000000
+      },
+      {
+        "name": "Chevron Corporation",
+        "pledge": 60004000,
+        "contribution": 60004000
+      },
+      {
+        "name": "Ecobank",
+        "pledge": 6000000,
+        "contribution": 1500000
+      },
+      {
+        "name": "Gift from Africa",
+        "pledge": 3000000,
+        "contribution": 1495856.61
+      },
+      {
+        "name": "GlaxoSmithKline plc and Viiv Healthcare",
+        "pledge": 9408997.36,
+        "contribution": 5880623.35
+      },
+      {
+        "name": "Goodbye Malaria - Sonhos Social Capital / Relate Trust ZA",
+        "pledge": 15000000,
+        "contribution": 6719279.34
+      },
+      {
+        "name": "Munich Re",
+        "pledge": 1002000,
+        "contribution": 1002000
+      },
+      {
+        "name": "Nationale Postcode Loterij N.V.",
+        "pledge": 3397662.5,
+        "contribution": 3397662.5
+      },
+      {
+        "name": "Product (RED)",
+        "pledge": 500000000,
+        "contribution": 575059357.4
+      },
+      {
+        "name": "PT. Kalbe Farma Tbk",
+        "pledge": 1500000,
+        "contribution": 500000
+      },
+      {
+        "name": "Standard Bank",
+        "pledge": 4000000,
+        "contribution": 2000000
+      },
+      {
+        "name": "Takeda Pharmaceutical",
+        "pledge": 17641986.15,
+        "contribution": 17641986.16
+      },
+      {
+        "name": "Vale",
+        "pledge": 3000000,
+        "contribution": 3000000
+      },
+      {
+        "name": "Duet Group",
+        "pledge": 2600000,
+        "contribution": 0
+      },
+      {
+        "name": "Medtronic LABS",
+        "pledge": 100000,
+        "contribution": 0
+      }
+    ]
+  },
+  {
+    "name": "Debt2Health",
+    "pledge": 232224123,
+    "contribution": 225894765.36,
+    "_children": [
+      {
+        "name": "Debt2Health - Australia-Indonesia",
+        "pledge": 35267489.58,
+        "contribution": 35267489.57
+      },
+      {
+        "name": "Debt2Health - Germany - El Salvador",
+        "pledge": 11222085.1,
+        "contribution": 11222085.1
+      },
+      {
+        "name": "Debt2Health - Germany-Côte d'Ivoire",
+        "pledge": 12540097.19,
+        "contribution": 12540096.89
+      },
+      {
+        "name": "Debt2Health - Germany-Egypt",
+        "pledge": 4807118.2,
+        "contribution": 4807118.2
+      },
+      {
+        "name": "Debt2Health - Germany-Indonesia",
+        "pledge": 90905435.51,
+        "contribution": 90905435.51
+      },
+      {
+        "name": "Debt2Health - Germany-Pakistan",
+        "pledge": 26374033.3,
+        "contribution": 26374033.3
+      },
+      {
+        "name": "Debt2Health - Germany-Sri Lanka",
+        "pledge": 22444170.2,
+        "contribution": 16114812.87
+      },
+      {
+        "name": "Debt2Health - Jordan-Germany",
+        "pledge": 11222085.1,
+        "contribution": 11222085.1
+      },
+      {
+        "name": "Debt2Health - Spain-Cameroon",
+        "pledge": 10456922.94,
+        "contribution": 10456922.94
+      },
+      {
+        "name": "Debt2Health - Spain-Congo (Democratic Republic)",
+        "pledge": 3403543.46,
+        "contribution": 3403543.46
+      },
+      {
+        "name": "Debt2Health - Spain-Ethiopia",
+        "pledge": 3581142.42,
+        "contribution": 3581142.42
+      }
+    ]
+  },
+  {
+    "name": "Faith-Based Organization",
+    "pledge": 41500000,
+    "contribution": 25510854.39,
+    "_children": [
+      {
+        "name": "LMI (Lutheran Malaria Initiative)",
+        "pledge": 13500000,
+        "contribution": 1654957.39
+      },
+      {
+        "name": "United Methodist Church",
+        "pledge": 28000000,
+        "contribution": 23855897
+      }
+    ]
+  },
+  {
+    "name": "Foundation",
+    "pledge": 4157886086.67,
+    "contribution": 3455554123.85,
+    "_children": [
+      {
+        "name": "Abbott Fund",
+        "pledge": 5000000,
+        "contribution": 1667000
+      },
+      {
+        "name": "AIDS Healthcare Foundation",
+        "pledge": 10000000,
+        "contribution": 2000000
+      },
+      {
+        "name": "Bill & Melinda Gates Foundation",
+        "pledge": 3928300348,
+        "contribution": 3305259289
+      },
+      {
+        "name": "Catholic Relief Services",
+        "pledge": 11000000,
+        "contribution": 8000000
+      },
+      {
+        "name": "Children's Investment Fund Foundation",
+        "pledge": 68090668.75,
+        "contribution": 48995232.75
+      },
+      {
+        "name": "Comic Relief",
+        "pledge": 58195069.92,
+        "contribution": 51032602.1
+      },
+      {
+        "name": "Communitas Foundation",
+        "pledge": 2000000,
+        "contribution": 2000000
+      },
+      {
+        "name": "Fondation Chanel",
+        "pledge": 1550000,
+        "contribution": 1550000
+      },
+      {
+        "name": "J.C. Flowers Foundation",
+        "pledge": 1000000,
+        "contribution": 1000000
+      },
+      {
+        "name": "Johnson & Johnson Foundation",
+        "pledge": 0,
+        "contribution": 4500000
+      },
+      {
+        "name": "M∙A∙C AIDS Fund",
+        "pledge": 3250000,
+        "contribution": 3250000
+      },
+      {
+        "name": "McGovern Foundation",
+        "pledge": 1000000,
+        "contribution": 1000000
+      },
+      {
+        "name": "Rockefeller Foundation",
+        "pledge": 30000000,
+        "contribution": 21000000
+      },
+      {
+        "name": "Skoll Foundation",
+        "pledge": 10000000,
+        "contribution": 4000000
+      },
+      {
+        "name": "Tanoto Foundation",
+        "pledge": 1000000,
+        "contribution": 300000
+      },
+      {
+        "name": "FIFA Foundation",
+        "pledge": 1500000,
+        "contribution": 0
+      },
+      {
+        "name": "Outcomes Fund for Fevers",
+        "pledge": 25000000,
+        "contribution": 0
+      },
+      {
+        "name": "SMJR Foundation",
+        "pledge": 1000000,
+        "contribution": 0
+      }
+    ]
+  },
+  {
+    "name": "Individual",
+    "pledge": 79215156.01,
+    "contribution": 23340405.44,
+    "_children": [
+      {
+        "name": "Tahir Foundation",
+        "pledge": 79215156.01,
+        "contribution": 23340405.44
+      }
+    ]
+  },
+  {
+    "name": "Private Sector & Nongovernment",
+    "pledge": 231880131.54999998,
+    "contribution": 65813531.28,
+    "_children": [
+      {
+        "name": "Co-Impact",
+        "pledge": 8000000,
+        "contribution": 6650000
+      },
+      {
+        "name": "Hottokenai Campaign (G-CAP Coalition Japan)",
+        "pledge": 250000,
+        "contribution": 250000
+      },
+      {
+        "name": "Idol Gives Back",
+        "pledge": 16600000,
+        "contribution": 16600000
+      },
+      {
+        "name": "KN Cam Ranh Co., Ltd.",
+        "pledge": 4000000,
+        "contribution": 1000000
+      },
+      {
+        "name": "Other Private Sector",
+        "pledge": 160647487.07,
+        "contribution": 29502198.44
+      },
+      {
+        "name": "Plan International and Plan Canada",
+        "pledge": 5175551.6,
+        "contribution": 1804239.96
+      },
+      {
+        "name": "United Nations Foundation",
+        "pledge": 9707092.88,
+        "contribution": 9707092.88
+      },
+      {
+        "name": "YMCA and Y's Men International",
+        "pledge": 500000,
+        "contribution": 300000
+      },
+      {
+        "name": "Cordaid",
+        "pledge": 5000000,
+        "contribution": 0
+      },
+      {
+        "name": "Human Crescent",
+        "pledge": 10000000,
+        "contribution": 0
+      },
+      {
+        "name": "Rotary Australia World Community Service and Rotarians Against Malaria",
+        "pledge": 12000000,
+        "contribution": 0
+      }
+    ]
+  },
+  {
+    "name": "Public Sector",
+    "pledge": 83023804221.21999,
+    "contribution": 68674070397.42001,
+    "_children": [
+      {
+        "name": "Andorra",
+        "pledge": 100000,
+        "contribution": 100000
+      },
+      {
+        "name": "Australia",
+        "pledge": 1061452595.5,
+        "contribution": 857868607.82
+      },
+      {
+        "name": "Austria",
+        "pledge": 1075900,
+        "contribution": 1075900
+      },
+      {
+        "name": "Azerbaijan",
+        "pledge": 20000000,
+        "contribution": 5800000
+      },
+      {
+        "name": "Barbados",
+        "pledge": 100000,
+        "contribution": 100000
+      },
+      {
+        "name": "Belgium",
+        "pledge": 406271977.08,
+        "contribution": 391368847.43
+      },
+      {
+        "name": "Benin",
+        "pledge": 3000000,
+        "contribution": 2000000
+      },
+      {
+        "name": "Brazil",
+        "pledge": 202355.08,
+        "contribution": 202355.08
+      },
+      {
+        "name": "Brunei Darussalam",
+        "pledge": 150000,
+        "contribution": 150000
+      },
+      {
+        "name": "Burkina Faso",
+        "pledge": 2075832.15,
+        "contribution": 1075832.15
+      },
+      {
+        "name": "Burundi",
+        "pledge": 1000000,
+        "contribution": 596080.38
+      },
+      {
+        "name": "Canada",
+        "pledge": 4379254163.97,
+        "contribution": 3776157910.87
+      },
+      {
+        "name": "Central African Republic",
+        "pledge": 1999001,
+        "contribution": 423016.73
+      },
+      {
+        "name": "Chad",
+        "pledge": 551480.73,
+        "contribution": 551480.73
+      },
+      {
+        "name": "China",
+        "pledge": 81000000,
+        "contribution": 81000000
+      },
+      {
+        "name": "Congo (Democratic Republic)",
+        "pledge": 12000000,
+        "contribution": 4000000
+      },
+      {
+        "name": "Côte d'Ivoire",
+        "pledge": 4526477.5,
+        "contribution": 2445500.45
+      },
+      {
+        "name": "Cyprus",
+        "pledge": 99354.2,
+        "contribution": 99354.2
+      },
+      {
+        "name": "Denmark",
+        "pledge": 499164879.31,
+        "contribution": 449066686.85
+      },
+      {
+        "name": "Estonia",
+        "pledge": 4077.2,
+        "contribution": 4077.2
+      },
+      {
+        "name": "Eswatini",
+        "pledge": 7000000,
+        "contribution": 6000000
+      },
+      {
+        "name": "European Commission",
+        "pledge": 4152680240.25,
+        "contribution": 3966197215.12
+      },
+      {
+        "name": "Finland",
+        "pledge": 33200900,
+        "contribution": 33200900
+      },
+      {
+        "name": "France",
+        "pledge": 9521557247.41,
+        "contribution": 8017719950.15
+      },
+      {
+        "name": "Georgia",
+        "pledge": 40000,
+        "contribution": 40000
+      },
+      {
+        "name": "Germany",
+        "pledge": 6713397327.33,
+        "contribution": 5794835379.71
+      },
+      {
+        "name": "Greece",
+        "pledge": 2205233.07,
+        "contribution": 2205233.07
+      },
+      {
+        "name": "Hungary",
+        "pledge": 55000,
+        "contribution": 55000
+      },
+      {
+        "name": "Iceland",
+        "pledge": 1170707.23,
+        "contribution": 1170707.23
+      },
+      {
+        "name": "India",
+        "pledge": 94500000,
+        "contribution": 76500000
+      },
+      {
+        "name": "Indonesia",
+        "pledge": 10000000,
+        "contribution": 1500000
+      },
+      {
+        "name": "Ireland",
+        "pledge": 406349691.8,
+        "contribution": 362633844.82
+      },
+      {
+        "name": "Italy",
+        "pledge": 2030558623.96,
+        "contribution": 1521147534.93
+      },
+      {
+        "name": "Japan",
+        "pledge": 5387195584,
+        "contribution": 4622979225
+      },
+      {
+        "name": "Kenya",
+        "pledge": 23008273,
+        "contribution": 13008273
+      },
+      {
+        "name": "Korea (Republic)",
+        "pledge": 170622486.94,
+        "contribution": 120622486.94
+      },
+      {
+        "name": "Kuwait",
+        "pledge": 25999965,
+        "contribution": 17999965
+      },
+      {
+        "name": "Latvia",
+        "pledge": 10000,
+        "contribution": 10000
+      },
+      {
+        "name": "Liechtenstein",
+        "pledge": 1634623.49,
+        "contribution": 1634623.49
+      },
+      {
+        "name": "Luxembourg",
+        "pledge": 81395478.42,
+        "contribution": 72602631.95
+      },
+      {
+        "name": "Malaysia",
+        "pledge": 132216.49,
+        "contribution": 132216.49
+      },
+      {
+        "name": "Malta",
+        "pledge": 479919.74,
+        "contribution": 380565.55
+      },
+      {
+        "name": "Mexico",
+        "pledge": 200000,
+        "contribution": 200000
+      },
+      {
+        "name": "Monaco",
+        "pledge": 970601.37,
+        "contribution": 672538.78
+      },
+      {
+        "name": "Namibia",
+        "pledge": 4750000,
+        "contribution": 4050000
+      },
+      {
+        "name": "Netherlands",
+        "pledge": 1667078517.4,
+        "contribution": 1515473488.79
+      },
+      {
+        "name": "New Zealand",
+        "pledge": 12063563.09,
+        "contribution": 11062090.32
+      },
+      {
+        "name": "Niger",
+        "pledge": 2000000,
+        "contribution": 1238712.85
+      },
+      {
+        "name": "Nigeria",
+        "pledge": 94280914,
+        "contribution": 38791305.11
+      },
+      {
+        "name": "Norway",
+        "pledge": 1597585463.72,
+        "contribution": 1445550033.87
+      },
+      {
+        "name": "Poland",
+        "pledge": 150000,
+        "contribution": 150000
+      },
+      {
+        "name": "Portugal",
+        "pledge": 18646007.53,
+        "contribution": 17856141.65
+      },
+      {
+        "name": "Qatar",
+        "pledge": 110000000,
+        "contribution": 70000000
+      },
+      {
+        "name": "Romania",
+        "pledge": 819457.78,
+        "contribution": 819457.78
+      },
+      {
+        "name": "Russian Federation",
+        "pledge": 316999995.61,
+        "contribution": 316999995.61
+      },
+      {
+        "name": "Rwanda",
+        "pledge": 6750000,
+        "contribution": 3500000
+      },
+      {
+        "name": "Saudi Arabia",
+        "pledge": 162000000,
+        "contribution": 136000000
+      },
+      {
+        "name": "Senegal",
+        "pledge": 2000000,
+        "contribution": 1914594.06
+      },
+      {
+        "name": "Singapore",
+        "pledge": 1600000,
+        "contribution": 1200000
+      },
+      {
+        "name": "Slovenia",
+        "pledge": 253869.34,
+        "contribution": 253869.34
+      },
+      {
+        "name": "South Africa",
+        "pledge": 41301559.09,
+        "contribution": 32601559.09
+      },
+      {
+        "name": "Spain",
+        "pledge": 1079015182.39,
+        "contribution": 879228916.98
+      },
+      {
+        "name": "Sweden",
+        "pledge": 2088394444.35,
+        "contribution": 1861339250.78
+      },
+      {
+        "name": "Switzerland",
+        "pledge": 381350853.24,
+        "contribution": 336703360.76
+      },
+      {
+        "name": "Tanzania (United Republic)",
+        "pledge": 1000000,
+        "contribution": 997809.1
+      },
+      {
+        "name": "Thailand",
+        "pledge": 26499941,
+        "contribution": 24880356.91
+      },
+      {
+        "name": "Togo",
+        "pledge": 3500000,
+        "contribution": 2000000
+      },
+      {
+        "name": "Tunisia",
+        "pledge": 2000000,
+        "contribution": 2000000
+      },
+      {
+        "name": "Uganda",
+        "pledge": 8500000,
+        "contribution": 4214817.98
+      },
+      {
+        "name": "Ukraine",
+        "pledge": 80000,
+        "contribution": 80000
+      },
+      {
+        "name": "Unitaid",
+        "pledge": 38691956,
+        "contribution": 38691956
+      },
+      {
+        "name": "United Arab Emirates",
+        "pledge": 55148072.57,
+        "contribution": 55148072.57
+      },
+      {
+        "name": "United Kingdom",
+        "pledge": 8250967810.82,
+        "contribution": 7674536242.55
+      },
+      {
+        "name": "United States",
+        "pledge": 31722465791.2,
+        "contribution": 23985370962.2
+      },
+      {
+        "name": "Zambia",
+        "pledge": 8525000,
+        "contribution": 775000
+      },
+      {
+        "name": "Zimbabwe",
+        "pledge": 4158462,
+        "contribution": 3108462
+      },
+      {
+        "name": "Armenia",
+        "pledge": 15000000,
+        "contribution": 0
+      },
+      {
+        "name": "Cameroon",
+        "pledge": 5020005,
+        "contribution": 0
+      },
+      {
+        "name": "Commitments to be personally secured by Bill Gates and Bono with the active support of France for the period 2020-2022",
+        "pledge": 96724259.64,
+        "contribution": 0
+      },
+      {
+        "name": "Congo",
+        "pledge": 5500000,
+        "contribution": 0
+      },
+      {
+        "name": "Equatorial Guinea",
+        "pledge": 2205922.9,
+        "contribution": 0
+      },
+      {
+        "name": "Ghana",
+        "pledge": 2000000,
+        "contribution": 0
+      },
+      {
+        "name": "Guinea",
+        "pledge": 200000,
+        "contribution": 0
+      },
+      {
+        "name": "Madagascar",
+        "pledge": 1000000,
+        "contribution": 0
+      },
+      {
+        "name": "Malawi",
+        "pledge": 1500000,
+        "contribution": 0
+      },
+      {
+        "name": "Mali",
+        "pledge": 551480.73,
+        "contribution": 0
+      },
+      {
+        "name": "Morocco",
+        "pledge": 1283940.39,
+        "contribution": 0
+      },
+      {
+        "name": "Other Public",
+        "pledge": 45799538.21,
+        "contribution": 0
+      },
+      {
+        "name": "Paraguay",
+        "pledge": 50000,
+        "contribution": 0
+      }
+    ]
+  }
+]

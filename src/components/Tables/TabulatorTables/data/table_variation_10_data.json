@@ -1,0 +1,280 @@
+[
+  {
+    "name": "Algeria",
+    "_children": [
+      {
+        "name": "Income Level",
+        "2023": "Low Income",
+        "2022": "Low Income",
+        "2021": "Low Income",
+        "2020": "Low Income",
+        "2019": "Low Income",
+        "2018": "Low Income",
+        "2017": "Low Income",
+        "2016": "Low Income",
+        "2015": "Low Income",
+        "2014": "Low Income",
+        "2013": "Low Income",
+        "2012": "Low Income",
+        "2011": "Low Income",
+        "2010": "Low Income"
+      },
+      {
+        "name": "HIV",
+        "_children": [
+          {
+            "name": "Disease Burden",
+            "2023": "Low",
+            "2022": "Low",
+            "2021": "Low",
+            "2020": "Low",
+            "2019": "Low",
+            "2018": "Low",
+            "2017": "Low",
+            "2016": "Low",
+            "2015": "Low",
+            "2014": "Low",
+            "2013": "Low",
+            "2012": "Low",
+            "2011": "Low",
+            "2010": "Low"
+          },
+          {
+            "name": "Eligibility",
+            "2023": "Eligible",
+            "2022": "Eligible",
+            "2021": "Eligible",
+            "2020": "Eligible",
+            "2019": "Eligible",
+            "2018": "Eligible",
+            "2017": "Eligible",
+            "2016": "Eligible",
+            "2015": "Eligible",
+            "2014": "Eligible",
+            "2013": "Eligible",
+            "2012": "Eligible",
+            "2011": "Eligible",
+            "2010": "Eligible"
+          }
+        ]
+      },
+      {
+        "name": "Malaria",
+        "_children": [
+          {
+            "name": "Disease Burden",
+            "2023": "Low",
+            "2022": "Low",
+            "2021": "Low",
+            "2020": "Low",
+            "2019": "Low",
+            "2018": "Low",
+            "2017": "Low",
+            "2016": "Low",
+            "2015": "Low",
+            "2014": "Low",
+            "2013": "Low",
+            "2012": "Low",
+            "2011": "Low",
+            "2010": "Low"
+          },
+          {
+            "name": "Eligibility",
+            "2023": "Eligible",
+            "2022": "Eligible",
+            "2021": "Eligible",
+            "2020": "Eligible",
+            "2019": "Eligible",
+            "2018": "Eligible",
+            "2017": "Eligible",
+            "2016": "Eligible",
+            "2015": "Eligible",
+            "2014": "Eligible",
+            "2013": "Eligible",
+            "2012": "Eligible",
+            "2011": "Eligible",
+            "2010": "Eligible"
+          }
+        ]
+      },
+      {
+        "name": "Tuberculosis",
+        "_children": [
+          {
+            "name": "Disease Burden",
+            "2023": "Low",
+            "2022": "Low",
+            "2021": "Low",
+            "2020": "Low",
+            "2019": "Low",
+            "2018": "Low",
+            "2017": "Low",
+            "2016": "Low",
+            "2015": "Low",
+            "2014": "Low",
+            "2013": "Low",
+            "2012": "Low",
+            "2011": "Low",
+            "2010": "Low"
+          },
+          {
+            "name": "Eligibility",
+            "2023": "Eligible",
+            "2022": "Eligible",
+            "2021": "Eligible",
+            "2020": "Eligible",
+            "2019": "Eligible",
+            "2018": "Eligible",
+            "2017": "Eligible",
+            "2016": "Eligible",
+            "2015": "Eligible",
+            "2014": "Eligible",
+            "2013": "Eligible",
+            "2012": "Eligible",
+            "2011": "Eligible",
+            "2010": "Eligible"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Afghanistan",
+    "_children": [
+      {
+        "name": "Income Level",
+        "2023": "Low Income",
+        "2022": "Low Income",
+        "2021": "Low Income",
+        "2020": "Low Income",
+        "2019": "Low Income",
+        "2018": "Low Income",
+        "2017": "Low Income",
+        "2016": "Low Income",
+        "2015": "Low Income",
+        "2014": "Low Income",
+        "2013": "Low Income",
+        "2012": "Low Income",
+        "2011": "Low Income",
+        "2010": "Low Income"
+      },
+      {
+        "name": "HIV",
+        "_children": [
+          {
+            "name": "Disease Burden",
+            "2023": "Low",
+            "2022": "Low",
+            "2021": "Low",
+            "2020": "Low",
+            "2019": "Low",
+            "2018": "Low",
+            "2017": "Low",
+            "2016": "Low",
+            "2015": "Low",
+            "2014": "Low",
+            "2013": "Low",
+            "2012": "Low",
+            "2011": "Low",
+            "2010": "Low"
+          },
+          {
+            "name": "Eligibility",
+            "2023": "Eligible",
+            "2022": "Eligible",
+            "2021": "Eligible",
+            "2020": "Eligible",
+            "2019": "Eligible",
+            "2018": "Eligible",
+            "2017": "Eligible",
+            "2016": "Eligible",
+            "2015": "Eligible",
+            "2014": "Eligible",
+            "2013": "Eligible",
+            "2012": "Eligible",
+            "2011": "Eligible",
+            "2010": "Eligible"
+          }
+        ]
+      },
+      {
+        "name": "Malaria",
+        "_children": [
+          {
+            "name": "Disease Burden",
+            "2023": "Low",
+            "2022": "Low",
+            "2021": "Low",
+            "2020": "Low",
+            "2019": "Low",
+            "2018": "Low",
+            "2017": "Low",
+            "2016": "Low",
+            "2015": "Low",
+            "2014": "Low",
+            "2013": "Low",
+            "2012": "Low",
+            "2011": "Low",
+            "2010": "Low"
+          },
+          {
+            "name": "Eligibility",
+            "2023": "Eligible",
+            "2022": "Eligible",
+            "2021": "Eligible",
+            "2020": "Eligible",
+            "2019": "Eligible",
+            "2018": "Eligible",
+            "2017": "Eligible",
+            "2016": "Eligible",
+            "2015": "Eligible",
+            "2014": "Eligible",
+            "2013": "Eligible",
+            "2012": "Eligible",
+            "2011": "Eligible",
+            "2010": "Eligible"
+          }
+        ]
+      },
+      {
+        "name": "Tuberculosis",
+        "_children": [
+          {
+            "name": "Disease Burden",
+            "2023": "Low",
+            "2022": "Low",
+            "2021": "Low",
+            "2020": "Low",
+            "2019": "Low",
+            "2018": "Low",
+            "2017": "Low",
+            "2016": "Low",
+            "2015": "Low",
+            "2014": "Low",
+            "2013": "Low",
+            "2012": "Low",
+            "2011": "Low",
+            "2010": "Low"
+          },
+          {
+            "name": "Eligibility",
+            "2023": "Eligible",
+            "2022": "Eligible",
+            "2021": "Eligible",
+            "2020": "Eligible",
+            "2019": "Eligible",
+            "2018": "Eligible",
+            "2017": "Eligible",
+            "2016": "Eligible",
+            "2015": "Eligible",
+            "2014": "Eligible",
+            "2013": "Eligible",
+            "2012": "Eligible",
+            "2011": "Eligible",
+            "2010": "Eligible"
+          }
+        ]
+      }
+    ]
+  }
+]
