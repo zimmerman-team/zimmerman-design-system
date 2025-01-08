@@ -1,0 +1,9 @@
+Feedback Change List on first version:
+
+- Added a bunch of comments to make props more desriptive and complex functions more selfexplanatory
+- Changed to the structure we discussed so know we have (const,interface,index,Stories,Component,types and data) instead of a piled file
+- JSON Conversion mainly for table components (Columns should be better of not be converted into JSON already discussed this with Stefanos)
+- SonarCloud code refactoring in general
+- Added better structured subdirectories for data and files (for example in the assets subdirectory or the data folders in the Table components)
+- Changed to absolute import paths instead of relative ones
+- Changed the imports from smallest length to biggest at the top of the files
