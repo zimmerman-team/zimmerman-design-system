@@ -4,7 +4,7 @@ import Divider from "@mui/material/Divider";
 import { GrantCardProps } from "./interface";
 import Typography from "@mui/material/Typography";
 import LocationIcon from "@mui/icons-material/LocationOn";
-import { formatFinancialValue } from "utils/formatFinancialValue";
+import { formatFinancialValue } from "../../utils/dxformatFinancialValue";
 
 export const ZDSGrantCard: React.FC<GrantCardProps> = (
   props: GrantCardProps
