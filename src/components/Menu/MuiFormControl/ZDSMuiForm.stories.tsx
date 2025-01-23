@@ -4,6 +4,7 @@ import data from "./data/mockdata.json";
 import { ZDSFormComponent } from "./index";
 import type { Meta, StoryObj } from "@storybook/react";
 import { withRouter } from "storybook-addon-remix-react-router";
+import ZDSMuiForm from "./ZDSMuiForm";
 
 const meta = {
   title: "Example/Dropdown/MUI-FormControl",
@@ -63,12 +64,26 @@ export const AIDAOutlined: StoryType = {
 };
 
 export const AIDASelectMonth: StoryType = {
+  render: (args) => {
+    const [selectedValue, setSelectedValue] = React.useState("january");
+
+    return (
+      <ZDSMuiForm
+        {...args}
+        value={selectedValue}
+        onChange={(event) => {
+          setSelectedValue(event.target.value);
+          // You can keep the original onChange if needed
+          args.onChange?.(event);
+        }}
+      />
+    );
+  },
   args: {
     id: "select-month",
     onChange: () => {},
     options: data.monthSelect.options,
     IconComponent: (props) => <ArrowDown {...props} stroke="black" />,
-    value: "january",
     variant: "outlined",
     width: "300px",
     height: "40px",

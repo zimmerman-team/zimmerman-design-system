@@ -15,7 +15,7 @@ export default interface FormControlProps {
 
 export interface SelectFieldProps extends FormControlProps {
   id: string;
-  value: string | string[];
+  value?: string | string[];
   name?: string;
   multiple?: boolean;
   IconComponent?: React.ElementType;
@@ -26,4 +26,5 @@ export interface SelectFieldProps extends FormControlProps {
   label?: string;
   width?: string;
   placeholder?: string;
+  selectedValue?: string;
 }
