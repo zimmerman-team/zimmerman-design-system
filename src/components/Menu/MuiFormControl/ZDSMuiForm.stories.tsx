@@ -3,13 +3,11 @@ import { ArrowDown } from "./const";
 import data from "./data/mockdata.json";
 import { ZDSFormComponent } from "./index";
 import type { Meta, StoryObj } from "@storybook/react";
-import { withRouter } from "storybook-addon-remix-react-router";
 import ZDSMuiForm from "./ZDSMuiForm";
 
 const meta = {
   title: "Example/Dropdown/MUI-FormControl",
   component: ZDSFormComponent,
-  decorators: [withRouter],
   parameters: {
     layout: "fullscreen",
   },
