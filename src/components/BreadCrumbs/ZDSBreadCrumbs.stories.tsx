@@ -59,10 +59,16 @@ export const AidaBreadCrumbs: StoryType = {
     separator: <ChevronIcon />,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=292-9229",
-    },
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=292-9229",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/vgdX46lAwjQwfV6YyEfaG4/AIDA-V3-MAIN?node-id=292-9229",
+      },
+    ],
   },
 };
 
