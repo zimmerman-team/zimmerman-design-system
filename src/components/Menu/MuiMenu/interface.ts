@@ -12,7 +12,6 @@ export default interface MenuItemProps {
   link?: string;
   divider?: boolean;
   action?: () => void;
-  selected?: boolean;
   onClick?: (event: React.MouseEvent<HTMLLIElement, MouseEvent>) => void;
   sx?: SxProps;
 }
@@ -21,10 +20,12 @@ export default interface MenuItemProps {
 export interface DropdownProps extends MuiMenuProps {
   id?: string;
   anchorElement: React.ReactNode;
-  selected?: string;
   onClose?: (event: {}, reason: "backdropClick" | "escapeKeyDown") => void;
   items?: MenuItemProps[];
+  defaultSelected?: string;
   elevation?: number;
+  dropdownSelected: string;
+  handleDropdownChange: (value: string) => void;
   transformOrigin?: {
     vertical: number | VerticalAlignment;
     horizontal: number | HorizontalAlignment;

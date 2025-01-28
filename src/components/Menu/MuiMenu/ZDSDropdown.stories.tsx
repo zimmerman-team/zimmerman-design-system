@@ -1,6 +1,6 @@
 import React from "react";
 import { colors } from "theme";
-import MyDropdown from "./ZDSDropdown";
+import ZDSDropdown from "./ZDSDropdown";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import LogoutIcon from "@mui/icons-material/Logout";
@@ -9,10 +9,13 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import MenuRounded from "@mui/icons-material/MenuRounded";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { ReactComponent as TableIcon } from "assets/DataExplorer/vectors/Select_Table.svg";
+import { ReactComponent as BarChartIcon } from "assets/DataExplorer/vectors/Select_BarChart.svg";
+import { ReactComponent as LineChartIcon } from "assets/DataExplorer/vectors/Select_LineChart.svg";
 
-const meta: Meta<typeof MyDropdown> = {
+const meta: Meta<typeof ZDSDropdown> = {
   title: "Example/Dropdown/MUI-Menu",
-  component: MyDropdown,
+  component: ZDSDropdown,
   parameters: {
     layout: "centered",
   },
@@ -33,7 +36,7 @@ const meta: Meta<typeof MyDropdown> = {
 };
 export default meta;
 type StoryType = StoryObj<typeof meta>;
-//OpenAidDropdown
+
 export const OpenAidDropdown: StoryType = {
   args: {
     id: "pages-menu",
@@ -152,8 +155,7 @@ export const OpenAidDropdown: StoryType = {
 };
 
 // Data Explorer Dropdown
-//TODO:MAKE IT DYNAMIC
-export const DataExplorerDropdown: StoryType = {
+export const DataExplorerYearDropdown: StoryType = {
   args: {
     anchorElement: (
       <Button
@@ -341,5 +343,52 @@ export const AcountDropdown: StoryType = {
         },
       },
     },
+  },
+};
+
+export const DataExplorerCategoryDropdownMenu: StoryType = {
+  args: {
+    anchorElement: (
+      <Button
+        variant="contained"
+        endIcon={<KeyboardArrowDownIcon />}
+        sx={{
+          backgroundColor: "white",
+          color: "black",
+          "&:hover": {
+            backgroundColor: "white",
+          },
+          "& .MuiButton-endIcon": {
+            color: "black",
+          },
+        }}
+      ></Button>
+    ),
+    items: [
+      {
+        label: "Bar Chart",
+        icon: <BarChartIcon />,
+      },
+      {
+        label: "Line Chart",
+        icon: <LineChartIcon />,
+      },
+      {
+        label: "Table View",
+        icon: <TableIcon />,
+      },
+    ],
+  },
+  parameters: {
+    design: [
+      {
+        type: "figma",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=2089-9827&t=IwzhBIdBYU4NVTZ8-0",
+      },
+      {
+        type: "link",
+        url: "https://www.figma.com/design/U3wokyt1snyPxQyHWytR0v/GLOBAL-FUND---V3?node-id=2089-9827&t=IwzhBIdBYU4NVTZ8-0",
+      },
+    ],
   },
 };
