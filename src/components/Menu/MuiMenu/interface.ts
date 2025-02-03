@@ -22,7 +22,7 @@ export interface DropdownProps extends MuiMenuProps {
   anchorElement: React.ReactNode;
   onClose?: (event: {}, reason: "backdropClick" | "escapeKeyDown") => void;
   items?: MenuItemProps[];
-  defaultSelected?: string;
+  selected?: string;
   elevation?: number;
   dropdownSelected: string;
   handleDropdownChange: (value: string) => void;
